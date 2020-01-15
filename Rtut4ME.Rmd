@@ -1,11 +1,8 @@
 ---
 title: "A hands-on tutorial on R and R Studio"
 author: "Tiago A. Marques"
-date: "September 18, 2019"
+date: "15th January 2020"
 output:
-  pdf_document:
-    toc: yes
-    toc_depth: '3'
   html_document:
     fig_caption: yes
     force_captions: yes
@@ -15,9 +12,12 @@ output:
     toc: yes
     toc_depth: 3
     toc_float: yes
+  pdf_document:
+    toc: yes
+    toc_depth: '3'
 urlcolor: blue
 csl: mee.csl
-subtitle: Modelaço Ecológica 2019/2020
+subtitle: A tutorial that might get used for lots of stuff
 bibliography: biblio.bib
 ---
 
@@ -30,7 +30,7 @@ bibliography: biblio.bib
 
 # Introduction
 
-This tutorial was created as a gentle introduction to the R environment via the R Studio interface to R. While it could be a general introduction to R, the primary objective of this document is to serve as a "hands-on-tutorial" for the course of "Modela??o Ecol?gica". It does not assume any  knowledge about R, but some basic programming notions would be desirable.
+This tutorial was created as a gentle introduction to the R environment via the R Studio interface to R. While it could be a general introduction to R, the primary objective of this document is to serve as a "hands-on-tutorial" for courses delivered by me (TAM). It does not assume any  knowledge about R, but some basic programming notions would be desirable.
 
 There is an extensive community revolving around R, and abundant courses, tutorials, books, blogs, list servers, etc, freely available online. We provide here a small list of these that might be particularly helpful for beginners:
 
