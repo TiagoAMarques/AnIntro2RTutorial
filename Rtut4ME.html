@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 <meta name="author" content="Tiago A. Marques" />
@@ -68,8 +68,6 @@ overflow: auto;
 margin-left: 2%;
 position: fixed;
 border: 1px solid #ccc;
-webkit-border-radius: 6px;
-moz-border-radius: 6px;
 border-radius: 6px;
 }
 
@@ -97,9 +95,14 @@ font-size: 12px;
 .tocify-subheader .tocify-subheader {
 text-indent: 30px;
 }
-
 .tocify-subheader .tocify-subheader .tocify-subheader {
 text-indent: 40px;
+}
+.tocify-subheader .tocify-subheader .tocify-subheader .tocify-subheader {
+text-indent: 50px;
+}
+.tocify-subheader .tocify-subheader .tocify-subheader .tocify-subheader .tocify-subheader {
+text-indent: 60px;
 }
 
 .tocify .tocify-item > a, .tocify .nav-list .nav-header {
@@ -503,13 +506,13 @@ float: none;
 
           item.append($("<a/>", {
 
-            "text": self.text()
+            "html": self.html()
 
           }));
 
         } else {
 
-          item.text(self.text());
+          item.html(self.html());
 
         }
 
@@ -1340,7 +1343,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") continue;
       var style = rule.style.cssText;
       // check if color or background-color is set
-      if (rule.style.color === '' || rule.style.backgroundColor === '') continue;
+      if (rule.style.color === '' && rule.style.backgroundColor === '') continue;
       // replace div.sourceCode by a pre.sourceCode rule
       sheets[i].deleteRule(j);
       sheets[i].insertRule('pre.sourceCode{' + style + '}', j);
@@ -1397,7 +1400,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -1459,6 +1461,7 @@ summary {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -1471,48 +1474,9 @@ summary {
 }
 </style>
 
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
 <!-- code folding -->
 
 
-
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
 
 <style type="text/css">
 
@@ -1526,6 +1490,12 @@ $(document).ready(function ()  {
 }
 }
 
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
 
 .toc-content {
   padding-left: 30px;
@@ -1561,8 +1531,6 @@ div.tocify {
 
 .tocify-subheader .tocify-item {
   font-size: 0.90em;
-  padding-left: 25px;
-  text-indent: 0;
 }
 
 .tocify .list-group-item {
@@ -1608,7 +1576,7 @@ div.tocify {
 
 <hr />
 <hr />
-
+<div style="page-break-after: always;"></div>
 <div id="introduction" class="section level1">
 <h1><span class="header-section-number">1</span> Introduction</h1>
 <p>This tutorial was created as a gentle introduction to the R environment via the R Studio interface to R. While it could be a general introduction to R, the primary objective of this document is to serve as a “hands-on-tutorial” for courses delivered by me (TAM). It does not assume any knowledge about R, but some basic programming notions would be desirable.</p>
@@ -1739,8 +1707,8 @@ div.tocify {
 <div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb36-1" title="1">z1</a></code></pre></div>
 <pre><code>## [1] 10  9  8</code></pre>
 <div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb38-1" title="1">z2</a></code></pre></div>
-<pre><code>##  [1] -10  -9  -8  -7  -6  -5  -4  -3  -2  -1   0   1   2   3   4   5   6
-## [18]   7   8   9  10</code></pre>
+<pre><code>##  [1] -10  -9  -8  -7  -6  -5  -4  -3  -2  -1   0   1   2   3   4   5   6   7   8
+## [20]   9  10</code></pre>
 <p>The function <code>seq</code> is very useful for setting sequences of numbers. The optional arguments <code>length.out</code> and <code>along.with</code> provide extra flexibility.</p>
 <p>We can use the usual mathematical operators over vectors. A few examples follow:</p>
 <div class="sourceCode" id="cb40"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb40-1" title="1">x1<span class="op">+</span>x2</a></code></pre></div>
@@ -1767,8 +1735,8 @@ div.tocify {
 <a class="sourceLine" id="cb52-3" title="3">x9<span class="op">+</span>x10</a></code></pre></div>
 <pre><code>## [1] 3.7 4.9 6.3</code></pre>
 <div class="sourceCode" id="cb54"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb54-1" title="1">x8<span class="op">+</span>x9</a></code></pre></div>
-<pre><code>## Warning in x8 + x9: longer object length is not a multiple of shorter
-## object length</code></pre>
+<pre><code>## Warning in x8 + x9: longer object length is not a multiple of shorter object
+## length</code></pre>
 <pre><code>## [1] 4 6 8 7</code></pre>
 <p>Notice that a warning message was produced when <code>x8</code> and <code>x9</code> were added. Usually these messages are important and should be read! Quite often the answer to your current question lies in the previous error or warning message.</p>
 <p>Another useful function is <code>rep</code>, which allows one to create repetitions of patterns. As examples, see the difference between the next two lines of code</p>
@@ -1987,7 +1955,7 @@ div.tocify {
 <a class="sourceLine" id="cb124-2" title="2"><span class="kw">library</span>(<span class="st">&quot;vegan&quot;</span>)</a></code></pre></div>
 <pre><code>## Loading required package: permute</code></pre>
 <pre><code>## Loading required package: lattice</code></pre>
-<pre><code>## This is vegan 2.5-4</code></pre>
+<pre><code>## This is vegan 2.5-6</code></pre>
 <p>and finally we check that the functions in it are now loaded</p>
 <div class="sourceCode" id="cb128"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb128-1" title="1"><span class="co">#</span></a>
 <a class="sourceLine" id="cb128-2" title="2">?vegan</a></code></pre></div>
@@ -2054,7 +2022,7 @@ div.tocify {
 <div class="sourceCode" id="cb136"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb136-1" title="1"><span class="co">#load the mgcv library</span></a>
 <a class="sourceLine" id="cb136-2" title="2"><span class="kw">library</span>(mgcv)</a></code></pre></div>
 <pre><code>## Loading required package: nlme</code></pre>
-<pre><code>## This is mgcv 1.8-28. For overview type &#39;help(&quot;mgcv-package&quot;)&#39;.</code></pre>
+<pre><code>## This is mgcv 1.8-31. For overview type &#39;help(&quot;mgcv-package&quot;)&#39;.</code></pre>
 <div class="sourceCode" id="cb139"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb139-1" title="1"><span class="co">#fit the GAM</span></a>
 <a class="sourceLine" id="cb139-2" title="2">mygam1&lt;-<span class="kw">gam</span>(dist<span class="op">~</span><span class="kw">s</span>(speed),<span class="dt">data=</span>cars,<span class="dt">family=</span><span class="kw">Gamma</span>(<span class="dt">link=</span>log))</a>
 <a class="sourceLine" id="cb139-3" title="3"><span class="co">#predict using the GAM for speeds between 1 and 30</span></a>
@@ -2155,7 +2123,7 @@ div.tocify {
 <p>Here we will implement an exercise were we pretend we are sampling an animal population, using some (very basic) simulations to understand the process better. Create plots that represent all the steps of your task, with proper legends, labels, colors, etc, and add all your comments to the dynamic report.</p>
 <ol style="list-style-type: decimal">
 <li><p>Simulate the positions of 10000 animals in a study area, with length 10km and width 1km. Assume that any animal has an equal chance to be at any location in the study area (this corresponds to a uniform density surface).</p></li>
-<li>Generate a transect at a random location along the study area.</li>
+<li><p>Generate a transect at a random location along the study area.</p></li>
 <li><p>Assume that you can potentially detect at most animals up to 500 meters from your transect. Count all the animals that you would detect if detection was perfect across your transect.</p></li>
 <li><p>Consider that animals far from your transect are harder to detect - yes, you are doing distance sampling! Define a function that represents a distance sampling half-normal detection function (If needed, look back at your slides from the 1st class). Assume that sigma=200m.</p></li>
 <li><p>Simulate the detection process and get a sample of those animals detected.</p></li>
@@ -2207,6 +2175,49 @@ $(document).ready(function () {
 });
 
 
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
 </script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
