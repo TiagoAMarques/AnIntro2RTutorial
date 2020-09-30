@@ -8,12 +8,13 @@ You should download the data files
 - dados1.csv
 - mydatafile.txt
 
-and work through the tutorial.
+and work through the tutorial. Open the file TAMsIntro2RviaRStudioTutorial.html and off you go.
 
 The main file you should use to work through the tutorial is either TAMsIntro2RviaRStudioTutorial.html or TAMsIntro2RviaRStudioTutorial.pdf, depending on your preference. These files are created by compiling TAMsIntro2RviaRStudioTutorial.Rmd, which is a dynamic report in R MArkdown.
 
 If you want a template for creating dynamic reports, there is one here:
 
 https://github.com/TiagoAMarques/RMarkdownTemplate
+
 
 There is also a powerpoint with a presentation that can be helpful if you are new to R Studio.
