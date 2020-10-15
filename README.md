@@ -17,4 +17,4 @@ If you want a template for creating dynamic reports, there is one here:
 https://github.com/TiagoAMarques/RMarkdownTemplate
 
 
-There is also a powerpoint with a presentation (Quick introduction to R and R Studio.pptx - https://github.com/TiagoAMarques/AnIntro2RTutorial/blob/master/TAMsIntro2RviaRStudioTutorial.Rmd) that can be helpful if you are new to R Studio.
+There is also a powerpoint with a presentation (Quick introduction to R and R Studio.pptx - https://github.com/TiagoAMarques/AnIntro2RTutorial/blob/master/Quick%20introduction%20to%20R%20and%20R%20Studio.pptx) that can be helpful if you are new to R Studio.
