@@ -1,8 +1,11 @@
 ---
 title: "A hands-on tutorial on R and R Studio"
 author: "Tiago A. Marques"
-date: "15th January 2020"
+date: \today
 output:
+  pdf_document:
+    toc: yes
+    toc_depth: '3'
   html_document:
     fig_caption: yes
     force_captions: yes
@@ -12,9 +15,6 @@ output:
     toc: yes
     toc_depth: 3
     toc_float: yes
-  pdf_document:
-    toc: yes
-    toc_depth: '3'
 urlcolor: blue
 csl: mee.csl
 subtitle: A tutorial that might get used for lots of stuff
@@ -27,6 +27,8 @@ bibliography: biblio.bib
 
 
 \newpage
+
+This .Rmd was last compiled on `r Sys.time()`.
 
 # Introduction
 
@@ -458,8 +460,21 @@ or the fourth column
 mat1[,4]
 ```
 
+We are often interested in subsetting a datset by some characteristic of one (or several) of its columns. Here we ilustrate with the dataset `iris` (check `?iris` for data details) 
 
-# Mathematical functions and simple data calculations
+```{r}
+head(iris)
+str(iris)
+```
+
+that contains information about 3 species: `r unique(iris$Species)[1]`, `r unique(iris$Species)[2]` and `r unique(iris$Species)[3]`. Imagine that we want to do something just with those from species `r unique(iris$Species)[3]`. Then we can create an object holding just that information as
+
+```{r}
+iris.3 <- iris[iris$Species=="virginica",]
+summary(iris.3)
+```
+
+# Mathematical functions 
 
 Within R there are a number of mathematical operators but also mathematical and statistical functions. As any other functions, many of these have required parameters and optional parameters. It would take a very long time to describe even the most basic functions. Therefore, we prefer to let you try hands on explore a number of these.
 
@@ -469,7 +484,7 @@ Within R there are a number of mathematical operators but also mathematical and 
 (Tip: do not forget that you can get a full description what each function can be used for, what arguments it takes, and what kind of output it produces,  using `?`. Further, the help of most functions includes examples of their use, which proves invaluable to understand their usage.)
 
 
-\section{Importing and exporting data}
+# Importing and exporting data
 
 Rather than importing data into R manually, typically the data we work with are imported from some external source. Typically this might be some simple file format, like a txt or a csv file, but while not covered here, direct import from say Excel files or Access data bases is possible. Such more specialized inputs often require additional packages.
 
@@ -516,7 +531,7 @@ So now we have our data back in R.
 
 **Task 2**: Import the file `dados1.csv` into R, giving it the name `newfile`. Tips: Explore the possible options including (1) `Import Dataset` shortcut in the `Environment tab`, (2) the optional argument `sep=","` in function `read.table` or (3) consider using function `read.csv`.  
 
-\section{Graphics}
+# Graphics
 
 One of the most amazing R capabilities are its graphics customization properties. One can create pretty much any graphic output desirable. The plot function is, as we have seen before for function `summary`, a function that attempts to do something smart depending on the type of arguments used. Using the data set iris previously considered, plot examples are implemented below, with some optional arguments being used to show some of the possibilities to customize plots.
 
@@ -557,7 +572,7 @@ pairs(indat)
 
 **Task 3**: Using data `cars`, create a plot that represents the stopping  distances as a function of the speed of cars. Use the `points` function to add a special symbol to points corresponding to cars with speed lower than 15 mph, but distance larger than 70m. Check out the function `text` to add text annotations to plots. Customize axis labels.
 
-\section{Extending basic capabilities via packages}
+# Extending basic capabilities via packages
 
 While R base installation includes enough functions that getting acquainted with them could take several years, many more are available via the installation of additional packages available online. A package is just a set of functions and data sets (and the corresponding documentation plus some additional required files) which usually have some specific goal. As examples, in our course we will be using packages `vegan` and `mgcv`, which allow the implementation of a variety of numerical ecology techniques and generalized additive models (GAM), respectively.
 
@@ -610,7 +625,7 @@ vare.cca
 plot(vare.cca)
 ```
 
-\section{Linear regression}
+# Analysis example: regression
 
 One of the most common type of data analysis is a regression model. Despite common and conceptually simple, it is a very powerful way to understand which (and how) of a number of candidate variables, sometimes referred to covariates, independent or explanatory variables, might influence a dependent variable, also often referred as the response. There are many flavors of regression models, from a simple linear regression to complicated generalized additive mixed models. We do not wish to present these in any detail, but to introduce you to some functions that implement these models and the syntax that R uses to describe them.
 
@@ -687,7 +702,6 @@ abline(mylm1)
 lines(1:30,predmyglm1,col="blue",lwd=3,lty=3)
 lines(1:30,predmygam1,col="green",lwd=3,lty=2)
 ```
-
 
 # Simulation and random number generation
 
