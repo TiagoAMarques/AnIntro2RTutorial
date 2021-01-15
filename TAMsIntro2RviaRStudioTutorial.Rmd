@@ -3,9 +3,6 @@ title: "A hands-on tutorial on R and R Studio"
 author: "Tiago A. Marques"
 date: \today
 output:
-  pdf_document:
-    toc: yes
-    toc_depth: '3'
   html_document:
     fig_caption: yes
     force_captions: yes
@@ -15,6 +12,9 @@ output:
     toc: yes
     toc_depth: 3
     toc_float: yes
+  pdf_document:
+    toc: yes
+    toc_depth: '3'
 urlcolor: blue
 csl: mee.csl
 subtitle: A tutorial that might get used for lots of stuff
@@ -25,10 +25,11 @@ bibliography: biblio.bib
 
 ******
 
-
 \newpage
 
-This .Rmd was last compiled on `r Sys.time()`.
+This .Rmd was last compiled on `r Sys.time()`, with the objective of serving the students of the Gades and CEAUL course on R for Data Science.
+
+Disclaimer: in this document I copy paste freely from other documents that I have written. Therefore, if you have read these words elesewhere me, tough luck. I claim the right to plagiarize myself !
 
 # Introduction
 
@@ -38,24 +39,69 @@ This .Rmd is the main document in the github repository located at:
 
 https://github.com/TiagoAMarques/AnIntro2RTutorial
 
-There is an extensive community revolving around R, and abundant courses, tutorials, books, blogs, list servers, etc, freely available online. We provide here a small list of these that might be particularly helpful for beginners:
+To facilitate the interaction with R we leverage on [RStudio](https://www.rstudio.com/), a piece of software which allows users to have at a click's distance many useful features in R. In the following sections of the tutorial you will be guided through a first session of R via RStudio.
+
+The tutorial is intended to follow a brief presentation about R and RStudio, their interaction and capabilities ("Quick introduction to R and R Studio.pptx", also in this git repository). It assumes that R and RStudio have been previously installed in the computer you are using. The latest version of both software packages is recommended. Both are free and open source.
+
+# Preliminaries about R
+
+There is an extensive community revolving around R, and abundant courses, tutorials, books, blogs, list servers, etc, are freely available online. 
+
+R might seem frightening at first, but even monsters can make something look more pleasant if you look from the right angle. It is all a matter of perspective :) So I will use the help of some monsters here to convince you that this is the right thing to do!
+
+The amazing images in this document are all by Allison Horst, Artwork by '@'allison_horst, and I recommend you visit Allison's github repository filled up with amazing stats and maths illustrations (https://github.com/allisonhorst/stats-illustrations), including so many amazing resources to make R look less frightening. To be honest, this section is actually also an homage to Allison's outstanding work.
+
+![Illustrating R Monsters: Artwork by '@'allison_horst](extfiles/monsteRs.jpg)
+
+And it is not just about stats. If you do not understand how to find the derivative of a function after looking at Artwork by Allison Horst and her amazing visualization series on the topic, take it as a sign: just give it up, as I suspect you will never will!
+
+![Illustrating a Derivative: Artwork by '@'allison_horst](extfiles/derivative_1.jpg)
+
+Nowadays learning R by example is easy to do, with so many free online resources available to do so. 
+
+![Illustrating learning R online: Artwork by '@'allison_horst](extfiles/monster_support.jpg)
+
+I recomend that you do it via the RStudio environment, since it provides an integrated environment to integrate with all R things. And there are many! And if you do so, I can guarantee that in no time you will be having funR.
+
+![Illustrating having funR: Artwork by '@'allison_horst](extfiles\r_first_then.png)
+
+The advantages of mastering R are priceless, but the learning curve can be daunting at first. 
+
+![Illustrating R's learning curve: Artwork by '@'allison_horst](extfiles/usethis.png)
+
+This document is written in RMarkdown, a tool that allows you to build dynamic reports based on R code, providing integrated documents that contain all that is required for a given project, from reading the data in to final results and discussion, passing through all the analysis and results. If you want a gentle introduction to RMarkdown using a hands on tutorial based on a versatile template that will do many of the things you'll need to get started, look for no more, there is also one here:
+
+https://github.com/TiagoAMarques/RMarkdownTemplate
+
+Go out and explore, little grasshopper. You will conquer many great things if you do. You will become a code giant one day. But never forget, you need to be thankful to an entire community, and you are standing on the shoulders of giants!
+
+![Illustrating standing on the shoulders of giants: Artwork by '@'allison_horst](extfiles/code_hero.jpg)
+
+# Other R resources that might be helpful
+
+## Beginer stuff
+
+We provide here a small list of these that might be particularly helpful for beginners:
 
 * [R webpage](http://r-project.org) - the main R webpage, including links to downloading R, manuals, tutorials, dedicated search engines, etc.
+
 * [R video tutorials](http://blog.revolutionanalytics.com/2013/08/google-video-r-tutorials.html) - video how to's in R
+
 * [Online tutorial](http://www.datamind.org/) - a course with interactive exercises
+
 * [Online course](http://faculty.washington.edu/tlumley/Rcourse/) -  notes for a two-day course in R
+
 * [Reference card](http://cran.r-project.org/doc/contrib/refcard.pdf) - A very handy list of useful R functions
+
 * [Short reference card](http://cran.r-project.org/doc/contrib/Short-refcard.pdf) - A longer reference card with most commonly used R functions
+
 * [Cheat sheets](https://www.rstudio.com/resources/cheatsheets/) - an incredible useful set of resources from the R Studio team, where self contained subject specific sets of functions are provided for different common tasks
 
-To facilitate the interaction with R we leverage on [RStudio](https://www.rstudio.com/), a piece of software which allows users to have at a click's distance many useful features in R. In the following sections of the tutorial you will be guided through a first session of R via RStudio. 
-
-The tutorial is intended to follow a brief presentation about R and RStudio, their interaction and capabilities. It assumes that R and RStudio have been previously installed in the computer you are using. The latest version of both software packages is recommended. Both are free and open source.
+At the end of this tutorial there is a longer list of less introductory/general resources on R that might just have what you were lloking for. Disclaimer: this is a random non-exaustive list of recources I have read and were useful to me at some point. I make no claims they might be useful to you :)
 
 # Introduction to R Studio
 
-
-Typically, if I am using this tutorial in a class room, the student will have been exposed to the powerpoint `Quick introduction to R and R Studio.pptx`. If you are not in a class room, you might want to take a look at it. This is alos vailable at
+Typically, if I am using this tutorial in a class room, the student will have been exposed to the powerpoint `Quick introduction to R and R Studio.pptx`. If you are not in a class room, you might want to take a look at it. This is also available at the repository
 
 https://github.com/TiagoAMarques/AnIntro2RTutorial
 
@@ -842,9 +888,16 @@ Finally, to promote good habits, we clean the workspace. An organized workspace 
 rm(list = ls())
 ```
 
+## Random R stuff I used and might be worth exploring
+
+This is a non-exaustive list of R resources that I found useful at some point. Feel free to explore at your own risk.
+
+* Ten awesome R Markdown tricks: R Markdown is more versatile than you might think by Keith McNulty (Dec 18, 2020, 8 min read). A preview: "Though I code in both R and Python, R Markdown is my only route for writing reports, blogs or books. It is incredibly flexible, has many beautiful design options and supports many output formats really nicely.
+If you have never worked in R Markdown, I highly recommend it. If you have worked in it before, here are ten little tricks I’ve learned which have served me well in numerous projects, and which highlight how flexible it is."
+
 # Aknowledgements 
 
-Several people have provided comments over the years, typically when exposed to the tutorial, including folks that have used it as teachers, or students asking questions in a course using the tutorial, like R courses, PAM DE courses, and Modelação Ecologica and Ecologia Numérica courses at DBA,FCUL. I thank their kind contributions here: Danielle Harris, Len Thomas, Soraia Pereira, Susana França, Sofia Reboleira and Sónia Coelho. Many are not named explicitly, as I've forgotten about the specifics, but I thank them any way! If you think your name is missing, let me know. Further, this list is ever evolving and so, if you have comments, please, send them my way and get your name added to it!
+Several people have provided comments over the years, typically when exposed to the tutorial, including folks that have used it as teachers, or students asking questions in a course using the tutorial, like R courses, PAM DE courses, and Modelação Ecologica and Ecologia Numérica courses at DBA,FCUL. I thank their kind contributions here: Danielle Harris, Len Thomas, Soraia Pereira, Susana França, Sofia Reboleira and Sónia Coelho. Many are not named explicitly, as I've forgotten about the specifics, but I thank them any way! If you think your name is missing, let me know. Further, this list is ever evolving and so, if you have comments, please, send them my way and get your name added to it! Indeed, fame for eternity is indeed that close :)
 
 # References
 
