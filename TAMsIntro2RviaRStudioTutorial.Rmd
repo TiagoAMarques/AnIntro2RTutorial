@@ -29,7 +29,7 @@ bibliography: biblio.bib
 
 This .Rmd was last compiled on `r Sys.time()`, with the objective of serving the students of the Gades and CEAUL course on R for Data Science.
 
-Disclaimer: in this document I copy paste freely from other documents that I have written. Therefore, if you have read these words elesewhere me, tough luck. I claim the right to plagiarize myself !
+Disclaimer: in this document I copy paste freely from other documents that I have written. Therefore, if you have read these words elsewhere me, tough luck. I claim the right to plagiarize myself !
 
 # Introduction
 
@@ -61,7 +61,7 @@ Nowadays learning R by example is easy to do, with so many free online resources
 
 ![Illustrating learning R online: Artwork by '@'allison_horst](extfiles/monster_support.jpg)
 
-I recomend that you do it via the RStudio environment, since it provides an integrated environment to integrate with all R things. And there are many! And if you do so, I can guarantee that in no time you will be having funR.
+I recommend that you do it via the RStudio environment, since it provides an integrated environment to integrate with all R things. And there are many! And if you do so, I can guarantee that in no time you will be having fRun.
 
 ![Illustrating having funR: Artwork by '@'allison_horst](extfiles\r_first_then.png)
 
@@ -77,9 +77,7 @@ Go out and explore, little grasshopper. You will conquer many great things if yo
 
 ![Illustrating standing on the shoulders of giants: Artwork by '@'allison_horst](extfiles/code_hero.jpg)
 
-# Other R resources that might be helpful
-
-## Beginer stuff
+# External R resources that might be helpful
 
 We provide here a small list of these that might be particularly helpful for beginners:
 
@@ -97,11 +95,11 @@ We provide here a small list of these that might be particularly helpful for beg
 
 * [Cheat sheets](https://www.rstudio.com/resources/cheatsheets/) - an incredible useful set of resources from the R Studio team, where self contained subject specific sets of functions are provided for different common tasks
 
-At the end of this tutorial there is a longer list of less introductory/general resources on R that might just have what you were lloking for. Disclaimer: this is a random non-exaustive list of recources I have read and were useful to me at some point. I make no claims they might be useful to you :)
+At the end of this tutorial there is a longer list of less introductory/general resources on R that might just have what you were looking for. Disclaimer: this is a random non-exhaustive list of resources I have read and were useful to me at some point. I make no claims they might be useful to you :)
 
 # Introduction to R Studio
 
-Typically, if I am using this tutorial in a class room, the student will have been exposed to the powerpoint `Quick introduction to R and R Studio.pptx`. If you are not in a class room, you might want to take a look at it. This is also available at the repository
+Typically, if I am using this tutorial in a class room, the student will have been exposed to the PowerPoint `Quick introduction to R and R Studio.pptx`. If you are not in a class room, you might want to take a look at it. This is also available at the repository
 
 https://github.com/TiagoAMarques/AnIntro2RTutorial
 
@@ -127,11 +125,9 @@ Now we have met RStudio and we know how it can make our life simpler, let's move
 
 ## Dynamic reports and reproducible research
 
-One of the most amazing features of the integration of R and R Studio is how simple it becomes to work with dynamic reports. This will take you to the next level in data analysis!
+One of the most amazing features of the integration of R and R Studio is how simple it becomes to work with dynamic reports, built on RMarkdown. This will take you to the next level in data analysis! Actually, this document was itself created as a dynamic report, using RMarkdown. You should explore some of the basics of R Markdown, and you can do so here: https://rmarkdown.rstudio.com/authoring_basics.html. You can find additional details here: https://rmarkdown.rstudio.com/. You can read an entire free book on the topic here: https://bookdown.org/yihui/rmarkdown/.
 
-Actually, this document was itself created as a dynamic report, using R Markdown. You should explore some of the basics of R Markdown, and you can do so here: https://rmarkdown.rstudio.com/authoring_basics.html. You can find additional details here: https://rmarkdown.rstudio.com/. You can read an entire free book on the topic here: https://bookdown.org/yihui/rmarkdown/.
-
-Experiment yourself to create one. In R Studio, select File - > New file -> R Markdown..., then just add a title, something like "My first dynamic report" and see what happens. Explore the content of the file just created and see what happens when you press the R Studion buttun `knit`. Experiment with the created document to try and change some of the output.
+Experiment yourself to create one. In R Studio, select File - > New file -> R Markdown..., then just add a title, something like "My first dynamic report" and see what happens. Explore the content of the file just created and see what happens when you press the R Studio button `knit`. Experiment with the created document to try and change some of the output.
 
 Actually, a good way to learn and get up and running fast in RMarkdown is by example. Hence, I have prepared a template that you can use to create without effort a nice dynamic report. Feel free to explore the material here:
 
@@ -139,13 +135,13 @@ https://github.com/TiagoAMarques/RMarkdownTemplate
 
 Just download all the files into a folder, `knit` the file `RMarkdownTemplate.Rmd` and off you go. 
 
-Imagine the potential when you are analysing real data, and the data changes after your report is written!
+Imagine the potential when you are analyzing real data, and the data changes after your report is written!
 
 # A first quick session in R Studio
 
 Here we present a brief introduction to R inside R Studio, using a script and the command line. In the coming sections we will mostly consider analysis using dynamic reports via RMarkdown documents (.Rmd), but it is useful to start with a session where you can see objects being created in the global environment.
 
-Open RStudio. By default an empty workspace should appear. If you have an existing workspace, you can open it by selecting `File|Open File`. We recomend that you begin by creating a script file (`Ctrl+Shift+N`, RStudio Shortcut) and use that to save and comment all your code that will be executed during the tutorial. In this way you will have a record of everything you did.
+Open RStudio. By default an empty workspace should appear. If you have an existing workspace, you can open it by selecting `File|Open File`. We recommend that you begin by creating a script file (`Ctrl+Shift+N`, RStudio Shortcut) and use that to save and comment all your code that will be executed during the tutorial. In this way you will have a record of everything you did.
 
 You know that R is ready to receive a command when you see the R prompt on the command line (on the bottom left tab by default in R Studio): `>`. If you type a line of code that is not complete, R presents the `+` character, so that the user knows it expects the conclusion of the current line. 
 
@@ -189,7 +185,7 @@ sin(pi)
 1234*sqrt(234)-12/23*4^(0.12-0.4)
 ```
 
-Tip: There is actualy a simpler way to do sourcing from the script file in RStudio. CTRL-Enter is a keyboard shortcut for "source the current line of code in my script file and move the cursor to the next line". In general if you like keyboard shortcuts, look in RStudio under the menu `Help | Keyboard shortcuts` - there are probably many more than those you will be able to remember!
+Tip: There is actually a simpler way to do sourcing from the script file in RStudio. CTRL-Enter is a keyboard shortcut for "source the current line of code in my script file and move the cursor to the next line". In general if you like keyboard shortcuts, look in RStudio under the menu `Help | Keyboard shortcuts` - there are probably many more than those you will be able to remember!
 
 It is now time to end our first R session. At this point you need to decide what to do, as all objects created so far are in the memory, but this will be wiped out unless we explicitly save it to a file. The easiest way to do so is by calling the `save.image` function
 
@@ -207,7 +203,7 @@ rm(list = ls())
 ```
 
 
-Note that you have saved your workspace in some directory but you have not defined the directory explicity. By default, this is your working directory. You can check what that directory currently is by using the following command
+Note that you have saved your workspace in some directory but you have not defined the directory explicitly. By default, this is your working directory. You can check what that directory currently is by using the following command
 
 ```{r}
 getwd()
@@ -228,9 +224,9 @@ Now you have used R in RStudio, let's use the power of their integration to work
 
 Create a new dynamic report using a RMarkdown file, as described above. Comment all you do in the appropriate place. At the end you will have a record that makes it easy to track everything you did, and a template you can use in future classes.
 
-Once you created the RMardown from scratch, we can start bty creating a new variable.
+Once you created the RMarkdown from scratch, we can start by creating a new variable.
 
-Note that all the code must go inside code chuncks, and you can get them by doing `Code | InsertChunk` or the shortcut `Ctrl+Alt+I`.
+Note that all the code must go inside code chunks, and you can get them by doing `Code | InsertChunk` or the shortcut `Ctrl+Alt+I`.
 
 An empty code chunk (in the image with a comment added to it!) looks like this:
 
@@ -332,7 +328,7 @@ x8<-c(1,2,3,4)
 x8+2
 ```
 
-However, if one of the vectors is smaller, unexpected behaviour can happen, because R recycles elements regardless (so be careful, a warning is typically produced)
+However, if one of the vectors is smaller, unexpected behavior can happen, because R recycles elements regardless (so be careful, a warning is typically produced)
 
 ```{r}
 x9<-c(3,4,5)
@@ -506,7 +502,7 @@ or the fourth column
 mat1[,4]
 ```
 
-We are often interested in subsetting a datset by some characteristic of one (or several) of its columns. Here we ilustrate with the dataset `iris` (check `?iris` for data details) 
+We are often interested in subsetting a dataset by some characteristic of one (or several) of its columns. Here we illustrate with the dataset `iris` (check `?iris` for data details) 
 
 ```{r}
 head(iris)
@@ -762,7 +758,7 @@ rdunif<-runif(50,min=3,max=6)
 rdpois<-rpois(50,lambda=6)
 ```
 
-R can create random numbers from many different distributions (see help(Distributions) for a list) -- the relevant functions generally start with r and then an abbreviated distribution name (rbinom, rexp, rgeom, etc). Additionally, R also includes the ability to obtain the density function, distribution function and quantile function via the `d`+name, `p`+name and `q`+name functions. As an example, the Gaussian function usage of these functions is presented below
+R can create random numbers from many different distributions (see help(Distributions) for a list) -- the relevant functions generally start with r and then an abbreviated distribution name (`rbinom`, `rexp`, `rgeom`, etc). Additionally, R also includes the ability to obtain the density function, distribution function and quantile function via the `d`+name, `p`+name and `q`+name functions. As an example, the Gaussian function usage of these functions is presented below
 
 ```{r}
 dnorm(0,mean=0,sd=1)
@@ -772,7 +768,7 @@ qnorm(0.975,mean=0,sd=1)
 
 **Task 6**: Using what you have learnt here, create two histograms, one of 50, another of 5000, random deviates from a Gaussian distribution (you can choose the mean and standard deviation you prefer!), using the optional argument `freq=FALSE` (leading to an estimate of the density function). Then add a line to the plot that represents the true underlying density (tip, you can use function `dnorm`), and comment on the results. You can also do similar experiments with other distributions. How weird are a beta(1,1), a beta(1,5) and a beta(0.5,0.5) distributions. Can you guess which one is sometimes referred to as bath tub distribution. What might be a beta useful for?
 
-# Programing tricks
+# Programming tricks
 
 Some very useful programming structures are those required to evaluate conditional statements and those used to repeat statements many times. These are fundamental for implementing simulations. In R we have `if` statements and `for` loops, respectively.
 
@@ -890,14 +886,14 @@ rm(list = ls())
 
 ## Random R stuff I used and might be worth exploring
 
-This is a non-exaustive list of R resources that I found useful at some point. Feel free to explore at your own risk.
+This is a non-exhaustive list of R resources that I found useful at some point. Feel free to explore at your own risk.
 
 * Ten awesome R Markdown tricks: R Markdown is more versatile than you might think by Keith McNulty (Dec 18, 2020, 8 min read). A preview: "Though I code in both R and Python, R Markdown is my only route for writing reports, blogs or books. It is incredibly flexible, has many beautiful design options and supports many output formats really nicely.
 If you have never worked in R Markdown, I highly recommend it. If you have worked in it before, here are ten little tricks I’ve learned which have served me well in numerous projects, and which highlight how flexible it is."
 
-# Aknowledgements 
+# Acknowledgements 
 
-Several people have provided comments over the years, typically when exposed to the tutorial, including folks that have used it as teachers, or students asking questions in a course using the tutorial, like R courses, PAM DE courses, and Modelação Ecologica and Ecologia Numérica courses at DBA,FCUL. I thank their kind contributions here: Danielle Harris, Len Thomas, Soraia Pereira, Susana França, Sofia Reboleira and Sónia Coelho. Many are not named explicitly, as I've forgotten about the specifics, but I thank them any way! If you think your name is missing, let me know. Further, this list is ever evolving and so, if you have comments, please, send them my way and get your name added to it! Indeed, fame for eternity is indeed that close :)
+Several people have provided comments over the years, typically when exposed to the tutorial, including folks that have used it as teachers, or students asking questions in a course using the tutorial, like R courses, PAM DE courses, and Modelação Ecológica and Ecologia Numérica courses at DBA,FCUL. I thank their kind contributions here: Danielle Harris, Len Thomas, Soraia Pereira, Susana França, Sofia Reboleira and Sónia Coelho. Many are not named explicitly, as I've forgotten about the specifics, but I thank them any way! If you think your name is missing, let me know. Further, this list is ever evolving and so, if you have comments, please, send them my way and get your name added to it! Indeed, fame for eternity is indeed that close :)
 
 # References
 
