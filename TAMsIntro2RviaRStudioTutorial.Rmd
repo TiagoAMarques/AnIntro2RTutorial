@@ -27,7 +27,7 @@ bibliography: biblio.bib
 
 \newpage
 
-This .Rmd was last compiled on `r Sys.time()`, with the objective of serving the students of the Gades and CEAUL course on R for Data Science.
+This .Rmd was last compiled on `r Sys.time()`, with the objective of serving the students of the Gades Solutions and CEAUL "Data Scientist com R" course   delivered in January/February 2021.
 
 Disclaimer: in this document I copy paste freely from other documents that I have written. Therefore, if you have read these words elsewhere by me, tough luck. I claim the right to plagiarize myself !
 
@@ -888,13 +888,16 @@ rm(list = ls())
 
 # Random R stuff I used and might be worth exploring
 
-This is a non-exhaustive, non-compreensive and quite random list of R resources that I found useful at some point. Feel free to explore at your own risk.
+This is a non-exhaustive, non-compreensive and quite random list of R (and related) resources that I found useful at some point. Feel free to explore at your own risk. No real order in the list I am afraid.
 
 * [Ten awesome R Markdown tricks](https://towardsdatascience.com/ten-awesome-r-markdown-tricks-56ef6d41098): R Markdown is more versatile than you might think by Keith McNulty (Dec 18, 2020, 8 min read). A preview: "Though I code in both R and Python, R Markdown is my only route for writing reports, blogs or books. It is incredibly flexible, has many beautiful design options and supports many output formats really nicely.
 If you have never worked in R Markdown, I highly recommend it. If you have worked in it before, here are ten little tricks I’ve learned which have served me well in numerous projects, and which highlight how flexible it is."
 
 * [A course on GAM's](https://noamross.github.io/gams-in-r-course/) by Noam Ross
 
+* [Introduction to Linear, Generalized, and Mixed/Multilevel models with R](https://github.com/Pakillo/LM-GLM-GLMM-intro/blob/trees/README.md) by Francisco Rodriguez-Sanchez (the first couple of slides are fantastic introduction to modern statistical analysis in a unified GLM framework). Found about this via a [tweet](https://twitter.com/frod_san/status/1349321844483043335). 
+
+* 
 
 # Acknowledgements 
 
