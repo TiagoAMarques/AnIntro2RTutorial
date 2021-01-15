@@ -27,7 +27,7 @@ bibliography: biblio.bib
 
 \newpage
 
-This .Rmd was last compiled on `r Sys.time()`, with the objective of serving the students of the Gades Solutions and CEAUL "Data Scientist com R" course   delivered in January/February 2021.
+This .Rmd was last compiled on `r Sys.time()`, with the objective of serving the students of the Gades Solutions and CEAUL "Data Scientist com R" course delivered in January/February 2021.
 
 Disclaimer: in this document I copy paste freely from other documents that I have written. Therefore, if you have read these words elsewhere by me, tough luck. I claim the right to plagiarize myself !
 
@@ -897,7 +897,11 @@ If you have never worked in R Markdown, I highly recommend it. If you have worke
 
 * [Introduction to Linear, Generalized, and Mixed/Multilevel models with R](https://github.com/Pakillo/LM-GLM-GLMM-intro/blob/trees/README.md) by Francisco Rodriguez-Sanchez (the first couple of slides are fantastic introduction to modern statistical analysis in a unified GLM framework). Found about this via a [tweet](https://twitter.com/frod_san/status/1349321844483043335). 
 
-* 
+* [GIS and mapping in R: Introduction to the sf package
+](https://oliviergimenez.github.io/intro_spatialR/) by Olivier Gimenez
+
+* [A short thread of rstats resources made freely available online](https://twitter.com/djnavarro/status/1278470778879569920?s=09) by Danielle Navarro
+
 
 # Acknowledgements 
 
