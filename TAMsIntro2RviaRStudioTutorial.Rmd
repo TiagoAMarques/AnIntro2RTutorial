@@ -27,13 +27,13 @@ bibliography: biblio.bib
 
 \newpage
 
-This .Rmd was last compiled on `r Sys.time()`, with the objective of serving the students of the Gades Solutions and CEAUL "Data Scientist com R" course delivered in January/February 2021.
+This .Rmd was last compiled on `r Sys.time()`, with the objective of serving the students of Ecologia Numérica e Modelação Ecológica, at FCUL, in Septmeber 2021.
 
-Disclaimer: in this document I copy paste freely from other documents that I have written. Therefore, if you have read these words elsewhere by me, tough luck. I claim the right to plagiarize myself !
+Disclaimer: in this document I copy paste freely from other documents that I have written. Therefore, if you have read these words elsewhere by me, tough luck. I claim the right to plagiarize myself!
 
 # Introduction
 
-This tutorial was created as a gentle introduction to the R environment via the R Studio interface to R. While it could be a general introduction to R, the primary objective of this document is to serve as a "hands-on-tutorial" for courses delivered by me (TAM). It does not assume any  knowledge about R, but some basic programming notions would be desirable.
+This tutorial was created as a gentle introduction to the R environment via the R Studio interface to R. While it could be a general introduction to R, the primary objective of this document is to serve as a "hands-on-tutorial" for courses delivered by me (TAM).I use it for both Ecologia Numérica and Modelação Ecológica, at FCUL, as well as for some other courses. It does not assume any  knowledge about R, but some basic programming notions would be desirable.
 
 This .Rmd is the main document in the github repository located at:
 
@@ -834,8 +834,8 @@ or even
 n=4
 X=1:n
 for (i in X) {
-  cat(paste("The i currently is:",i))
-  cat(paste("The i+3 currently is:",i+3))
+  cat(paste("The i currently is:",i),sep="\n")
+  cat(paste("The i+3 currently is:",i+3),sep="\n")
   }
 ```
 
