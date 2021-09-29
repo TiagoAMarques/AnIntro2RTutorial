@@ -583,14 +583,29 @@ One of the most amazing R capabilities are its graphics customization properties
 #default use
 plot(indat$Sepal.Length)
 ```
-
-We now add some labels to a new plot of sepal length as a function of species (note the use of `~` to mean "as a function of"; this is also used below when specifying regression models, where the object on the left  of `~` will be the response variable and the objects on the right explanatory variables)
+In the following example, R evaluates the class of one of the arguments as being a factor and hence tries to give you a sensible result, which is producing a boxplot of a numerical variable as a function of a factor.
 
 ```{r}
 ys<-indat$Sepal.Length
 xs<-indat$Species
 #note use of ~ to represent "as a function of"
-plot(ys~xs,ylab="Sepal Length (in mm)",main="Sepal length by species")
+plot(ys~as.factor(xs))
+```
+
+Note the use of `~` to mean "as a function of"; this is also used below when specifying regression models, where the object on the left  of `~` will be the response variable and the objects on the right explanatory variables.
+
+We now add some labels to a new plot, using directly function `boxplot` (which in the background `plot` above called), of sepal length as a function of species 
+
+```{r}
+ys<-indat$Sepal.Length
+xs<-indat$Species
+#note use of ~ to represent "as a function of"
+boxplot(ys~xs,ylab="Sepal Length (in mm)",main="Sepal length by species")
+#compare with this code - next line returns an error
+#plot(ys~xs,ylab="Sepal Length (in mm)",main="Sepal length by species")
+#making species be a factor - allows the plot below to work well
+#xs<-as.factor(indat$Species)
+#plot(ys~xs,ylab="Sepal Length (in mm)",main="Sepal length by species")
 ```
 
 We can also set the graphic window to hold multiple plots. This is obtained via argument `mfrow`, one of the arguments in function. Note this function controls a much larger number of graphical parameters. You can take a look at its help file to get a feel for how many and what kind of control it allows you. An  example follows, in which we leverage on the use of function `with` to avoid having to constantly use `indat$` to tell R where the data can be found.
@@ -611,7 +626,8 @@ We used argument `mfrow`, but looking at the help for function `par` gives you a
 We can look at the correlation structure between all variables using function `pairs`.
 
 ```{r}
-pairs(indat)
+#note selection of just the first 4 columns, since the last is not numeric
+pairs(indat[,1:4])
 ```
 
 **Task 3**: Using data `cars`, create a plot that represents the stopping  distances as a function of the speed of cars. Use the `points` function to add a special symbol to points corresponding to cars with speed lower than 15 mph, but distance larger than 70m. Check out the function `text` to add text annotations to plots. Customize axis labels.
@@ -801,7 +817,7 @@ on the other side, here's how a for loop works
 ```{r}
 n=4
 X=1:n
-for (i in 1:n) print(sum(i+3))
+for (i in 1:n) print(i+3)
 ```
 
 note there is nothing special about the use of i for an index; you can use any index that you might want
@@ -809,7 +825,7 @@ note there is nothing special about the use of i for an index; you can use any i
 ```{r}
 n=4
 X=1:n
-for (j in 1:n) print(sum(j+3))
+for (j in 1:n) print(sum(c(j,j+3)))
 ```
 
 or even
@@ -817,12 +833,17 @@ or even
 ```{r}
 n=4
 X=1:n
-for (i in X) print(sum(i+3))
+for (i in X) {
+  cat(paste("The i currently is:",i))
+  cat(paste("The i+3 currently is:",i+3))
+  }
 ```
+
+See above, explore R. Change the code. Repeat. Check for yourself what `cat` and `paste` can be used for!
 
 **Task 7**: Create 9 histograms of samples of Gaussian random variables, adding the mean value on the plot as a vertical dashed line, in blue if the mean of the observations is positive and in red if the mean of the observations is negative.
 
-Other interesting structures for "control flow" are the while, repeat and break. Look into the help for ?"if" to see details.
+Other interesting structures for "control flow" are the `while`, `repeat` and `break`. Look into the help, `?if`, to see details.
 
 # Writing your own functions
 
@@ -847,8 +868,11 @@ You can now see the function in the works
 myfun(3,5)
 ```
 
+Note a function could have many arguments, none, or just one.
 
-**Task 7**: create a function called `mystats` which returns the mean, variance, maximum and minimum of the first argument (a vector). Then, update your function such that it can also return the mean excluding the negative numbers. Then, create some other function you might think is useful.
+**Task 7**: create a function called `mystats` which returns the mean, variance, maximum and minimum of the first, and only, argument (a vector). Then, update your function such that it can also return the mean excluding the negative numbers. Then, create some other function you might think could be useful.
+
+Creating your own functions will unleash strong R power, increasing significantly your ability to manipulate, analyze and simulate data.
 
 # A final task integrating all of the above
 
@@ -859,15 +883,15 @@ Here we will implement an exercise were we pretend we are sampling an animal pop
 2. Generate a transect at a random location along the study area. 
 3. Assume that you can potentially detect at most animals up to 500 meters from your transect. Count all the animals that you would detect if detection was perfect across your transect.
 
-4. Consider that  animals far from your transect are harder to detect - yes, you are doing distance sampling! Define a function that represents a distance sampling half-normal detection function (If needed, look back at your slides from the 1st class). Assume that sigma=200m. 
+4. Consider that  animals far from your transect are harder to detect - yes, you are doing distance sampling! Define a function that represents a distance sampling half-normal detection function. If you do not know what that looks like check [here](https://workshops.distancesampling.org/online-course/lecturepdfs/Ch1/L1-4%20Choosing%20a%20Detection%20Function.pdf), around slide 9. Assume that sigma=200m. 
 
-5. Simulate the detection process and get a sample of those animals detected. 
+5. Simulate the detection process and get a sample of those animals detected. This is the hard bit, creating an animal detector. Tip: using `runif` will help. Ask me for details if you need them.
 
-6. Create a plot that allows you to estimate (at this stage just a visual guess in needed) the detection probability. 
+6. Create a plot that allows you to estimate (at this stage just a visual guess is needed) the detection probability. 
 
 7. Repeat the sampling process 500 times, and store the number of animals detected in each one of your simulated surveys.
 
-8. plot the distribution of the number of animals that you would detect each new survey. 
+8. plot the distribution of the number of animals that you would detect each new survey.
 
 Take your own conclusions about all that you did. 
 
