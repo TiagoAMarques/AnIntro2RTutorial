@@ -27,9 +27,9 @@ bibliography: biblio.bib
 
 \newpage
 
-This .Rmd was last compiled on `r Sys.time()`, with the objective of serving the students of Ecologia Numérica e Modelação Ecológica, at FCUL, in Septmeber 2021.
+This .Rmd was last compiled on `r Sys.time()`.
 
-Disclaimer: in this document I copy paste freely from other documents that I have written. Therefore, if you have read these words elsewhere by me, tough luck. I claim the right to plagiarize myself!
+Disclaimer: in this document I copy paste freely from other documents that I have written. Therefore, if you have read these words elsewhere by me, though luck. I claim the right to plagiarize myself here!
 
 # Introduction
 

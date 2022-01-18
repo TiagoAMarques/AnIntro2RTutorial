@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.27)  15 JAN 2021 10:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.27)  18 JAN 2022 10:24
 entering extended mode
 **./TAMsIntro2RviaRStudioTutorial.tex
 (TAMsIntro2RviaRStudioTutorial.tex
@@ -53,22 +53,8 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
-)
-("C:\Users\tam2\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amssymb.st
-y"
-Package: amssymb 2013/01/14 v3.01 AMS font symbols
-
-("C:\Users\tam2\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amsfonts.s
+) ("C:\Users\tam2\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsmath.s
 ty"
-Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\@emptytoks=\toks14
-\symAMSa=\mathgroup4
-\symAMSb=\mathgroup5
-LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
-LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) ("C:\Users\tam2\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsmath.
-sty"
 Package: amsmath 2019/11/16 v2.17d AMS math features
 \@mathmargin=\skip43
 For additional information on amsmath, use the `?' option.
@@ -77,7 +63,7 @@ For additional information on amsmath, use the `?' option.
 Package: amstext 2000/06/29 v2.01 AMS text
 ("C:\Users\tam2\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks15
+\@emptytoks=\toks14
 \ex@=\dimen103
 )) ("C:\Users\tam2\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsbsy.s
 ty"
@@ -107,21 +93,21 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 \dotsspace@=\muskip10
 \c@parentequation=\count95
 \dspbrk@lvl=\count96
-\tag@help=\toks16
+\tag@help=\toks15
 \row@=\count97
 \column@=\count98
 \maxfields@=\count99
-\andhelp@=\toks17
+\andhelp@=\toks16
 \eqnshift@=\dimen106
 \alignsep@=\dimen107
 \tagshift@=\dimen108
 \tagwidth@=\dimen109
 \totwidth@=\dimen110
 \lineht@=\dimen111
-\@envbody=\toks18
+\@envbody=\toks17
 \multlinegap=\skip44
 \multlinetaggap=\skip45
-\mathdisplay@stack=\toks19
+\mathdisplay@stack=\toks18
 LaTeX Info: Redefining \[ on input line 2858.
 LaTeX Info: Redefining \] on input line 2859.
 ) ("C:\Users\tam2\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\ifxetex.s
@@ -141,8 +127,8 @@ LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 )) ("C:\Users\tam2\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\inputenc.st
 y"
 Package: inputenc 2018/08/11 v1.3c Input encoding file
-\inpenc@prehook=\toks20
-\inpenc@posthook=\toks21
+\inpenc@prehook=\toks19
+\inpenc@posthook=\toks20
 ) ("C:\Users\tam2\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\textcomp.sty
 "
 Package: textcomp 2018/08/11 v2.0j Standard LaTeX package
@@ -300,8 +286,21 @@ Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
 Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
-) ("C:\Users\tam2\AppData\Local\Programs\MiKTeX 2.9\tex/latex/upquote\upquote.s
+)
+("C:\Users\tam2\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amssymb.st
+y"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+("C:\Users\tam2\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amsfonts.s
 ty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) ("C:\Users\tam2\AppData\Local\Programs\MiKTeX 2.9\tex/latex/upquote\upquote.
+sty"
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
 tim
 )
@@ -311,9 +310,9 @@ Package: microtype 2019/11/18 v2.7d Micro-typographical refinements (RS)
 ("C:\Users\tam2\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\keyval.sty
 "
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks22
+\KV@toks@=\toks21
 )
-\MT@toks=\toks23
+\MT@toks=\toks22
 \MT@count=\count100
 LaTeX Info: Redefining \textls on input line 790.
 \MT@outer@kern=\dimen112
@@ -535,7 +534,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 File: bkm-pdftex.def 2019/12/03 v1.28 bookmark driver for pdfTeX (HO)
 \BKM@id=\count114
 ))
-Package hyperref Info: Option `colorlinks' set `true' on input line 47.
+Package hyperref Info: Option `colorlinks' set `true' on input line 48.
 
 ("C:\Users\tam2\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geometry.s
 ty"
@@ -554,7 +553,7 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layoutheight=\dimen122
 \Gm@layouthoffset=\dimen123
 \Gm@layoutvoffset=\dimen124
-\Gm@dimlist=\toks24
+\Gm@dimlist=\toks23
 
 ("C:\Users\tam2\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geometry.c
 fg"))
@@ -594,51 +593,61 @@ Package graphics Info: Driver file: pdftex.def on input line 105.
 )
 \Gin@req@height=\dimen129
 \Gin@req@width=\dimen130
-) ("C:\Users\tam2\AppData\Local\Programs\MiKTeX 2.9\tex/latex/grffile\grffile.s
-ty"
-Package: grffile 2019/11/11 v2.1 Extended file name support for graphics (legac
-y)
-Package grffile Info: This package is an empty stub for compatibility on input 
-line 40.
-) (TAMsIntro2RviaRStudioTutorial.aux)
+)
+\cslhangindent=\skip49
+\csllabelwidth=\skip50
+("C:\Users\tam2\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\calc.sty"
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count121
+\calc@Bcount=\count122
+\calc@Adimen=\dimen131
+\calc@Bdimen=\dimen132
+\calc@Askip=\skip51
+\calc@Bskip=\skip52
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count123
+\calc@Cskip=\skip53
+)
+No file TAMsIntro2RviaRStudioTutorial.aux.
 \openout1 = `TAMsIntro2RviaRStudioTutorial.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 119.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 143.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 143.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 143.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 143.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 143.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 143.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 143.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
-19.
+43.
 ("C:\Users\tam2\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 11
-9.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 143.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 143.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 14
+3.
 ("C:\Users\tam2\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Info: Redefining \microtypecontext on input line 119.
+LaTeX Info: Redefining \microtypecontext on input line 143.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using protrusion set `basicmath'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `basictext'.
-LaTeX Info: Redefining \showhyphens on input line 119.
+LaTeX Info: Redefining \showhyphens on input line 143.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -651,17 +660,17 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 ("C:\Users\tam2\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-pd
 f.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count121
-\scratchdimen=\dimen131
+\scratchcounter=\count124
+\scratchdimen=\dimen133
 \scratchbox=\box30
-\nofMPsegments=\count122
-\nofMParguments=\count123
-\everyMPshowfont=\toks25
-\MPscratchCnt=\count124
-\MPscratchDim=\dimen132
-\MPnumerator=\count125
-\makeMPintoPDFobject=\count126
-\everyMPtoPDFconversion=\toks26
+\nofMPsegments=\count125
+\nofMParguments=\count126
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count127
+\MPscratchDim=\dimen134
+\MPnumerator=\count128
+\makeMPintoPDFobject=\count129
+\everyMPtoPDFconversion=\toks25
 )
 ("C:\Users\tam2\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstop
 df-base.sty"
@@ -670,7 +679,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 )
 \AtBeginShipoutBox=\box31
-Package hyperref Info: Link coloring ON on input line 119.
+Package hyperref Info: Link coloring ON on input line 143.
 
 ("C:\Users\tam2\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.st
 y"
@@ -684,265 +693,25 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ttitlestring.sty"
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count127
+\c@section@level=\count130
 )
-LaTeX Info: Redefining \ref on input line 119.
-LaTeX Info: Redefining \pageref on input line 119.
-LaTeX Info: Redefining \nameref on input line 119.
-*geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
-*geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
-* paper: <default>
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
-* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=469.75502pt
-* \textheight=650.43001pt
-* \oddsidemargin=0.0pt
-* \evensidemargin=0.0pt
-* \topmargin=-37.0pt
-* \headheight=12.0pt
-* \headsep=25.0pt
-* \topskip=10.0pt
-* \footskip=30.0pt
-* \marginparwidth=65.0pt
-* \marginparsep=11.0pt
-* \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-21.
-("C:\Users\tam2\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ot1lmr.fd"
-File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-21.
-("C:\Users\tam2\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omllmm.fd"
-File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-121.
-("C:\Users\tam2\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omslmsy.fd"
-File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-121.
-("C:\Users\tam2\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omxlmex.fd"
-File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 121.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 121.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 121.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 121
-.
-("C:\Users\tam2\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-("C:\Users\tam2\AppData\Local\Programs\MiKTeX 2.9\tex/latex/microtype\mt-msa.cf
-g"
-File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 121
-.
-("C:\Users\tam2\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-("C:\Users\tam2\AppData\Local\Programs\MiKTeX 2.9\tex/latex/microtype\mt-msb.cf
-g"
-File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-) (TAMsIntro2RviaRStudioTutorial.toc
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 5.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 5.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 5.
-)
-\tf@toc=\write4
-\openout4 = `TAMsIntro2RviaRStudioTutorial.toc'.
-
-[1
-
-{C:/Users/tam2/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
-<extfiles/monsteRs.jpg, id=65, 681.54625pt x 391.4625pt>
-File: extfiles/monsteRs.jpg Graphic file (type jpg)
-<use extfiles/monsteRs.jpg>
-Package pdftex.def Info: extfiles/monsteRs.jpg  used on input line 189.
-(pdftex.def)             Requested size: 469.75784pt x 269.81671pt.
-<extfiles/derivative_1.jpg, id=66, 5340.95375pt x 3027.31pt>
-File: extfiles/derivative_1.jpg Graphic file (type jpg)
-<use extfiles/derivative_1.jpg>
-Package pdftex.def Info: extfiles/derivative_1.jpg  used on input line 200.
-(pdftex.def)             Requested size: 469.7446pt x 266.25629pt.
-<extfiles/monster_support.jpg, id=67, 7631.51125pt x 4263.93pt>
-File: extfiles/monster_support.jpg Graphic file (type jpg)
-<use extfiles/monster_support.jpg>
-Package pdftex.def Info: extfiles/monster_support.jpg  used on input line 209.
-(pdftex.def)             Requested size: 469.74855pt x 262.4611pt.
-<extfiles/r_first_then.png, id=68, 2362.8275pt x 2590.67876pt>
-File: extfiles/r_first_then.png Graphic file (type png)
-<use extfiles/r_first_then.png>
-Package pdftex.def Info: extfiles/r_first_then.png  used on input line 220.
-(pdftex.def)             Requested size: 469.74493pt x 515.0432pt.
-<extfiles/usethis.png, id=70, 635.37375pt x 382.18785pt>
-File: extfiles/usethis.png Graphic file (type png)
-<use extfiles/usethis.png>
-Package pdftex.def Info: extfiles/usethis.png  used on input line 229.
-(pdftex.def)             Requested size: 469.77171pt x 282.57547pt.
-[3] [4 <./extfiles/monsteRs.jpg> <./extfiles/derivative_1.jpg>]
-<extfiles/code_hero.jpg, id=85, 2878.755pt x 2873.73625pt>
-File: extfiles/code_hero.jpg Graphic file (type jpg)
-<use extfiles/code_hero.jpg>
-Package pdftex.def Info: extfiles/code_hero.jpg  used on input line 250.
-(pdftex.def)             Requested size: 469.74687pt x 468.92792pt.
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
-64.
-("C:\Users\tam2\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ts1lmr.fd"
-File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 3
-01.
-("C:\Users\tam2\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmtt.fd"
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [5 <./extfiles/monster_support.jpg>] [6 <./extfiles/r_first_then.png>] [7 <./
-extfiles/usethis.png>] [8 <./extfiles/code_hero.jpg>] [9]
-LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 444.
-LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 
-469.
-("C:\Users\tam2\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ts1lmtt.fd"
-File: ts1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [10]
-<codechunk.JPG, id=144, 307.64937pt x 44.66687pt>
-File: codechunk.JPG Graphic file (type jpg)
-<use codechunk.JPG>
-Package pdftex.def Info: codechunk.JPG  used on input line 630.
-(pdftex.def)             Requested size: 307.66267pt x 44.6688pt.
-[11 <./codechunk.JPG>] [12] [13] [14] [15] [16] [17] [18] [19]
-<TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-47-1.pdf, id=19
-1, 469.755pt x 325.215pt>
-File: TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-47-1.pdf G
-raphic file (type pdf)
-<use TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-47-1.pdf>
-Package pdftex.def Info: TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnam
-ed-chunk-47-1.pdf  used on input line 1561.
-(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-<TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-48-1.pdf, id=19
-2, 469.755pt x 325.215pt>
-File: TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-48-1.pdf G
-raphic file (type pdf)
-<use TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-48-1.pdf>
-Package pdftex.def Info: TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnam
-ed-chunk-48-1.pdf  used on input line 1579.
-(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-[20 <./TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-47-1.pdf>
-]
-<TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-49-1.pdf, id=20
-2, 469.755pt x 325.215pt>
-File: TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-49-1.pdf G
-raphic file (type pdf)
-<use TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-49-1.pdf>
-Package pdftex.def Info: TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnam
-ed-chunk-49-1.pdf  used on input line 1603.
-(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-[21 <./TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-48-1.pdf>
-]
-<TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-50-1.pdf, id=21
-3, 469.755pt x 325.215pt>
-File: TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-50-1.pdf G
-raphic file (type pdf)
-<use TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-50-1.pdf>
-Package pdftex.def Info: TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnam
-ed-chunk-50-1.pdf  used on input line 1619.
-(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-[22 <./TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-49-1.pdf>
-] [23 <./TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-50-1.pd
-f>] [24]
-
-LaTeX Warning: Reference `chunck159' on page 25 undefined on input line 1787.
-
-<TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-58-1.pdf, id=23
-8, 469.755pt x 325.215pt>
-File: TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-58-1.pdf G
-raphic file (type pdf)
-<use TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-58-1.pdf>
-Package pdftex.def Info: TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnam
-ed-chunk-58-1.pdf  used on input line 1798.
-(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-[25 <./TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-58-1.pdf>
-]
-<TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-60-1.pdf, id=24
-9, 469.755pt x 325.215pt>
-File: TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-60-1.pdf G
-raphic file (type pdf)
-<use TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-60-1.pdf>
-Package pdftex.def Info: TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnam
-ed-chunk-60-1.pdf  used on input line 1850.
-(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-[26] [27 <./TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-60-1
-.pdf>]
-<TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-62-1.pdf, id=26
-3, 469.755pt x 325.215pt>
-File: TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-62-1.pdf G
-raphic file (type pdf)
-<use TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-62-1.pdf>
-Package pdftex.def Info: TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnam
-ed-chunk-62-1.pdf  used on input line 1903.
-(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-[28 <./TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-62-1.pdf>
-] [29] [30] [31]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2274.
-[32]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2274.
-(TAMsIntro2RviaRStudioTutorial.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2274.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 2274.
-
-LaTeX Warning: There were undefined references.
-
- ) 
+LaTeX Info: Redefining \ref on input line 143.
+LaTeX Info: Redefining \pageref on input line 143.
+LaTeX Info: Redefining \nameref on input line 143.
+! I can't write on file `TAMsIntro2RviaRStudioTutorial.pdf'.
+Please type another file name for output
+! Emergency stop.
+<to be read again> 
+                   \edef 
+l.143 \begin{document}
+                       
 Here is how much of TeX's memory you used:
- 14262 strings out of 492448
- 214220 string characters out of 3120446
- 336267 words of memory out of 3000000
- 18140 multiletter control sequences out of 15000+200000
- 72316 words of font info for 116 fonts, out of 3000000 for 9000
+ 13642 strings out of 492448
+ 200634 string characters out of 3120446
+ 325906 words of memory out of 3000000
+ 17825 multiletter control sequences out of 15000+200000
+ 7559 words of font info for 18 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 47i,8n,42p,830b,447s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/tam2/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.en
-c}{C:/Users/tam2/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc
-}<C:/Users/tam2/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.
-pfb><C:/Users/tam2/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx
-12.pfb><C:/Users/tam2/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/l
-mr10.pfb><C:/Users/tam2/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm
-/lmr12.pfb><C:/Users/tam2/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
-lm/lmr17.pfb><C:/Users/tam2/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
-c/lm/lmr6.pfb><C:/Users/tam2/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
-ic/lm/lmr7.pfb><C:/Users/tam2/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
-lic/lm/lmr8.pfb><C:/Users/tam2/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
-blic/lm/lmri10.pfb><C:/Users/tam2/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
-/public/lm/lmtk10.pfb><C:/Users/tam2/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
-pe1/public/lm/lmtt10.pfb><C:/Users/tam2/AppData/Local/Programs/MiKTeX 2.9/fonts
-/type1/public/lm/lmtti10.pfb>
-Output written on TAMsIntro2RviaRStudioTutorial.pdf (32 pages, 6608473 bytes).
-PDF statistics:
- 448 PDF objects out of 1000 (max. 8388607)
- 97 named destinations out of 1000 (max. 500000)
- 14583 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 47i,1n,42p,830b,271s stack positions out of 5000i,500n,10000p,200000b,50000s
 
+!  ==> Fatal error occurred, no output PDF file produced!
