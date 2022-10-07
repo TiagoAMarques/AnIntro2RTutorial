@@ -3,9 +3,6 @@ title: "A hands-on tutorial on R and R Studio"
 author: "Tiago A. Marques"
 date: \today
 output:
-  pdf_document:
-    toc: yes
-    toc_depth: '3'
   html_document:
     fig_caption: yes
     force_captions: yes
@@ -15,6 +12,9 @@ output:
     toc: yes
     toc_depth: 3
     toc_float: yes
+  pdf_document:
+    toc: yes
+    toc_depth: '3'
 urlcolor: blue
 csl: mee.csl
 subtitle: A tutorial that might get used for lots of stuff
@@ -876,7 +876,11 @@ Creating your own functions will unleash strong R power, increasing significantl
 
 # A final task integrating all of the above
 
+This task is only intended for the students in Modelação Ecológica. If you are a Ecologia Numérica student you can try it at your own risk!
+
 Here we will implement an exercise were we pretend we are sampling an animal population, using some (very basic) simulations to understand the process better. Create plots that represent all the steps of your task, with proper legends, labels, colors, etc, and add all your comments to the dynamic report.
+
+This exercise simulates a distance sampling survey. If you want to know more about it, you can check this 2 page introduction paper on the topic [here](https://github.com/TiagoAMarques/AnIntro2RTutorial/blob/40f353b63cb465c36dfa8f358e0e0d1cba45967a/Marques2009b.pdf). It is one of the most often used methods to estimate the abundance and/or density of wildlife populations.
 
 1. Simulate the positions of 10000 animals in a study area, with length 10km and width 1km. Assume that any animal has an equal chance to be at any location in the study area (this corresponds to a uniform density surface). 
 
