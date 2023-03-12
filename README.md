@@ -22,3 +22,5 @@ If you are new to R in general, the [R cheat sheets](https://www.rstudio.com/res
 
 - [base R](https://github.com/rstudio/cheatsheets/blob/main/base-r.pdf)
 - [RMarkdown](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
+
+Also, if you want to lear R interactively from the command line, you might want to try package [Swirl](https://swirlstats.com/). Your own R tutor at your fingertips. Try it!

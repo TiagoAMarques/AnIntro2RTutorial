@@ -3,6 +3,9 @@ title: "A hands-on tutorial on R and R Studio"
 author: "Tiago A. Marques"
 date: \today
 output:
+  pdf_document:
+    toc: yes
+    toc_depth: '3'
   html_document:
     fig_caption: yes
     force_captions: yes
@@ -12,9 +15,6 @@ output:
     toc: yes
     toc_depth: 3
     toc_float: yes
-  pdf_document:
-    toc: yes
-    toc_depth: '3'
 urlcolor: blue
 csl: mee.csl
 subtitle: A tutorial that might get used for lots of stuff
@@ -82,6 +82,8 @@ Go out and explore, little grasshopper. You will conquer many great things if yo
 We provide here a small list of these that might be particularly helpful for beginners:
 
 * [R webpage](http://r-project.org) - the main R webpage, including links to downloading R, manuals, tutorials, dedicated search engines, etc.
+
+* [Swirl](https://swirlstats.com/) - if you want to learn R interactively from the command line, you might want to try this package. Your own R tutor at your fingertips. Try it!
 
 * [R video tutorials](http://blog.revolutionanalytics.com/2013/08/google-video-r-tutorials.html) - video how to's in R
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.27)  12 MAR 2023 10:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.27)  12 MAR 2023 10:41
 entering extended mode
 **./TAMsIntro2RviaRStudioTutorial.tex
 (TAMsIntro2RviaRStudioTutorial.tex
@@ -821,123 +821,127 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 3
-28.
+32.
 ("C:\Users\tam2\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmtt.fd"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [5 <./extfiles/monster_support.jpg>] [6 <./extfiles/r_first_then.png>] [7 <./
 extfiles/usethis.png>] [8 <./extfiles/code_hero.jpg>] [9]
 LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 
-496.
+503.
 ("C:\Users\tam2\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ts1lmtt.fd"
 File: ts1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [10]
-<codechunk.JPG, id=145, 307.64937pt x 44.66687pt>
+<codechunk.JPG, id=147, 307.64937pt x 44.66687pt>
 File: codechunk.JPG Graphic file (type jpg)
 <use codechunk.JPG>
-Package pdftex.def Info: codechunk.JPG  used on input line 657.
+Package pdftex.def Info: codechunk.JPG  used on input line 664.
 (pdftex.def)             Requested size: 307.66267pt x 44.6688pt.
-[11 <./codechunk.JPG>] [12] [13] [14] [15] [16] [17] [18] [19]
+[11 <./codechunk.JPG>] [12] [13] [14]
+Overfull \vbox (1.62723pt too high) detected at line 1173
+ []
+
+[15] [16] [17] [18] [19]
 <TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-47-1.pdf, id=19
-2, 469.755pt x 325.215pt>
+3, 469.755pt x 325.215pt>
 File: TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-47-1.pdf G
 raphic file (type pdf)
 <use TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-47-1.pdf>
 Package pdftex.def Info: TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnam
-ed-chunk-47-1.pdf  used on input line 1588.
+ed-chunk-47-1.pdf  used on input line 1595.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1588--1593
+Underfull \hbox (badness 10000) in paragraph at lines 1595--1600
 [][]
  []
 
 <TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-48-1.pdf, id=19
-3, 469.755pt x 325.215pt>
+4, 469.755pt x 325.215pt>
 File: TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-48-1.pdf G
 raphic file (type pdf)
 <use TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-48-1.pdf>
 Package pdftex.def Info: TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnam
-ed-chunk-48-1.pdf  used on input line 1603.
+ed-chunk-48-1.pdf  used on input line 1610.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
 [20 <./TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-47-1.pdf>
 ]
 <TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-49-1.pdf, id=20
-3, 469.755pt x 325.215pt>
+5, 469.755pt x 325.215pt>
 File: TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-49-1.pdf G
 raphic file (type pdf)
 <use TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-49-1.pdf>
 Package pdftex.def Info: TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnam
-ed-chunk-49-1.pdf  used on input line 1623.
+ed-chunk-49-1.pdf  used on input line 1630.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
 [21 <./TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-48-1.pdf>
 ]
 <TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-50-1.pdf, id=21
-3, 469.755pt x 325.215pt>
+5, 469.755pt x 325.215pt>
 File: TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-50-1.pdf G
 raphic file (type pdf)
 <use TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-50-1.pdf>
 Package pdftex.def Info: TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnam
-ed-chunk-50-1.pdf  used on input line 1657.
+ed-chunk-50-1.pdf  used on input line 1664.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
 [22 <./TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-49-1.pdf>
 ]
 <TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-51-1.pdf, id=22
-4, 469.755pt x 325.215pt>
+6, 469.755pt x 325.215pt>
 File: TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-51-1.pdf G
 raphic file (type pdf)
 <use TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-51-1.pdf>
 Package pdftex.def Info: TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnam
-ed-chunk-51-1.pdf  used on input line 1674.
+ed-chunk-51-1.pdf  used on input line 1681.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
 [23 <./TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-50-1.pdf>
 ] [24 <./TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-51-1.pd
 f>]
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 1772.
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 1779.
 
 LaTeX Font Warning: Font shape `T1/lmtt/bx/it' in size <10> not available
-(Font)              Font shape `T1/lmtt/b/sl' tried instead on input line 1772.
+(Font)              Font shape `T1/lmtt/b/sl' tried instead on input line 1779.
 
 
 [25]
 
-LaTeX Warning: Reference `chunck159' on page 26 undefined on input line 1842.
+LaTeX Warning: Reference `chunck159' on page 26 undefined on input line 1849.
 
 <TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-59-1.pdf, id=25
-1, 469.755pt x 325.215pt>
+3, 469.755pt x 325.215pt>
 File: TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-59-1.pdf G
 raphic file (type pdf)
 <use TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-59-1.pdf>
 Package pdftex.def Info: TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnam
-ed-chunk-59-1.pdf  used on input line 1853.
+ed-chunk-59-1.pdf  used on input line 1860.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
 [26 <./TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-59-1.pdf>
 ]
 <TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-61-1.pdf, id=26
-1, 469.755pt x 325.215pt>
+3, 469.755pt x 325.215pt>
 File: TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-61-1.pdf G
 raphic file (type pdf)
 <use TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-61-1.pdf>
 Package pdftex.def Info: TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnam
-ed-chunk-61-1.pdf  used on input line 1905.
+ed-chunk-61-1.pdf  used on input line 1912.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
 [27] [28 <./TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-61-1
 .pdf>]
 <TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-63-1.pdf, id=27
-5, 469.755pt x 325.215pt>
+7, 469.755pt x 325.215pt>
 File: TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-63-1.pdf G
 raphic file (type pdf)
 <use TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-63-1.pdf>
 Package pdftex.def Info: TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnam
-ed-chunk-63-1.pdf  used on input line 1958.
+ed-chunk-63-1.pdf  used on input line 1965.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
 [29 <./TAMsIntro2RviaRStudioTutorial_files/figure-latex/unnamed-chunk-63-1.pdf>
 ] [30] [31] [32]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2378.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2385.
 [33]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2378.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2385.
 (TAMsIntro2RviaRStudioTutorial.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2378.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 2378.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2385.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 2385.
 
 LaTeX Warning: There were undefined references.
 
@@ -966,9 +970,9 @@ blic/lm/lmri10.pfb><C:/Users/tam2/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
 pe1/public/lm/lmtko10.pfb><C:/Users/tam2/AppData/Local/Programs/MiKTeX 2.9/font
 s/type1/public/lm/lmtt10.pfb><C:/Users/tam2/AppData/Local/Programs/MiKTeX 2.9/f
 onts/type1/public/lm/lmtti10.pfb>
-Output written on TAMsIntro2RviaRStudioTutorial.pdf (33 pages, 6562911 bytes).
+Output written on TAMsIntro2RviaRStudioTutorial.pdf (33 pages, 6563669 bytes).
 PDF statistics:
- 471 PDF objects out of 1000 (max. 8388607)
+ 473 PDF objects out of 1000 (max. 8388607)
  98 named destinations out of 1000 (max. 500000)
  14588 words of extra memory for PDF output out of 17280 (max. 10000000)
 
