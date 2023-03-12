@@ -3,9 +3,6 @@ title: "A hands-on tutorial on R and R Studio"
 author: "Tiago A. Marques"
 date: \today
 output:
-  pdf_document:
-    toc: yes
-    toc_depth: '3'
   html_document:
     fig_caption: yes
     force_captions: yes
@@ -15,6 +12,9 @@ output:
     toc: yes
     toc_depth: 3
     toc_float: yes
+  pdf_document:
+    toc: yes
+    toc_depth: '3'
 urlcolor: blue
 csl: mee.csl
 subtitle: A tutorial that might get used for lots of stuff
@@ -33,7 +33,7 @@ Disclaimer: in this document I copy paste freely from other documents that I hav
 
 # Introduction
 
-This tutorial was created as a gentle introduction to the R environment via the R Studio interface to R. While it could be a general introduction to R, the primary objective of this document is to serve as a "hands-on-tutorial" for courses delivered by me (TAM).I use it for both Ecologia Numérica and Modelação Ecológica, at FCUL, as well as for some other courses. It does not assume any  knowledge about R, but some basic programming notions would be desirable.
+This tutorial was created as a gentle introduction to the [R](https://www.r-project.org/) environment via the [RStudio](https://www.rstudio.com/) interface to R. While it could be a general introduction to R, the primary objective of this document is to serve as a "hands-on-tutorial" for courses delivered by me (TAM). I use it for both Ecologia Numérica and Modelação Ecológica, at FCUL, as well as for some other courses. It does not assume any previous knowledge about R, but some basic logic and programming notions would be desirable.
 
 This .Rmd is the main document in the github repository located at:
 
@@ -102,6 +102,8 @@ At the end of this tutorial there is a longer list of less introductory/general 
 Typically, if I am using this tutorial in a class room, the student will have been exposed to the PowerPoint `Quick introduction to R and R Studio.pptx`. If you are not in a class room, you might want to take a look at it. This is also available at the repository
 
 https://github.com/TiagoAMarques/AnIntro2RTutorial
+
+right about [here](https://github.com/TiagoAMarques/AnIntro2RTutorial/blob/0db9070cb440ea591a74744c64c17e3022830f43/Quick%20introduction%20to%20R%20and%20R%20Studio.pptx).
 
 Nowadays most users (except perhaps die hard command line users) will use some sort of graphical user interface (GUI) to R. While the basic R installation comes with a simple GUI, here we adopt the use of R Studio, which considerably facilitates an introduction to R by providing many shortcuts and convenient features which we introduce next.
 
@@ -876,7 +878,7 @@ Creating your own functions will unleash strong R power, increasing significantl
 
 # A final task integrating all of the above
 
-This task is only intended for the students in Modelação Ecológica. If you are a Ecologia Numérica student you can try it at your own risk!
+This task is only intended for the students in Modelação Ecológica. If you are a Ecologia Numérica student you can try it at your own risk! If you are neither of those, then feel free to work through the material regardless.
 
 Here we will implement an exercise were we pretend we are sampling an animal population, using some (very basic) simulations to understand the process better. Create plots that represent all the steps of your task, with proper legends, labels, colors, etc, and add all your comments to the dynamic report.
 
@@ -928,8 +930,15 @@ If you have never worked in R Markdown, I highly recommend it. If you have worke
 * [GIS and mapping in R: Introduction to the sf package
 ](https://oliviergimenez.github.io/intro_spatialR/) by Olivier Gimenez
 
-* [A short thread of rstats resources made freely available online](https://twitter.com/djnavarro/status/1278470778879569920?s=09) by Danielle Navarro
+* [R for biologists](https://www.rforbiologists.org/) - the name says it all
 
+* [Introduction to R for Biologists](https://melbournebioinformatics.github.io/r-intro-biologists/intro_r_biologists.html) by Maria Doyle, Jessica Chung, Vicky Perreau
+
+* [Introduction to R for Biologists](https://ncgas.org/training/r_textbook_full.pdf) by Sheri Sanders
+
+* [Fundamentals of R for Biologists](https://learnadventurously.com/courses/fundamentals-of-r-for-biologists/) Fundamentals of R for Biologists is a self-guided crash course in how to use R specifically geared for those working in the biological sciences. All of the lessons in this course are bundled together into a single PDF textbook: Fundamentals of R for Biologists. You can easily access this text [here]( https://learnadventurously.com/library/fundamentals-of-r-for-biologists-textbook/)
+
+* [A short thread of rstats resources made freely available online](https://twitter.com/djnavarro/status/1278470778879569920?s=09) by Danielle Navarro
 
 # Acknowledgements 
 
