@@ -934,6 +934,10 @@ If you have never worked in R Markdown, I highly recommend it. If you have worke
 
 * [R for biologists](https://www.rforbiologists.org/) - the name says it all
 
+* [R Crash Course for Biologists](https://github.com/ColauttiLab) - This is a great resource, a git repos by R.I. Colauti, that includes also other crash courses in stats etc
+
+* [Geospatial Health Data: Modeling and Visualization with R-INLA and Shiny](https://paula-moraga.github.io/book-geospatial/) - a free version of the CRC book by Paula Moraga
+
 * [Introduction to R for Biologists](https://melbournebioinformatics.github.io/r-intro-biologists/intro_r_biologists.html) by Maria Doyle, Jessica Chung, Vicky Perreau
 
 * [Introduction to R for Biologists](https://ncgas.org/training/r_textbook_full.pdf) by Sheri Sanders
