@@ -27,7 +27,7 @@ Also, if you want to learn R interactively from the command line, you might want
 
 Below I also provide a list of additional free online resources that you might want to consider as additional R learning resources. 
 
-This is a non-exhaustive, non-compreensive and quite random list of R (and related) resources that I found useful at some point. Feel free to explore at your own risk. No real order in the list I am afraid.
+This is a non-exhaustive, non-compreensive and quite random list of R (and related) resources that I found useful at some point. They might be ecologically oriented. Feel free to explore at your own risk. No real order in the list I am afraid.
 
 - [Developing a Cancer Atlas using Bayesian Methods: A Practical Guide for Application and Interpretation](https://atlas.cancer.org.au/developing-a-cancer-atlas/index.html)
 
@@ -53,3 +53,6 @@ This is a non-exhaustive, non-compreensive and quite random list of R (and relat
 - [Fundamentals of R for Biologists](https://learnadventurously.com/courses/fundamentals-of-r-for-biologists/) Fundamentals of R for Biologists is a self-guided crash course in how to use R specifically geared for those working in the biological sciences. All of the lessons in this course are bundled together into a single PDF textbook: Fundamentals of R for Biologists. You can easily access this text [here]( https://learnadventurously.com/library/fundamentals-of-r-for-biologists-textbook/)
 
 - [A short thread of rstats resources made freely available online](https://twitter.com/djnavarro/status/1278470778879569920?s=09) by Danielle Navarro
+
+- [Luka Negoita's webpage](https://www.rforecology.com/) Including some self-paced online courses, for ecologists and biologists, that simplify the R learning process, so you can quickly gain confidence in handling your own data. (while some resources are free, most are paid). One free bit which is very useful lists 5 great sources of [free ecological datasets](https://www.rforecology.com/post/top-five-ish-sources-of-ecological-data/) that you can use to practice R within an ecological framework
+
