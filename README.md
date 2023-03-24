@@ -1,4 +1,4 @@
-# An Intro 2 RTutorial
+# An Introduction 2 R Tutorial
 
 This is a tutorial that can be used by students to get working with [R](https://www.r-project.org/) using [RStudio](https://www.rstudio.com/). I use it for both my Ecologia Numérica and my Modelação Ecológica at [FCUL](https://ciencias.ulisboa.pt/en) courses. If you are a student, please bear in mind that the final task, " A final task integrating all of the above", is only intended to be completed for those in "Modelação Ecológica".
 
@@ -24,6 +24,8 @@ If you are new to R in general, the [R cheat sheets](https://www.rstudio.com/res
 - [RMarkdown](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
 
 Also, if you want to learn R interactively from the command line, you might want to try package [Swirl](https://swirlstats.com/). Your own R tutor at your fingertips. Try it!
+
+# Additional online resources
 
 Below I also provide a list of additional free online resources that you might want to consider as additional R learning resources. 
 
