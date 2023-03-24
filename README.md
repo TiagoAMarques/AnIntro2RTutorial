@@ -1,10 +1,5 @@
----
-title: "An Introduction 2 R Tutorial"
-author: "Tiago A. Marques"
-date: "March 24, 2023"
-theme: jekyll-theme-minimal
----
 
+# An Introduction 2 R Tutorial
 
 This is a tutorial that can be used by students to get working with [R](https://www.r-project.org/) using [RStudio](https://www.rstudio.com/). I use it for both my Ecologia Numérica and my Modelação Ecológica at [FCUL](https://ciencias.ulisboa.pt/en) courses. If you are a student, please bear in mind that the final task, " A final task integrating all of the above", is only intended to be completed for those in "Modelação Ecológica".
 
