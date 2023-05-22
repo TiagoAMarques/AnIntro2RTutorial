@@ -30,7 +30,9 @@ Also, if you want to learn R interactively from the command line, you might want
 
 Below I also provide a list of additional free online resources that you might want to consider as additional R learning resources. 
 
-This is a non-exhaustive, non-compreensive and quite random list of R (and related) resources that I found useful at some point. They might be ecologically oriented. Feel free to explore at your own risk. No real order in the list I am afraid.
+This is a non-exhaustive, non-comprehensive and quite random list of R (and related) resources that I found useful at some point. They might be ecologically oriented. Feel free to explore at your own risk. No real order in the list I am afraid.
+
+- [Telling Stories with Data: With Applications in R](https://tellingstorieswithdata.com/) - a great book by @RohanAlexander [Rohan Alexander](https://rohanalexander.com/) about telling stories with data. Effective and reliable stories in a reproducible framework.
 
 - [Developing a Cancer Atlas using Bayesian Methods: A Practical Guide for Application and Interpretation](https://atlas.cancer.org.au/developing-a-cancer-atlas/index.html)
 
@@ -59,3 +61,4 @@ This is a non-exhaustive, non-compreensive and quite random list of R (and relat
 
 - [Luka Negoita's webpage](https://www.rforecology.com/) Including some self-paced online courses, for ecologists and biologists, that simplify the R learning process, so you can quickly gain confidence in handling your own data. (while some resources are free, most are paid). One free bit which is very useful lists 5 great sources of [free ecological datasets](https://www.rforecology.com/post/top-five-ish-sources-of-ecological-data/) that you can use to practice R within an ecological framework
 
+- [A User’s Guide to Statistical Inference and Regression](https://mattblackwell.github.io/gov2002-book/) Notes for Government 2002: Quantitative Social Science Methods II at Harvard University, taught by Matthew Blackwell. It provides a rigorous yet accessible introduction to the foundational topics in statistical inference with a special application to linear regression. The material is intended for first-year PhD students in political science, but it may be of interest more broadly, say to biologists, lol! 
