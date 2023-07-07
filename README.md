@@ -34,6 +34,8 @@ Below I also provide a list of additional free online resources that you might w
 
 This is a non-exhaustive, non-comprehensive and quite random list of R (and related) resources that I found useful at some point. They might be ecologically oriented. Feel free to explore at your own risk. No real order in the list I am afraid.
 
+- [An R companion to Statistical Thinking for the 21st Century](https://statsthinking21.github.io/statsthinking21-R-site/) a free companion to the book An R companion to Statistical Thinking for the 21st Century 2020 by Russell A. Poldrack
+
 - [The R Language: An Engine for Bioinformatics and Data Science](https://doi.org/10.3390/life12050648) Giorgi et al. describe the history of the R language. I use one of their images in the powerpoint [Quick introduction to R and R Studio](https://github.com/TiagoAMarques/AnIntro2RTutorial/blob/master/Quick%20introduction%20to%20R%20and%20R%20Studio.pptx)
 
 - [Ten simple rules for teaching yourself R ](https://doi.org/10.1371/journal.pcbi.1010372) - Lawler et al. with a "Ten simple rules" paper for teaching yourself R
