@@ -63,6 +63,8 @@ This is a non-exhaustive, non-comprehensive and quite random list of R (and rela
 
 - [Introduction to R for Biologists](https://ncgas.org/training/r_textbook_full.pdf) by Sheri Sanders
 
+- [Data Analysis in R](https://bookdown.org/steve_midway/DAR/) by Steve Midway
+
 - [Fundamentals of R for Biologists](https://learnadventurously.com/courses/fundamentals-of-r-for-biologists/) Fundamentals of R for Biologists is a self-guided crash course in how to use R specifically geared for those working in the biological sciences. All of the lessons in this course are bundled together into a single PDF textbook: Fundamentals of R for Biologists. You can easily access this text [here]( https://learnadventurously.com/library/fundamentals-of-r-for-biologists-textbook/)
 
 - [A short thread of rstats resources made freely available online](https://twitter.com/djnavarro/status/1278470778879569920?s=09) by Danielle Navarro
