@@ -11,15 +11,15 @@ To use the tutorial you should download at the very least the following files
 - dados1.csv
 - mydatafile.txt
 
-The main file you should use to work through the tutorial is either "TAMsIntro2RviaRStudioTutorial.html"" or "TAMsIntro2RviaRStudioTutorial.pdf"", depending on your preference. These files are created by compiling #TAMsIntro2RviaRStudioTutorial.Rmd#, which is a dynamic report in [RMarkdown](https://rmarkdown.rstudio.com/).
+The main file you should use to work through the tutorial is either "TAMsIntro2RviaRStudioTutorial.html" or "TAMsIntro2RviaRStudioTutorial.pdf"", depending on your preference. These files are created by compiling "TAMsIntro2RviaRStudioTutorial.Rmd", which is a dynamic report in [RMarkdown](https://rmarkdown.rstudio.com/).
 
-These days I tend to work using dynamic reports, making the workflow from reading the data and cleaning it all the way to reporting the results from analysis integrated and fully reproducible. Learning how to work with dynamic reports is another topic, but starting from a template helps. If you want a template for creating dynamic reports, there is one here:
+These days I tend to work using dynamic reports, making the workflow from reading the data and cleaning it all the way to reporting the results from analysis integrated and fully reproducible. I believe that working with dynamic reports is a good skill to have if you are a biology student, and so, if you are a student of one of my courses at FCUL, I will also show you in class how those work. Learning how to work with dynamic reports is another topic, but starting from a template helps. If you want a template for creating dynamic reports, there is one here:
 
 https://github.com/TiagoAMarques/RMarkdownTemplate
 
-My suggestion is that you start by creating your own dynamic report which you then use as a basis to use the code and experiment variations of the code. Please keep all your code properly commented: what seems obvious to you today might not be obvious to the "you" next week or next mont. Coding is a collaborative experience, even if between you and your future self (This quote, or something similar, might be from Hadley Hickam).
+My suggestion is that you start by creating your own dynamic report which you then use as a basis to work with the code and experiment variations of the code. Please keep all your code properly commented: what seems obvious to you today might not be obvious to the "you" next week or next month. Coding is a collaborative experience, even if between you and your future self (This quote, or something similar, might be from Hadley Hickam).
 
-If you are new to RStudio, there is also a powerpoint in this git repository with a presentation  that can be helpful is getting started: [Quick introduction to R and R Studio](https://github.com/TiagoAMarques/AnIntro2RTutorial/blob/master/Quick%20introduction%20to%20R%20and%20R%20Studio.pptx)
+If you are new to RStudio, there is also a powerpoint in this git repository with a presentation  that can be helpful is getting started: [Quick introduction to R and R Studio](https://github.com/TiagoAMarques/AnIntro2RTutorial/blob/master/Quick%20introduction%20to%20R%20and%20R%20Studio.pptx). If you are a student of one of my courses at FCUL, this powerpoint will be presented to you in class.
 
 If you are new to R in general, the [R cheat sheets](https://www.rstudio.com/resources/cheatsheets/) are great resources, and I recommend to begin with downloading these:
 
