@@ -76,6 +76,6 @@ This is a non-exhaustive, non-comprehensive and quite random list of R (and rela
 
 - [Improving Your Statistical Inferences](https://lakens.github.io/statistical_inferences/) not just about R nor even R focused, but damn this is a great resource by Daniel Lakens!
 
-- [Statistical Rethinking (2023 Edition)](https://github.com/rmcelreath/stat_rethinking_2023) if you want to get your mind blown and change the way you see statistics, embracing the Bayesian paradigm, all from within R, then this course from Richard McElreath is your one stop shop! It includes the prerecorded lectuires, the slides, homework and respective solutions, all based on the quickly becoming a classing book "Statistical Rethinking" (for the actual book, well worth it, see [here](https://xcelab.net/rm/statistical-rethinking/).
+- [Statistical Rethinking (2023 Edition)](https://github.com/rmcelreath/stat_rethinking_2023) if you want to get your mind blown and change the way you see statistics, embracing the Bayesian paradigm, all from within R, then this course from Richard McElreath is your one stop shop! It includes the pre-recorded lectures, the slides, homework and respective solutions, all based on the quickly becoming a classing book "Statistical Rethinking" (for the actual book, well worth it, see [here](https://xcelab.net/rm/statistical-rethinking/).
 
 
