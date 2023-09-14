@@ -30,9 +30,10 @@ Also, if you want to learn R interactively from the command line, you might want
 
 # Additional online resources
 
-Below I also provide a list of additional free online resources that you might want to consider as additional R learning resources. 
+Below I also provide a list of additional free online resources that you might want to consider as additional R learning resources. Some of these resources are not about R, but about some relevant aspect of statistics that uses R.
 
-This is a non-exhaustive, non-comprehensive and quite random list of R (and related) resources that I found useful at some point. They might be ecologically oriented. Feel free to explore at your own risk. No real order in the list I am afraid.
+This is a non-exhaustive, non-comprehensive and quite random list of R (and related) resources that I found useful at some point. They might (but will not necessarily) be ecologically oriented. Feel free to explore at your own risk. No real order in the list I am afraid.
+
 
 - [An R companion to Statistical Thinking for the 21st Century](https://statsthinking21.github.io/statsthinking21-R-site/) a free companion to the book An R companion to Statistical Thinking for the 21st Century 2020 by Russell A. Poldrack
 
@@ -74,3 +75,7 @@ This is a non-exhaustive, non-comprehensive and quite random list of R (and rela
 - [A User’s Guide to Statistical Inference and Regression](https://mattblackwell.github.io/gov2002-book/) Notes for Government 2002: Quantitative Social Science Methods II at Harvard University, taught by Matthew Blackwell. It provides a rigorous yet accessible introduction to the foundational topics in statistical inference with a special application to linear regression. The material is intended for first-year PhD students in political science, but it may be of interest more broadly, say to biologists, lol! ~
 
 - [Improving Your Statistical Inferences](https://lakens.github.io/statistical_inferences/) not just about R nor even R focused, but damn this is a great resource by Daniel Lakens!
+
+- [Statistical Rethinking (2023 Edition)](https://github.com/rmcelreath/stat_rethinking_2023) if you want to get your mind blown and change the way you see statistics, embracing the Bayesian paradigm, all from within R, then this course from Richard McElreath is your one stop shop! It includes the prerecorded lectuires, the slides, homework and respective solutions, all based on the quickly becoming a classing book "Statistical Rethinking" (for the actual book, well worth it, see [here](https://xcelab.net/rm/statistical-rethinking/).
+
+
