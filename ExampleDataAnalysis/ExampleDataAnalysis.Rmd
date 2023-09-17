@@ -40,7 +40,7 @@ write.xlsx(mydata,file="fakedata.xlsx",row.names = FALSE)
 The first thing to do is to read in the data that you spent so much effort collecting. This reads the data
 
 ```{r}
-fakedata <- read_excel("fakedata2.xlsx")
+fakedata <- read_excel("fakedata.xlsx")
 ```
 
 
