@@ -1,0 +1,108 @@
+---
+title: "An example data analysis to illustrate reproducibility"
+author: "Tiago A. Marques"
+date: "`r format(Sys.Date(), '%d %B %Y')`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(readxl)
+library(xlsx)
+```
+
+
+# Introduction
+
+Let us imagine that you are doing a study, perhaps your Master thesis dissertation, evaluating the relationship between the number of species of insects as a function the number of species of plants, considering several types of habitats. In each type of habitat you conducted surveys at diferent quadrats. After collecting, recording and exploring the data, you show it to your supervisor.
+
+# Do not touch this section
+
+The next chunk of code is not to be touched, it simulates data with some useful features and creates the file with the data, "fakedata.xlsx", which you use below
+
+```{r,eval=FALSE}
+#do not touch this code chunck
+#this simulates the data
+set.seed(123)
+n<-1000
+mydata<-data.frame(ID=1:n,nspI=NA,nspP=NA,habitat=NA)
+mydata$nspP<-round(runif(n,0,10))
+mydata$habitat<-rep(c("Hab1","Hab2","Hab3","Hab4"),each=n/4)
+mydata$nspI<-round(2+3*mydata$nspP+ifelse(mydata$habitat=="Hab1",10,ifelse(mydata$habitat=="Hab2",20,ifelse(mydata$habitat=="Hab3",30,40)))+rpois(n,5))
+write.xlsx(mydata,file="fakedata.xlsx",row.names = FALSE)
+```
+
+# Your analysis
+
+The first thing to do is to read in the data that you spent so much effort collecting. This reads the data
+
+```{r}
+fakedata <- read_excel("fakedata2.xlsx")
+```
+
+
+We can take a look a the data
+
+
+```{r}
+head(fakedata)
+```
+
+
+and we see that we have collected `r nrow(fakedata)` observations. We can see that the number of insects seems to increase with the number of plants, and it also seems to be a function of the habitat. We have a balanced number of observations per habitat
+
+```{r}
+barplot(table(fakedata$habitat),ylab="number of observations",xlab="Habitat")
+```
+
+We can look at the data:
+
+```{r}
+par(mfrow=c(1,2))
+boxplot(fakedata$nspI~fakedata$habitat,ylab="number of insect species",xlab="Habitat")
+boxplot(fakedata$nspI~fakedata$nspP,ylab="number of insect species",xlab="number of plant species")
+```
+
+and we can say that for example the mean number of insects in habitat 1 is `r mean(fakedata$nspI[fakedata$habitat=="Hab1"])`, the mean number of insects in habitat 2 is `r mean(fakedata$nspI[fakedata$habitat=="Hab2"])`, the mean number of insects in habitat 3 is `r mean(fakedata$nspI[fakedata$habitat=="Hab3"])` the mean number of insects in habitat 4 is `r mean(fakedata$nspI[fakedata$habitat=="Hab4"])` and the overall mean number of insects  is `r mean(fakedata$nspI)`. The minimum, median and maximum number of species of insects were `r min(fakedata$nspI)`, `r median(fakedata$nspI)`, `r max(fakedata$nspI)`, respectively. If you want to see these numbers with less decimals, just round them as for the global mean here say: `r round(mean(fakedata$nspI),1)`. 
+
+You are happy. But your supervisor tells you, you forgot to sample 2 important habitats. You need to go back to the field. And then you have to redo the entire analysis. Or do you?
+
+# Your task
+
+Lets pretend we have collected more data on those new two habitats, and the file with the data for all the habitats is now "fakedata2.xlsx". Do not touch the next chunk code, it just creates more data, as if you had gone to the field again:
+
+```{r,eval=FALSE}
+#do not touch this code chunck
+#this simulates additional data
+set.seed(123)
+n2<-400
+mydata2<-data.frame(ID=(nrow(fakedata)+1):(nrow(fakedata)+n2),nspI=NA,nspP=NA,habitat=NA)
+mydata2$nspP<-round(runif(n2,0,10))
+mydata2$habitat<-rep(c("Hab5","Hab6"),each=n2/2)
+mydata2$nspI<-round(2+3*mydata2$nspP+ifelse(mydata2$habitat=="Hab5",0,60)+rpois(n2,5))
+mydata2<-as.data.frame(rbind(fakedata,mydata2))
+write.xlsx(mydata2,file="fakedata2.xlsx",row.names = FALSE)
+```
+
+Your task is to simply create a new ".Rmd" file that reads `fakedata2.xlsx` instead of `fakedata.xlsx`.
+
+Basically you can just create a copy of `ExampleDataAnalysis.Rmd`, so copy-paste the file `ExampleDataAnalysis.Rmd`, and name it say `ExampleDataAnalysis2.Rmd`, and then you edit the line above with
+
+```{r}
+fakedata <- read_excel("fakedata.xlsx")
+```
+
+to become (note this now reads `fakedata2.xlsx`)
+
+```{r}
+fakedata <- read_excel("fakedata2.xlsx")
+```
+
+and recompile that .Rmd.
+
+Check how all the results are updated immediately. 
+
+While you have to do new field work, all the analysis is reproduced by simply recompiling the same document with new data. This will sve you days of work when it's for real!

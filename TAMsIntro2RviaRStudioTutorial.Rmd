@@ -1,8 +1,11 @@
 ---
 title: "A hands-on tutorial on R and R Studio"
 author: "Tiago A. Marques"
-date: \today
+date: "`r format(Sys.Date(), '%d %B %Y')`"
 output:
+  word_document:
+    toc: yes
+    toc_depth: '3'
   pdf_document:
     toc: yes
     toc_depth: '3'
@@ -69,7 +72,7 @@ The advantages of mastering R are priceless, but the learning curve can be daunt
 
 ![Illustrating R's learning curve: Artwork by '@'allison_horst](extfiles/usethis.png)
 
-This document is written in RMarkdown, a tool that allows you to build dynamic reports based on R code, providing integrated documents that contain all that is required for a given project, from reading the data in to final results and discussion, passing through all the analysis and results. If you want a gentle introduction to RMarkdown using a hands on tutorial based on a versatile template that will do many of the things you'll need to get started, look for no more, there is also one here:
+This document is written in RMarkdown, a tool that allows you to build dynamic reports based on R code, providing integrated documents that contain all that is required for a given project, from reading the data in to final results and discussion, passing through all the analysis and results. If you want a gentle introduction to RMarkdown using a hands on tutorial based on a versatile template that will do many of the things you will need to get started, look for no more, there is also one here:
 
 https://github.com/TiagoAMarques/RMarkdownTemplate
 
@@ -131,7 +134,7 @@ Now we have met RStudio and we know how it can make our life simpler, let's move
 
 One of the most amazing features of the integration of R and R Studio is how simple it becomes to work with dynamic reports, built on RMarkdown. This will take you to the next level in data analysis! Actually, this document was itself created as a dynamic report, using RMarkdown. You should explore some of the basics of R Markdown, and you can do so here: https://rmarkdown.rstudio.com/authoring_basics.html. You can find additional details here: https://rmarkdown.rstudio.com/. You can read an entire free book on the topic here: https://bookdown.org/yihui/rmarkdown/.
 
-Experiment yourself to create one. In R Studio, select File - > New file -> R Markdown..., then just add a title, something like "My first dynamic report" and see what happens. Explore the content of the file just created and see what happens when you press the R Studio button `knit`. Experiment with the created document to try and change some of the output.
+Experiment yourself to create one. In R Studio, select File - > New file -> R Markdown..., then just add a title, something like "My first dynamic report" and see what happens. Explore the content of the file just created and see what happens when you press the R Studio button `knit`. Experiment with the created document to try and change some of the output. Experiment in creating output as an html, as a pdf, and even as a Word document.
 
 Actually, a good way to learn and get up and running fast in RMarkdown is by example. Hence, I have prepared a template that you can use to create without effort a nice dynamic report. Feel free to explore the material here:
 
@@ -707,9 +710,9 @@ We have stored the result of fitting the model in object `mylm1`. The function `
 summary(mylm1)
 ```
 
-Do not get frightened about all the output. The coefficient associated with speed tells us what intuition alone would anticipate, the higher the speed, the larger the distance a car takes to stop. The easier way to see the relationship is by adding a line to the plot (note this is a similar plot to what you should have created in task 3 above!). The predicted relationship is shown in figure \ref{chunck159}.
+Do not get frightened about all the output. The coefficient associated with speed tells us what intuition alone would anticipate, the higher the speed, the larger the distance a car takes to stop. The easier way to see the relationship is by adding a line to the plot (note this is a similar plot to what you should have created in task 3 above!). The predicted relationship is shown next:
 
-```{r}
+```{r chunck159}
 xl<-"Speed (mph)"
 yl<-"Distance (m)"
 plot(cars$speed,cars$dist,xlab=xl,ylab=yl,ylim=c(0,120),xlim=c(0,30))
@@ -921,7 +924,7 @@ rm(list = ls())
 
 # Acknowledgements 
 
-Several people have provided comments over the years, typically when exposed to the tutorial, including folks that have used it as teachers, or students asking questions in a course using the tutorial, like R courses, PAM DE courses, and Modelação Ecológica and Ecologia Numérica courses at DBA,FCUL. I thank their kind contributions here: Danielle Harris, Len Thomas, Soraia Pereira, Susana França, Sofia Reboleira, Sónia Coelho and Afonso Barrocal. Many are not named explicitly, as I've forgotten about the specifics, but I thank them any way! If you think your name is missing, let me know. Further, this list is ever evolving and so, if you have comments, please, send them my way and get your name added to it! Indeed, fame for eternity is indeed that close :)
+Several people have provided comments over the years, typically when exposed to the tutorial, including folks that have used it as teachers, or students asking questions in a course using the tutorial, like R courses, PAM DE courses, and Modelação Ecológica and Ecologia Numérica courses at DBA, FCUL. I thank their kind contributions here: Danielle Harris, Len Thomas, Soraia Pereira, Susana França, Sofia Reboleira, Sónia Coelho and Afonso Barrocal. Many are not named explicitly, as I've forgotten about the specifics, but I thank them any way! If you think your name is missing, let me know. Further, this list is ever evolving and so, if you have comments, please, send them my way and get your name added to it! Indeed, fame for eternity is indeed that close :)
 
 # References
 
