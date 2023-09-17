@@ -3,10 +3,10 @@ title: "A hands-on tutorial on R and R Studio"
 author: "Tiago A. Marques"
 date: "`r format(Sys.Date(), '%d %B %Y')`"
 output:
-  word_document:
+  pdf_document:
     toc: yes
     toc_depth: '3'
-  pdf_document:
+  word_document:
     toc: yes
     toc_depth: '3'
   html_document:
