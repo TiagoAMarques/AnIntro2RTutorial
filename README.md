@@ -3,15 +3,15 @@
 
 This is a tutorial that can be used by students to get working with [R](https://www.r-project.org/) using [RStudio](https://www.rstudio.com/). It is intended to be used by someone that has not used R before.
 
-I use it for both my "Ecologia Numérica" and my "Modelação Ecológica" at [FCUL](https://ciencias.ulisboa.pt/en) courses. If you are a student in one of those courses, please bear in mind that the final task, " A final task integrating all of the above", is only intended to be completed for those in "Modelação Ecológica".
+I use it for both my "Ecologia Numérica" and my "Modelação Ecológica" at [FCUL](https://ciencias.ulisboa.pt/en) courses. If you are a student in one of those courses, please bear in mind that the final task, "A final task integrating all of the above", is only intended to be completed for those in "Modelação Ecológica".
 
 To use the tutorial you should download at the very least the following files
 
-- TAMsIntro2RviaRStudioTutorial.html and/or TAMsIntro2RviaRStudioTutorial.html
+- TAMsIntro2RviaRStudioTutorial.pdf and/or TAMsIntro2RviaRStudioTutorial.html
 - dados1.csv
 - mydatafile.txt
 
-The main file you should use to work through the tutorial is either "TAMsIntro2RviaRStudioTutorial.html" or "TAMsIntro2RviaRStudioTutorial.pdf"", depending on your preference. These files are created by compiling "TAMsIntro2RviaRStudioTutorial.Rmd", which is a dynamic report in [RMarkdown](https://rmarkdown.rstudio.com/).
+The main file you should use to work through the tutorial is either "TAMsIntro2RviaRStudioTutorial.html" or "TAMsIntro2RviaRStudioTutorial.pdf", depending on your preference. These files are created by compiling "TAMsIntro2RviaRStudioTutorial.Rmd", which is a dynamic report in [RMarkdown](https://rmarkdown.rstudio.com/).
 
 These days I tend to work using dynamic reports, making the workflow from reading the data and cleaning it all the way to reporting the results from analysis integrated and fully reproducible. I believe that working with dynamic reports is a good skill to have if you are a biology student, and so, if you are a student of one of my courses at FCUL, I will also show you in class how those work. Learning how to work with dynamic reports is another topic, but starting from a template helps. If you want a template for creating dynamic reports, there is one here:
 
@@ -19,7 +19,9 @@ https://github.com/TiagoAMarques/RMarkdownTemplate
 
 My suggestion is that you start by creating your own dynamic report which you then use as a basis to work with the code and experiment variations of the code. Please keep all your code properly commented: what seems obvious to you today might not be obvious to the "you" next week or next month. Coding is a collaborative experience, even if between you and your future self (This quote, or something similar, might be from Hadley Hickam).
 
-If you are new to RStudio, there is also a powerpoint in this git repository with a presentation  that can be helpful is getting started: [Quick introduction to R and R Studio](https://github.com/TiagoAMarques/AnIntro2RTutorial/blob/master/Quick%20introduction%20to%20R%20and%20R%20Studio.pptx). If you are a student of one of my courses at FCUL, this powerpoint will be presented to you in class.
+If you are new to RStudio, there is also a powerpoint in this git repository with a presentation  that can be helpful in getting started: [Quick introduction to R and R Studio](https://github.com/TiagoAMarques/AnIntro2RTutorial/blob/master/Quick%20introduction%20to%20R%20and%20R%20Studio.pptx). A new version from 2023 compiled in Quarto is also available (AQuikIntro2RandRStudioInQuarto.html).
+
+If you are a student of one of my courses at FCUL, this presentation will be delivered to you in class. 
 
 If you are new to R in general, the [R cheat sheets](https://www.rstudio.com/resources/cheatsheets/) are great resources, and I recommend to begin with downloading these:
 
