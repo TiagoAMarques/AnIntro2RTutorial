@@ -80,4 +80,4 @@ This is a non-exhaustive, non-comprehensive and quite random list of R (and rela
 
 - [Statistical Rethinking (2023 Edition)](https://github.com/rmcelreath/stat_rethinking_2023) if you want to get your mind blown and change the way you see statistics, embracing the Bayesian paradigm, all from within R, then this course from Richard McElreath is your one stop shop! It includes the pre-recorded lectures, the slides, homework and respective solutions, all based on the quickly becoming a classing book "Statistical Rethinking" (for the actual book, well worth it, see [here](https://xcelab.net/rm/statistical-rethinking/).
 
-
+- [Bayesian analysis of capture-recapture data with hidden Markov models](https://oliviergimenez.github.io/banana-book/index.html) a great book by Olivier Gimenez, colleague and friend, on the theory behind capture recapture models, how to frame the models as hidden Markov models, and useful case studies in R and NIMBLE.
