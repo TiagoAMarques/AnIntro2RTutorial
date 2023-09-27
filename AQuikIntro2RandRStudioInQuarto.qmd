@@ -1,6 +1,7 @@
 ---
 title: "A quick introduction to R and RStudio"
 author: "Tiago A. Marques"
+date: "`r format(Sys.Date(), '%d %B %Y')`"
 format: revealjs
 editor: visual
 ---
@@ -10,6 +11,10 @@ editor: visual
 A quick introduction to the topics to be used in courses that require such introduction, including TAM's courses Ecologia Numérica and Modelação Ecológica at FCUL
 
 but also to support the self paced learning github repository hosted at <https://github.com/TiagoAMarques/AnIntro2RTutorial>
+
+The tutorial has a landing webpage (and hence looks a bit friendlier) here:
+
+<https://tiagoamarques.github.io/AnIntro2RTutorial/>
 
 ::: footer
 This presentation was created using [Quarto](https://quarto.org/) and [revealjs](https://quarto.org/). Want to try yourself. Check its amazing capabilities [here](https://quarto.org/docs/presentations/revealjs/demo/#/title-slide)

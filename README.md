@@ -2,15 +2,21 @@
 
 This is a tutorial that can be used by students to get working with [R](https://www.r-project.org/) using [RStudio](https://www.rstudio.com/). It is intended to be used by someone that has not used R before.
 
+All the relevant material is available here:
+
+https://github.com/TiagoAMarques/AnIntro2RTutorial
+
 I use it for both my "Ecologia Numérica" and my "Modelação Ecológica" at [FCUL](https://ciencias.ulisboa.pt/en) courses. If you are a student in one of those courses, please bear in mind that the final task, "A final task integrating all of the above", is only intended to be completed for those in "Modelação Ecológica".
 
-To use the tutorial you should download at the very least the following files
+To use the tutorial you should download the contents from the github repository above, at the very least the following files
 
 - TAMsIntro2RviaRStudioTutorial.pdf and/or TAMsIntro2RviaRStudioTutorial.html
 - dados1.csv
 - mydatafile.txt
 
 The main file you should use to work through the tutorial is either "TAMsIntro2RviaRStudioTutorial.html" or "TAMsIntro2RviaRStudioTutorial.pdf", depending on your preference. These files are created by compiling "TAMsIntro2RviaRStudioTutorial.Rmd", which is a dynamic report in [RMarkdown](https://rmarkdown.rstudio.com/).
+
+(Note on a tangent: this was made for biology students. I assume you don't know your way around github. If you do, feel free to clone the repository and provide comments and raise issues etc that way etc)
 
 These days I tend to work using dynamic reports, making the workflow from reading the data and cleaning it all the way to reporting the results from analysis integrated and fully reproducible. I believe that working with dynamic reports is a good skill to have if you are a biology student, and so, if you are a student of one of my courses at FCUL, I will also show you in class how those work. Learning how to work with dynamic reports is another topic, but starting from a template helps. If you want a template for creating dynamic reports, there is one here:
 
