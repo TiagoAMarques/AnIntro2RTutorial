@@ -4,6 +4,7 @@ author: "Tiago A. Marques"
 date: "`r format(Sys.Date(), '%d %B %Y')`"
 format: revealjs
 editor: visual
+embedded-resources: standalone
 ---
 
 ## Objective
