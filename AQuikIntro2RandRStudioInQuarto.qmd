@@ -1,5 +1,5 @@
 ---
-title: "A quick introduction to R and RStudio"
+title: "A quick introduction to R and RMarkdown from within RStudio"
 author: "Tiago A. Marques"
 date: "`r format(Sys.Date(), '%d %B %Y')`"
 format: revealjs

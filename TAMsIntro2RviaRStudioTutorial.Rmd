@@ -3,9 +3,6 @@ title: "A hands-on tutorial on R and RStudio"
 author: "Tiago A. Marques"
 date: "`r format(Sys.Date(), '%d %B %Y')`"
 output:
-  word_document:
-    toc: yes
-    toc_depth: '3'
   pdf_document:
     toc: yes
     toc_depth: '3'
@@ -18,6 +15,9 @@ output:
     toc: yes
     toc_depth: 3
     toc_float: yes
+  word_document:
+    toc: yes
+    toc_depth: '3'
 urlcolor: blue
 csl: mee.csl
 subtitle: A tutorial that might get used for lots of stuff
@@ -730,7 +730,7 @@ and finally we check that the functions in it are now loaded
 
 We would now be ready to do all sorts of classification and ordination techniques, say.
 
-**Task 4**: Run the example code available in the help page from package `cca`. Try to understand what is happening.
+**Task 4**: Run the example code available in the help page from the function `cca`. Try to understand what is happening.
 
 ```{r,eval=FALSE}
 #here are the relevant lines of code to run
