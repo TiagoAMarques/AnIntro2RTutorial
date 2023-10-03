@@ -240,15 +240,16 @@ BE PROACTIVE: EXPLORE RESOURCES
 
 ## An example of the usefulness of dynamic reports
 
-The following activity allows you to see the life/time saving usefullness of dynamic reports if you are someone that does data analysis. Check in folder "ExampleDataAnalysis" at
+The following activity allows you to see the life/time saving usefulness of dynamic reports if you are someone that does data analysis. Check in folder "ExampleDataAnalysis" at
 
 <https://github.com/TiagoAMarques/AnIntro2RTutorial>
 
-1.  Open ExampleDataAnalysis.Rmd
-2.  Compile it and see the results
-3.  Implement the last few actions
-4.  Recompile the report
-5.  Compare the results obtained
+1.  Download the 4 files in the folder 
+2.  Open ExampleDataAnalysis.Rmd
+3.  Compile it and see the results
+4.  Implement the last few actions
+5.  Recompile the report
+6.  Compare the results obtained
 
 ## And finally...
 
