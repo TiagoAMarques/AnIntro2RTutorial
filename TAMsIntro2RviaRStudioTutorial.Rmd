@@ -611,7 +611,7 @@ indat<-read.table(file="mydatafile.txt",header=TRUE)
 
 So now we have our data back in R.
 
-**Task 2**: Import the file `dados1.csv` into R, giving it the name `newfile`. Tips: Explore the possible options including (1) `Import Dataset` shortcut in the `Environment tab`, (2) the optional argument `sep=","` in function `read.table` or (3) consider using function `read.csv`.  
+**Task 2**: Import the file `dados1.csv` into R, giving it the name `newfile`. Tips: Explore the possible options including (1) `Import Dataset` shortcut in the `Environment tab`, which is usually a convenient way to find the right function with suitable defaults for your data (2) the optional arguments in function `read.table` above or (3) consider using function `read.csv`.
 
 # Graphics
 

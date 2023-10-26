@@ -238,9 +238,9 @@ A<-3;B<-8;A+B
 
 BE PROACTIVE: EXPLORE RESOURCES
 
-## An example of the usefulness of dynamic reports
+## Example: dynamic reports are useful
 
-The following activity allows you to see the life/time saving usefulness of dynamic reports if you are someone that does data analysis. Check in folder "ExampleDataAnalysis" at
+The following activity allows you to see the life-time saving usefulness of dynamic reports if you are someone that does data analysis. Check in folder "ExampleDataAnalysis" at
 
 <https://github.com/TiagoAMarques/AnIntro2RTutorial>
 
