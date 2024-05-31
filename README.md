@@ -108,4 +108,6 @@ This is a non-exhaustive, non-comprehensive and quite random list of R (and rela
 
 - [Learning Statistical Models Through Simulation in R](https://psyteachr.github.io/stat-models-v1/index.html) - This textbook approaches statistical analysis through the General Linear Model, taking a simulation-based approach in the R software environment. The overarching goal is to teach students how to translate a description of the design of a study into a linear model to analyze data from that study. The focus is on the skills needed to analyze data from psychology experiments. Material from a course  aught by Dale Barr at the University of Glasgow School of Psychology. It is part of the [PsyTeachR](https://psyteachr.github.io/) series of course materials developed by University of Glasgow Psychology staff.
 
+- [Resources to lower stats anxiety](http://www.glennanightingale.com/stats-clinic.html) - A stats clinic, a collection of resources developed by Glenna Nightingale. Take a peak, there's videos, shiny apps, data stories, etc.
+
 - [Send me a suggested resource and I'll add it here]()
