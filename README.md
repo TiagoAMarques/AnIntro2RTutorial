@@ -2,9 +2,7 @@
 
 This is a tutorial that can be used by students to get working with [R](https://www.r-project.org/) using [RStudio](https://www.rstudio.com/). It is intended to be used by someone that has not used R before.
 
-All the relevant material is available here:
-
-https://github.com/TiagoAMarques/AnIntro2RTutorial
+All the relevant material is available [here](https://github.com/TiagoAMarques/AnIntro2RTutorial) at the corresponding github repository.
 
 I use it for both my "Ecologia Numérica" and my "Modelação Ecológica" at [FCUL](https://ciencias.ulisboa.pt/en) courses. If you are a student in one of those courses, please bear in mind that the final task, "A final task integrating all of the above", is only intended to be completed for those in "Modelação Ecológica".
 
