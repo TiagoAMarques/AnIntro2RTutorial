@@ -108,4 +108,8 @@ This is a non-exhaustive, non-comprehensive and quite random list of R (and rela
 
 - [Resources to lower stats anxiety](http://www.glennanightingale.com/stats-clinic.html) - A stats clinic, a collection of resources developed by Glenna Nightingale. Take a peak, there's videos, shiny apps, data stories, etc.
 
+
+- [Marginal effects](https://marginaleffects.com/) - This free online book introduces a conceptual framework to clearly define statistical quantities of interest, and shows how to estimate those quantities using the `marginaleffects` package for R and Python. The techniques introduced can enhance the interpretability of over 100 classes of statistical and machine learning models, including linear, GLM, GAM, mixed-effects, bayesian, categorical outcomes, XGBoost, and more.
+
+
 - [Send me a suggested resource and I'll add it here]()
