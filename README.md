@@ -112,4 +112,9 @@ This is a non-exhaustive, non-comprehensive and quite random list of R (and rela
 - [Marginal effects](https://marginaleffects.com/) - This free online book introduces a conceptual framework to clearly define statistical quantities of interest, and shows how to estimate those quantities using the `marginaleffects` package for R and Python. The techniques introduced can enhance the interpretability of over 100 classes of statistical and machine learning models, including linear, GLM, GAM, mixed-effects, bayesian, categorical outcomes, XGBoost, and more.
 
 
+- [Mixed Models with R: Getting started with random effects](https://m-clark.github.io/mixed-models-with-R/) A nice document by Michael Clark. On his words: "The goal here is primarily to provide a sense of when one would use mixed models, and a variety of standard techniques to implement them. While it can be seen as a standalone treatment, the document originally served as the basis for a workshop, and from that, exercises are available to practice your skills."
+
+
+
+
 - [Send me a suggested resource and I'll add it here]()
