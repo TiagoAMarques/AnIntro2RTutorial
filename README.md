@@ -114,7 +114,7 @@ This is a non-exhaustive, non-comprehensive and quite random list of R (and rela
 
 - [Mixed Models with R: Getting started with random effects](https://m-clark.github.io/mixed-models-with-R/) A nice document by Michael Clark. On his words: "The goal here is primarily to provide a sense of when one would use mixed models, and a variety of standard techniques to implement them. While it can be seen as a standalone treatment, the document originally served as the basis for a workshop, and from that, exercises are available to practice your skills."
 
-
+- [Introduction to R with Tidyverse course](https://scubed.netlify.app/courses/1_intro_r_tidyverse/) This is a course by Sophie Lee "designed to equip you with the essential skills to leverage the power of R and Tidyverse for their work. The course begins with a gentle introduction to the user-friendly RStudio interface and the basics of the R coding language, or syntax. This makes it ideal for anyone with little or no prior coding experience, or those looking for a refresher of the basics.""
 
 
 - [Send me a suggested resource and I'll add it here]()
