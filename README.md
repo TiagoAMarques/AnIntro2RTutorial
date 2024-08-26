@@ -56,8 +56,7 @@ This is a non-exhaustive, non-comprehensive and quite random list of R (and rela
 
 - [Introduction to Linear, Generalized, and Mixed/Multilevel models with R](https://github.com/Pakillo/LM-GLM-GLMM-intro/blob/trees/README.md) by Francisco Rodriguez-Sanchez (the first couple of slides are fantastic introduction to modern statistical analysis in a unified GLM framework). Found about this via a [tweet](https://twitter.com/frod_san/status/1349321844483043335). 
 
-- [GIS and mapping in R: Introduction to the sf package
-](https://oliviergimenez.github.io/intro_spatialR/) by Olivier Gimenez
+- [GIS and mapping in R: Introduction to the sf package](https://oliviergimenez.github.io/intro_spatialR/) by Olivier Gimenez
 
 - [R for biologists](https://www.rforbiologists.org/) - the name says it all
 
@@ -116,5 +115,6 @@ This is a non-exhaustive, non-comprehensive and quite random list of R (and rela
 
 - [Introduction to R with Tidyverse course](https://scubed.netlify.app/courses/1_intro_r_tidyverse/) This is a course by Sophie Lee "designed to equip you with the essential skills to leverage the power of R and Tidyverse for their work. The course begins with a gentle introduction to the user-friendly RStudio interface and the basics of the R coding language, or syntax. This makes it ideal for anyone with little or no prior coding experience, or those looking for a refresher of the basics.""
 
+- [R charts](https://r-charts.com/) A great resource by "R Coder" that lets you see hundreds of R graph examples and provides all the code to reproduce them, making it easily extendable to your own data, using both base R and `ggplot2`, as well as other packages for some more niche graphs. 
 
 - [Send me a suggested resource and I'll add it here]()
