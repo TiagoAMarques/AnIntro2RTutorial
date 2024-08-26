@@ -117,4 +117,7 @@ This is a non-exhaustive, non-comprehensive and quite random list of R (and rela
 
 - [R charts](https://r-charts.com/) A great resource by "R Coder" that lets you see hundreds of R graph examples and provides all the code to reproduce them, making it easily extendable to your own data, using both base R and `ggplot2`, as well as other packages for some more niche graphs. 
 
+- [A set of R tutorials](https://r-coder.com/learn-r/) While the adds on the webpage are a bit annoying, the content is worth it and there are several free tutorials to learn R at your own pace.
+
+
 - [Send me a suggested resource and I'll add it here]()
