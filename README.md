@@ -119,5 +119,14 @@ This is a non-exhaustive, non-comprehensive and quite random list of R (and rela
 
 - [A set of R tutorials](https://r-coder.com/learn-r/) While the adds on the webpage are a bit annoying, the content is worth it and there are several free tutorials to learn R at your own pace.
 
+- [A short course on Survival Analysis](https://bookdown.org/sestelo/sa_financial/) A short course on Survival Analysis applied to the Financial Industry, for BBVA Data & Analytics, Madrid, by Marta Sestelo This book is designed to provide a guide for a short course on survival analysis. Focused on applying survival analysis statistical techniques to the financial industry. The emphasis is placed in understanding the methods, building intuition about when applying each of them and showing their application through the use of R.
+
+- [Modern Statistics with R](https://modernstatisticswithr.com/) by Mans Thulin, Modern Statistics with R: From wrangling and exploring data to inference and predictive modelling
+(2024-07-01 - Second edition - Version 2.0.0)
 
 - [Send me a suggested resource and I'll add it here]()
+- [Send me a suggested resource and I'll add it here]()
+- [Send me a suggested resource and I'll add it here]()
+- [Send me a suggested resource and I'll add it here]()
+- [Send me a suggested resource and I'll add it here]()
+
