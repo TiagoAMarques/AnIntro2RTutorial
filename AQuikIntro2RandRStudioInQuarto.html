@@ -8,10 +8,10 @@
 <link href="AQuikIntro2RandRStudioInQuarto_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="AQuikIntro2RandRStudioInQuarto_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="AQuikIntro2RandRStudioInQuarto_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.3.433">
+  <meta name="generator" content="quarto-1.5.57">
 
   <meta name="author" content="Tiago A. Marques">
-  <meta name="dcterms.date" content="2023-10-04">
+  <meta name="dcterms.date" content="2024-10-01">
   <title>A quick introduction to R and RMarkdown from within RStudio</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -32,7 +32,7 @@
     }
     /* CSS for syntax highlighting */
     pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span { line-height: 1.25; }
     pre > code.sourceCode > span:empty { height: 1.2em; }
     .sourceCode { overflow: visible; }
     code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -43,7 +43,7 @@
     }
     @media print {
     pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
     }
     pre.numberSource code
       { counter-reset: source-line 0; }
@@ -71,7 +71,7 @@
     code span.at { color: #657422; } /* Attribute */
     code span.bn { color: #ad0000; } /* BaseN */
     code span.bu { } /* BuiltIn */
-    code span.cf { color: #003b4f; } /* ControlFlow */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
     code span.ch { color: #20794d; } /* Char */
     code span.cn { color: #8f5902; } /* Constant */
     code span.co { color: #5e5e5e; } /* Comment */
@@ -85,7 +85,7 @@
     code span.fu { color: #4758ab; } /* Function */
     code span.im { color: #00769e; } /* Import */
     code span.in { color: #5e5e5e; } /* Information */
-    code span.kw { color: #003b4f; } /* Keyword */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
     code span.op { color: #5e5e5e; } /* Operator */
     code span.ot { color: #003b4f; } /* Other */
     code span.pp { color: #ad0000; } /* Preprocessor */
@@ -222,7 +222,8 @@
   }
 
   .callout.callout-titled .callout-body > .callout-content > :last-child {
-    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
   }
 
   .callout.callout-titled .callout-icon::before {
@@ -401,7 +402,7 @@ Tiago A. Marques
 </div>
 </div>
 
-  <p class="date">2023-10-04</p>
+  <p class="date">2024-10-01</p>
 </section>
 <section id="objective" class="slide level2">
 <h2>Objective</h2>
@@ -451,8 +452,7 @@ Tiago A. Marques
 </ul>
 </div><div class="column" style="width:40%;">
 <p><img data-src="extfiles/RpackageEvol.png" class="absolute" style="top: 100px; left: 620px; width: 500px; height: 500px; "></p>
-</div>
-</div>
+</div></div>
 <div class="footer">
 <p><a href="http://r4stats.com/articles/popularity/">image source at r4stats.com</a></p>
 </div>
@@ -463,7 +463,7 @@ Tiago A. Marques
 <li>R was traditionally accessed solely via the command line, making the learning curve rather steep for beginners</li>
 </ul>
 
-<img data-src="extfiles/oldRcmd.png" width="780" class="r-stretch quarto-figure-center"><ul>
+<img data-src="extfiles/oldRcmd.png" class="quarto-figure quarto-figure-center r-stretch" style="border: 3px solid #dee2e6;" width="780"><ul>
 <li>Here we focus on Rstudio, a program to interface with R, making many of the most common tasks simpler. Let’s open Rstudio shall we?</li>
 </ul>
 <div class="footer">
@@ -482,8 +482,7 @@ Tiago A. Marques
 </ul>
 </div><div class="column" style="width:35%;">
 <p><img data-src="extfiles/RStudio.png" class="absolute" style="top: 200px; left: 700px; width: 400px; height: 300px; "></p>
-</div>
-</div>
+</div></div>
 </section>
 <section id="windows-4-ways-to-interact-with-r" class="slide level2">
 <h2>4 windows, 4 ways to interact with R</h2>
@@ -574,14 +573,14 @@ Tiago A. Marques
 <ul>
 <li><p>Try to insert a new bit of code with <code>Code|insert chunck</code> (shortcut <code>Ctrl+Al+I</code>)</p></li>
 <li><p>Change a chunck’s options (e.g.&nbsp;<code>eval</code>, <code>echo</code>, etc) from <code>TRUE</code> to <code>FALSE</code> and see what whappens to the output</p></li>
-<li><p>Try to use dynamic numbers like this one: -0.4723569 printing the mean value of 5 random Gaussian numbers. For that you need to use something like `? mean(rnorm(5))` (note: replace the “?” with the leter “r” so that it knows you want to run r code).</p></li>
+<li><p>Try to use dynamic numbers like this one: -0.941491 printing the mean value of 5 random Gaussian numbers. For that you need to use something like `? mean(rnorm(5))` (note: replace the “?” with the leter “r” so that it knows you want to run r code).</p></li>
 <li><p>For more, check e.g.&nbsp;the <a href="https://github.com/rstudio/cheatsheets/raw/main/rmarkdown-2.0.pdf">RMarkdown cheat sheet</a></p></li>
 </ul>
 </section>
 <section id="warning-command-line-vs-.rmd" class="slide level2">
 <h2>Warning: command line vs .Rmd</h2>
 
-<img data-src="extfiles/warning.png" class="r-stretch quarto-figure-center"><ul>
+<img data-src="extfiles/warning.png" class="quarto-figure quarto-figure-center r-stretch"><ul>
 <li><p>When you run some code within a .Rmd, it is only run in the .Rmd</p></li>
 <li><p>When you run some code in the command line, it is only run in the command line</p></li>
 <li><p>Therefore, reading the data in the command line does NOT mean it will be available for a dynamic report, and vice versa!</p></li>
@@ -596,9 +595,9 @@ Tiago A. Marques
 <li><p>Comments to the code can also be within code chunks (preceded by “#” – the hash symbol).</p></li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="co"># EXAMPLE: this would be a comment</span></span>
-<span id="cb1-2"><a href="#cb1-2"></a><span class="co"># run the next lines of code the result is 11</span></span>
-<span id="cb1-3"><a href="#cb1-3"></a>A<span class="ot">&lt;-</span><span class="dv">3</span>;B<span class="ot">&lt;-</span><span class="dv">8</span>;A<span class="sc">+</span>B</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href=""></a><span class="co"># EXAMPLE: this would be a comment</span></span>
+<span id="cb1-2"><a href=""></a><span class="co"># run the next lines of code the result is 11</span></span>
+<span id="cb1-3"><a href=""></a>A<span class="ot">&lt;-</span><span class="dv">3</span>;B<span class="ot">&lt;-</span><span class="dv">8</span>;A<span class="sc">+</span>B</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 11</code></pre>
 </div>
@@ -632,7 +631,7 @@ Tiago A. Marques
 <h2>And finally…</h2>
 <p>Open the hands on R tutorial (“TAMsIntro2RviaRStudioTutorial.pdf”) and work through it</p>
 
-<img data-src="extfiles/Rtut.png" class="r-stretch quarto-figure-center"></section>
+<img data-src="extfiles/Rtut.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="if-you-are-seeing-this-slide" class="slide level2">
 <h2>If you are seeing this slide</h2>
 <p>It is because you either:</p>
@@ -654,16 +653,18 @@ Tiago A. Marques
 <h2>Get a (virtual) R Tutor</h2>
 <p>You can find one within the <a href="https://swirlstats.com/">swirl R package</a>: try it out!</p>
 
-<img data-src="extfiles/swirl.png" class="r-stretch quarto-figure-center"></section>
+<img data-src="extfiles/swirl.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="and-now-off-you-go" class="slide level2">
 <h2>And now, off you go!</h2>
 <p>The path to R mastery is winding, but the reward is worth it…</p>
 
-<img data-src="extfiles/grasshoper.jpg" class="r-stretch quarto-figure-center"></section>
+<img data-src="extfiles/grasshoper.jpg" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="the-end" class="slide level2" data-background="#43464B" data-background-image="extfiles/backgRound.png">
 <h2>The end</h2>
+<div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
+</div>
 </div>
 </section>
     </div>
@@ -692,7 +693,6 @@ Tiago A. Marques
       Reveal.initialize({
 'controlsAuto': true,
 'previewLinksAuto': false,
-'smaller': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
@@ -878,42 +878,80 @@ Tiago A. Marques
       });
     </script>
     
+
     <script>
+
       // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+
       // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+
       // slide changes (different for each slide format).
+
       (function () {
+
         // dispatch for htmlwidgets
+
         function fireSlideEnter() {
+
           const event = window.document.createEvent("Event");
+
           event.initEvent("slideenter", true, true);
+
           window.document.dispatchEvent(event);
+
         }
+
+    
 
         function fireSlideChanged(previousSlide, currentSlide) {
+
           fireSlideEnter();
 
+    
+
           // dispatch for shiny
+
           if (window.jQuery) {
+
             if (previousSlide) {
+
               window.jQuery(previousSlide).trigger("hidden");
+
             }
+
             if (currentSlide) {
+
               window.jQuery(currentSlide).trigger("shown");
+
             }
+
           }
+
         }
+
+    
 
         // hookup for slidy
+
         if (window.w3c_slidy) {
+
           window.w3c_slidy.add_observer(function (slide_num) {
+
             // slide_num starts at position 1
+
             fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+
           });
+
         }
 
+    
+
       })();
+
     </script>
+
+    
 
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -947,18 +985,7 @@ Tiago A. Marques
         }
         return false;
       }
-      const clipboard = new window.ClipboardJS('.code-copy-button', {
-        text: function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-        }
-      });
-      clipboard.on('success', function(e) {
+      const onCopySuccess = function(e) {
         // button target
         const button = e.trigger;
         // don't keep focus
@@ -990,11 +1017,50 @@ Tiago A. Marques
         }, 1000);
         // clear code selection
         e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
       });
-      function tippyHover(el, contentFn) {
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        // For code content inside modals, clipBoardJS needs to be initialized with a container option
+        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp('/' + window.location.host + '/');
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
         const config = {
           allowHTML: true,
-          content: contentFn,
           maxWidth: 500,
           delay: 100,
           arrow: false,
@@ -1004,8 +1070,17 @@ Tiago A. Marques
           interactive: true,
           interactiveBorder: 10,
           theme: 'light-border',
-          placement: 'bottom-start'
+          placement: 'bottom-start',
         };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
           config['offset'] = [0,0];
           config['maxWidth'] = 700;
         window.tippy(el, config); 
@@ -1019,7 +1094,11 @@ Tiago A. Marques
           try { href = new URL(href).hash; } catch {}
           const id = href.replace(/^#\/?/, "");
           const note = window.document.getElementById(id);
-          return note.innerHTML;
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
         });
       }
       const findCites = (el) => {

@@ -932,9 +932,11 @@ Note a function could have many arguments, none, or just one.
 
 Creating your own functions will unleash strong R power, increasing significantly your ability to manipulate, analyze and simulate data.
 
-# A final task integrating all of the above
+# Final tasks
 
-This task is only intended for the students in Modelação Ecológica. If you are a Ecologia Numérica student you can try it at your own risk! If you are neither of those, then feel free to work through the material regardless.
+These tasks are only intended for the students in Modelação Ecológica. If you are a Ecologia Numérica student you can try it at your own risk! If you are neither of those, then feel free to work through the material regardless.
+
+## A final task integrating all of the above
 
 Here we will implement an exercise were we pretend we are sampling an animal population, using some (very basic) simulations to understand the process better. Create plots that represent all the steps of your task, with proper legends, labels, colors, etc, and add all your comments to the dynamic report.
 
@@ -956,6 +958,16 @@ This exercise simulates a distance sampling survey. If you want to know more abo
 8. plot the distribution of the number of animals that you would detect each new survey.
 
 Take your own conclusions about all that you did. 
+
+## Creating your own statistical test via resampling
+
+**This is work in progress**
+
+We are all used to implementing statistical tests. But statistical tests for the situations one might face with real ecological data are not always available. For that reason, it might be useful to know how to create your own statistical tests. One can do that if one is able to create a test statistic, that contains information about the hypothesis one wishes to test, and for which we can simulate the distribution assuming that the null hypothesis is true.
+
+Let us consider an example where we have data from camera traps, and we want to see if there is some relationship between two species. In particular, we want to see if the area usage is dependent on the order in which species appear.
+
+
 
 # Wrap up 
 
