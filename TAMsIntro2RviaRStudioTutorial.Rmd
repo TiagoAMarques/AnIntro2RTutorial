@@ -3,9 +3,6 @@ title: "A hands-on tutorial on R and RStudio"
 author: "Tiago A. Marques"
 date: "`r format(Sys.Date(), '%d %B %Y')`"
 output:
-  pdf_document:
-    toc: yes
-    toc_depth: '3'
   html_document:
     fig_caption: yes
     force_captions: yes
@@ -15,6 +12,9 @@ output:
     toc: yes
     toc_depth: 3
     toc_float: yes
+  pdf_document:
+    toc: yes
+    toc_depth: '3'
   word_document:
     toc: yes
     toc_depth: '3'
@@ -965,9 +965,61 @@ Take your own conclusions about all that you did.
 
 We are all used to implementing statistical tests. But statistical tests for the situations one might face with real ecological data are not always available. For that reason, it might be useful to know how to create your own statistical tests. One can do that if one is able to create a test statistic, that contains information about the hypothesis one wishes to test, and for which we can simulate the distribution assuming that the null hypothesis is true.
 
-Let us consider an example where we have data from camera traps, and we want to see if there is some relationship between two species. In particular, we want to see if the area usage is dependent on the order in which species appear.
+Let us consider an example where we have data from camera traps, and we want to see if there is some relationship between two species. In particular, we want to see if the  use of the area covered by the camera is dependent on what species were present there before.
 
+Imagine we have a camera trap and we collect the order in which different species appeared on the camera.
 
+```{r}
+#the exercise is more interesting if you do not think about how the data is being created
+#later you can look at it, but for now, just treat this as a black box
+#so all get the same answers
+set.seed(189)
+species<-c("wolf","bear","deer","racoon","weasel","bobcat","badger","squirel","sheep")
+abundances<-c(50,20,300,500,500,50,400,1000,200)
+appearences<-rep(species,times=abundances)
+n<-length(appearences)
+appearences<-appearences[sample(1:n,size = n,replace=FALSE)]
+```
+
+The code above has simulated such data, creating `r n` sequential occurrences of 9 different species. Here's the number of observations per species
+
+```{r}
+barplot(table(appearences))
+```
+
+We can see the first few detections
+
+```{r}
+head(appearences)
+```
+
+Recent research indicates that squirels tend to appear after weasels appear, and you have been tasked with looking into the data to test whether that seems to be the case at this site. How can you do it?
+
+You will immediately realize this puts you in a context that you have not learnt any statistical significance tests that sound useful here. You need to create your own test. This can be done as a resampling/permutation test.
+
+You first define a null hypothesis. That could be
+
+H0: the appearance of a squirrel does not depend on badgers having been present
+
+Next, you need to get a test statistic. It seems like a good test statistic would be the number of times a squirrel is preceded by a badger.
+
+How can we calculate that for our data?
+
+```{r}
+#get each appearence
+firsta<-appearences[1:(n-1)]
+#get the next one
+seconda<-appearences[2:(n)]
+#get the pairs
+paireda<-data.frame(fa=firsta,sa=seconda,pa=paste(firsta,seconda,sep="."))
+#now, it's easy to count how many squirel-badger sequences we had
+test.stat<-sum(paireda$pa=="squirel.badger")
+test.stat
+```
+
+The key question is, under H0, is the value `test.stat` extreme, leading to rejecting H0, or quite expected, leading to no evidence to reject H0?
+
+What do you think? How can you find a distribution for the test statistic under H0 so that you can formally evaluate whether to reject, or not, H0.
 
 # Wrap up 
 
