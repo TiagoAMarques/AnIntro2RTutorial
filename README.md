@@ -124,8 +124,11 @@ This is a non-exhaustive, non-comprehensive and quite random list of R (and rela
 - [Modern Statistics with R](https://modernstatisticswithr.com/) by Mans Thulin, Modern Statistics with R: From wrangling and exploring data to inference and predictive modelling
 (2024-07-01 - Second edition - Version 2.0.0)
 
+- [Material from Gavin Simpson's course on GAMs](https://github.com/gavinsimpson/physalia-gam-course) A course on Generalized Additive Models; a data-driven approach to estimating regression models
+This is part of a suite of Physalia-Courses hosted at https://www.physalia-courses.org/
+
 - [Send me a suggested resource and I'll add it here]()
-- [Send me a suggested resource and I'll add it here]()
+
 - [Send me a suggested resource and I'll add it here]()
 - [Send me a suggested resource and I'll add it here]()
 - [Send me a suggested resource and I'll add it here]()
