@@ -844,7 +844,7 @@ pnorm(0,mean=0,sd=1)
 qnorm(0.975,mean=0,sd=1)
 ```
 
-**Task 6**: Using what you have learnt here, create two histograms, one of 50, another of 5000, random deviates from a Gaussian distribution (you can choose the mean and standard deviation you prefer!), using the optional argument `freq=FALSE` (leading to an estimate of the density function). Then add a line to the plot that represents the true underlying density (tip, you can use function `dnorm`), and comment on the results. You can also do similar experiments with other distributions. How weird are a beta(1,1), a beta(1,5) and a beta(0.5,0.5) distributions. Can you guess which one is sometimes referred to as bath tub distribution. What might be a beta useful for?
+**Task 6**: Using what you have learnt here, create two histograms, one of 50, another of 5000, random deviates from a Gaussian distribution (you can choose the mean and standard deviation you prefer!), using the optional argument `freq=FALSE` (leading to an estimate of the density function). Then add a line to the plot that represents the true underlying density (tip, you can use function `dnorm`), and comment on the results. You can also do similar experiments with other distributions. How weird are a beta(1,1), a beta(1,5) and a beta(0.5,0.5) distributions (tip, you can use function `dbeta`). Can you guess which one is sometimes referred to as bath tub distribution. What might be a beta useful for?
 
 # Programming tricks
 
