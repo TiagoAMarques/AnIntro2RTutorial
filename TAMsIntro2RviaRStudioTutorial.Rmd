@@ -714,6 +714,8 @@ Next, we install the package.
 install.packages("vegan")
 ```
 
+(note: do not install packages within a dynamic report, that would be a akin to installing Word everytime you wanted to work on a document!)
+
 Then, we load the package
 
 ```{r}
