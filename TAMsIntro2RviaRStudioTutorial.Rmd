@@ -3,9 +3,6 @@ title: "A hands-on tutorial on R and RStudio"
 author: "Tiago A. Marques"
 date: "`r format(Sys.Date(), '%d %B %Y')`"
 output:
-  pdf_document:
-    toc: yes
-    toc_depth: '3'
   html_document:
     fig_caption: yes
     force_captions: yes
@@ -16,6 +13,9 @@ output:
     toc_depth: 3
     toc_float: yes
   word_document:
+    toc: yes
+    toc_depth: '3'
+  pdf_document:
     toc: yes
     toc_depth: '3'
 urlcolor: blue
@@ -783,7 +783,7 @@ Note that the line added to the plot represents the distance a car would take to
 myglm1<-glm(dist~speed,data=cars,family=Gamma(link=log))
 #predict using the GLM for speeds between 1 and 30
 predmyglm1<-predict.glm(myglm1,
-newdata<-data.frame(speed=1:30),type="response")
+newdata=data.frame(speed=1:30),type="response")
 ```
 
 Our model now assumes the response has a gamma distribution, and the link function is the logarithm. The link function allows you to change how the mean value is related to the covariates. This becomes rather technical rather fast. Details about GLMs are naturally beyond the scope of this tutorial. References like @Faraway2006 or @Zuur2009b will provide further details in an applied context. The predicted relationship is shown in the next figure.
@@ -930,7 +930,7 @@ myfun(3,5)
 
 Note a function could have many arguments, none, or just one.
 
-**Task 7**: create a function called `mystats` which returns the mean, variance, maximum and minimum of the first, and only, argument (a vector). Then, update your function such that it can also return the mean excluding the negative numbers. Then, create some other function you might think could be useful.
+**Task 8**: create a function called `mystats` which returns the mean, variance, maximum and minimum of the first, and only, argument (a vector). Then, update your function such that it can also return the mean excluding the negative numbers. Then, create some other function you might think could be useful.
 
 Creating your own functions will unleash strong R power, increasing significantly your ability to manipulate, analyze and simulate data.
 
@@ -1041,7 +1041,7 @@ rm(list = ls())
 
 # Acknowledgements 
 
-Several people have provided comments over the years, typically when exposed to the tutorial, including colleagues, folks that have used it as teachers, or students asking questions in a course using the tutorial, like R courses, PAM DE courses, and Modelação Ecológica and Ecologia Numérica courses at DBA, FCUL. I thank their kind contributions here: Danielle Harris, Len Thomas, Soraia Pereira, Susana França, Sofia Reboleira, Sónia Coelho,  Afonso Barrocal and José Pedro Granadeiro. Many are not named explicitly, as I've forgotten about the specifics, but I thank them any way! If you think your name is missing, let me know. Further, this list is ever evolving and so, if you have comments, please, send them my way and get your name added to it! Indeed, fame for eternity is indeed that close :)
+Several people have provided comments over the years, typically when exposed to the tutorial, including colleagues, folks that have used it as teachers, or students asking questions in a course using the tutorial, like R courses, PAM DE courses, and Modelação Ecológica and Ecologia Numérica courses at DBA, FCUL. I thank their kind contributions here: Danielle Harris, Len Thomas, Soraia Pereira, Susana França, Sofia Reboleira, Sónia Coelho, Afonso Barrocal and José Pedro Granadeiro. Many are not named explicitly, as I've forgotten about the specifics, but I thank them any way! If you think your name is missing, let me know. Further, this list is ever evolving and so, if you have comments, please, send them my way and get your name added to it! Indeed, fame for eternity is indeed that close :)
 
 # References
 
