@@ -111,7 +111,7 @@ This is a non-exhaustive, non-comprehensive and quite random list of R (and rela
 - [Marginal effects](https://marginaleffects.com/) - This free online book introduces a conceptual framework to clearly define statistical quantities of interest, and shows how to estimate those quantities using the `marginaleffects` package for R and Python. The techniques introduced can enhance the interpretability of over 100 classes of statistical and machine learning models, including linear, GLM, GAM, mixed-effects, bayesian, categorical outcomes, XGBoost, and more.
 
 
-- [Mixed Models with R: Getting started with random effects](https://m-clark.github.io/mixed-models-with-R/) A nice document by Michael Clark. On his words: "The goal here is primarily to provide a sense of when one would use mixed models, and a variety of standard techniques to implement them. While it can be seen as a standalone treatment, the document originally served as the basis for a workshop, and from that, exercises are available to practice your skills."
+- [Mixed Models with R: Getting started with random effects](https://m-clark.github.io/mixed-models-with-R/) A nice document by Michael Clark. On his own words: "The goal here is primarily to provide a sense of when one would use mixed models, and a variety of standard techniques to implement them. While it can be seen as a standalone treatment, the document originally served as the basis for a workshop, and from that, exercises are available to practice your skills."
 
 - [Introduction to R with Tidyverse course](https://scubed.netlify.app/courses/1_intro_r_tidyverse/) This is a course by Sophie Lee "designed to equip you with the essential skills to leverage the power of R and Tidyverse for their work. The course begins with a gentle introduction to the user-friendly RStudio interface and the basics of the R coding language, or syntax. This makes it ideal for anyone with little or no prior coding experience, or those looking for a refresher of the basics.""
 
@@ -127,9 +127,10 @@ This is a non-exhaustive, non-comprehensive and quite random list of R (and rela
 - [Material from Gavin Simpson's course on GAMs](https://github.com/gavinsimpson/physalia-gam-course) A course on Generalized Additive Models; a data-driven approach to estimating regression models
 This is part of a suite of Physalia-Courses hosted at https://www.physalia-courses.org/
 
-- [Send me a suggested resource and I'll add it here]()
+- [Writing Better R Code](https://nrennie.rbind.io/training-better-r-code/) here you can find the material for a course entitled "Writing Better R Code" by Nicola Rennie, including the course slides
 
-- [Send me a suggested resource and I'll add it here]()
+- [Regression Modeling Strategies](https://hbiostat.org/rmsc/) a book that is all about regression, by Frank E. Harrel. Jr., that serves as support material for a course by the same author, but can be read independently of the course.
+
 - [Send me a suggested resource and I'll add it here]()
 - [Send me a suggested resource and I'll add it here]()
 

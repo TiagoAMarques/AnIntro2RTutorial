@@ -3,6 +3,12 @@ title: "A hands-on tutorial on R and RStudio"
 author: "Tiago A. Marques"
 date: "`r format(Sys.Date(), '%d %B %Y')`"
 output:
+  pdf_document:
+    toc: yes
+    toc_depth: '3'
+  word_document:
+    toc: yes
+    toc_depth: '3'
   html_document:
     fig_caption: yes
     force_captions: yes
@@ -12,12 +18,6 @@ output:
     toc: yes
     toc_depth: 3
     toc_float: yes
-  word_document:
-    toc: yes
-    toc_depth: '3'
-  pdf_document:
-    toc: yes
-    toc_depth: '3'
 urlcolor: blue
 csl: mee.csl
 subtitle: A tutorial that might get used for lots of stuff
@@ -844,7 +844,7 @@ pnorm(0,mean=0,sd=1)
 qnorm(0.975,mean=0,sd=1)
 ```
 
-**Task 6**: Using what you have learnt here, create two histograms, one of 50, another of 5000, random deviates from a Gaussian distribution (you can choose the mean and standard deviation you prefer!), using the optional argument `freq=FALSE` (leading to an estimate of the density function). Then add a line to the plot that represents the true underlying density (tip, you can use function `dnorm`), and comment on the results. You can also do similar experiments with other distributions. How weird are a beta(1,1), a beta(1,5) and a beta(0.5,0.5) distributions (tip, you can use function `dbeta`). Can you guess which one is sometimes referred to as bath tub distribution. What might be a beta useful for?
+**Task 6**: Using what you have learnt here, create two histograms, one of 50, another of 5000, random deviates from a Gaussian distribution (you can choose the mean and standard deviation you prefer!), using the optional argument `freq=FALSE` (leading to an estimate of the density function). Then add a line to the plot that represents the true underlying density (tip, you can use function `dnorm`), and comment on the results. You can also do similar experiments with other distributions. How weird are a beta(1,1), a beta(1,5) and a beta(0.5,0.5) distributions (tip, you can use function `rbeta` or `dbeta`). Can you guess which one is sometimes referred to as bath tub distribution. What quantities do you imagine a beta might be useful to model?
 
 # Programming tricks
 
