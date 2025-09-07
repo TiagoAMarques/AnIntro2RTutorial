@@ -50,7 +50,7 @@ In Giorgi et al. 2022 The R Language: An Engine for Bioinformatics and Data Scie
 
 ## The R base + packages
 
-::: columns
+::::: columns
 ::: {.column width="60%"}
 -   R base installation comes with a number of libraries which provide access to a large number of commonly used features (e.g. linear models, survival analysis, basic statistical distributions, etc)
 -   One of R's key strengths comes from the fact that many more packages are available online, under constant increase
@@ -59,7 +59,7 @@ In Giorgi et al. 2022 The R Language: An Engine for Bioinformatics and Data Scie
 ::: {.column width="40%"}
 ![](extfiles/RpackageEvol.png){.absolute top="100" left="620" width="500" height="500"}
 :::
-:::
+:::::
 
 ::: footer
 [image source at r4stats.com](http://r4stats.com/articles/popularity/)
@@ -79,7 +79,7 @@ In Giorgi et al. 2022 The R Language: An Engine for Bioinformatics and Data Scie
 
 ## RStudio
 
-::: columns
+::::: columns
 ::: {.column width="65%"}
 -   (as R) Free and open source
 -   An integrated development environment for data analysis
@@ -90,7 +90,7 @@ In Giorgi et al. 2022 The R Language: An Engine for Bioinformatics and Data Scie
 ::: {.column width="35%"}
 ![](extfiles/RStudio.png){.absolute top="200" left="700" width="400" height="300"}
 :::
-:::
+:::::
 
 ## 4 windows, 4 ways to interact with R
 
@@ -244,7 +244,7 @@ The following activity allows you to see the life-time saving usefulness of dyna
 
 <https://github.com/TiagoAMarques/AnIntro2RTutorial>
 
-1.  Download the 4 files in the folder 
+1.  Download the 4 files in the folder
 2.  Open ExampleDataAnalysis.Rmd
 3.  Compile it and see the results
 4.  Implement the last few actions

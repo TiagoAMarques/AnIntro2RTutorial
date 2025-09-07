@@ -39,6 +39,7 @@ Below I also provide a list of additional free online resources that you might w
 
 This is a non-exhaustive, non-comprehensive and quite random list of R (and related) resources that I found useful at some point. They might (but will not necessarily) be ecologically oriented. Feel free to explore at your own risk. No real order in the list I am afraid.
 
+- [The Big Book of R](https://www.bigbookofr.com/) as per the author, Oscar Baruffa, hopefully this is the only bookmark you’ll need in future ;). Over 400 books on R programing, organized by topic area
 
 - [An R companion to Statistical Thinking for the 21st Century](https://statsthinking21.github.io/statsthinking21-R-site/) a free companion to the book An R companion to Statistical Thinking for the 21st Century 2020 by Russell A. Poldrack
 
@@ -131,6 +132,17 @@ This is part of a suite of Physalia-Courses hosted at https://www.physalia-cours
 
 - [Regression Modeling Strategies](https://hbiostat.org/rmsc/) a book that is all about regression, by Frank E. Harrel. Jr., that serves as support material for a course by the same author, but can be read independently of the course.
 
-- [Send me a suggested resource and I'll add it here]()
+- [Geocomputation with R](https://r.geocompx.org/) a book by Robin Lovelace, Jakub Nowosad and Jannes Muenchow on geographic data analysis, visualization and modeling.
+
+- [Intro to GIS and Spatial Analysis]() Lecture notes for a course with the same name by Manuel Gimond
+
+- [R as GIS for Economists](https://tmieno2.github.io/R-as-GIS-for-Economists-Quarto/) A bookdown book by Taro Mieno. In his own words: "This book is specifically aimed at spatial data processing for empirical statistical projects, where spatial variables become part of the analysis dataset. Over the years, I have seen many students and researchers spend excessive time just processing spatial data, often by endlessly clicking through the ArcGIS (or QGIS) user interface. From an academic productivity perspective, this is a waste of time. My hope is that this book helps researchers become more proficient in spatial data processing, ultimately enhancing productivity in economics and other scientific fields where spatial data is essential."
+
+- [Biological Data Science with R](https://bdsr.stephenturner.us/) This book was written as a companion to a series of courses taught by Stephen D. Turner at the University of Virginia introducing the essentials of biological data science with R.
+
+- [Explanatory Model Analysis](https://ema.drwhy.ai/) A book to help you Explore, Explain, and Examine Predictive Models. With examples in R and Python. By Przemyslaw Biecek and Tomasz Burzykowski, edited by CRC.
+
+- [ANOVA and Mixed Models: A Short Introduction Using R](https://ema.drwhy.ai/) The free version of the CRC book by Lukas Meier, a great resource for those looking for an introduction to the topics with the supporting R code.
+
 - [Send me a suggested resource and I'll add it here]()
 
