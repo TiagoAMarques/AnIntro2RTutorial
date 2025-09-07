@@ -21,6 +21,14 @@ The tutorial has a landing webpage (and hence looks a bit friendlier) here:
 This presentation was created using [Quarto](https://quarto.org/) and [revealjs](https://quarto.org/). Want to try yourself. Check its amazing capabilities [here](https://quarto.org/docs/presentations/revealjs/demo/#/title-slide)
 :::
 
+## Obtaining the material
+
+You can get all the material by downloading and unziping the [github repository](https://tiagoamarques.github.io/AnIntro2RTutorial/) contents. See image below: press the button at the end of the red arrow, then that of the blue arrow, and finally unzip the material into a folder of your choice.
+
+![](extfiles/downloadgit.png){.absolute top="300" left="30" width="1000" height="400"}
+
+
+
 ## Learning goals
 
 -   Obtain a working knowledge about the R software and environment, to be able to implement basic data analysis
