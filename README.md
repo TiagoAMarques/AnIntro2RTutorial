@@ -22,7 +22,7 @@ https://github.com/TiagoAMarques/RMarkdownTemplate
 
 My suggestion is that you start by creating your own dynamic report which you then use as a basis to work with the code and experiment variations of the code. Please keep all your code properly commented: what seems obvious to you today might not be obvious to the "you" next week or next month. Coding is a collaborative experience, even if between you and your future self (This quote, or something similar, might be from Hadley Hickam).
 
-If you are new to RStudio, there is also a powerpoint in this git repository with a presentation  that can be helpful in getting started: [Quick introduction to R and R Studio](https://github.com/TiagoAMarques/AnIntro2RTutorial/blob/master/Quick%20introduction%20to%20R%20and%20R%20Studio.pptx). A new version from 2023 compiled in Quarto is also available at [Rpubs](https://rpubs.com/talomarques/Intro2RAndRMarkdownViaRStudio).
+If you are new to RStudio, there is also a quarto html presentation that can be helpful in getting you started, corresponding to the file "AQuikIntro2RandRStudioInQuarto.html" but also available here:  [Rpubs](https://rpubs.com/talomarques/Intro2RAndRMarkdownViaRStudio).
 
 If you are a student of one of my courses at FCUL, this presentation will be delivered to you in class. 
 
