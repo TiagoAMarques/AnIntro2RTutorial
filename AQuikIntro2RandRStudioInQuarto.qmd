@@ -246,19 +246,6 @@ A<-3;B<-8;A+B
 
 BE PROACTIVE: EXPLORE RESOURCES
 
-## Example: dynamic reports are useful
-
-The following activity allows you to see the life-time saving usefulness of dynamic reports if you are someone that does data analysis. Check in folder "ExampleDataAnalysis" at
-
-<https://github.com/TiagoAMarques/AnIntro2RTutorial>
-
-1.  Download the 4 files in the folder
-2.  Open ExampleDataAnalysis.Rmd
-3.  Compile it and see the results
-4.  Implement the last few actions
-5.  Recompile the report
-6.  Compare the results obtained
-
 ## And finally...
 
 Open the hands on R tutorial ("TAMsIntro2RviaRStudioTutorial.pdf") and work through it

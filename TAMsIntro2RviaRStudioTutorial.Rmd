@@ -6,9 +6,6 @@ output:
   word_document:
     toc: yes
     toc_depth: '3'
-  pdf_document:
-    toc: yes
-    toc_depth: '3'
   html_document:
     fig_caption: yes
     force_captions: yes
@@ -18,6 +15,9 @@ output:
     toc: yes
     toc_depth: 3
     toc_float: yes
+  pdf_document:
+    toc: yes
+    toc_depth: '3'
 urlcolor: blue
 csl: mee.csl
 subtitle: A tutorial that might get used for lots of stuff
@@ -146,7 +146,7 @@ A very handy feature of RStudio is that you can preview the possible arguments o
 
 Now we have met RStudio and we know how it can make our life simpler, let's move on.
 
-## Dynamic reports and reproducible research
+# Dynamic reports and reproducible research
 
 One of the most amazing features of the integration of R and RStudio is how simple it becomes to work with dynamic reports, built on RMarkdown. This will take you to the next level in data analysis! Actually, this document was itself created as a dynamic report, using RMarkdown. You should explore some of the basics of R Markdown, and you can do so here: https://rmarkdown.rstudio.com/authoring_basics.html. You can find additional details here: https://rmarkdown.rstudio.com/. You can read an entire free book on the topic here: https://bookdown.org/yihui/rmarkdown/.
 
@@ -160,7 +160,27 @@ Just download all the files into a folder, `knit` the file `RMarkdownTemplate.Rm
 
 Imagine the potential when you are analyzing real data, and the data changes after your report is written!
 
-A recent (well, on the 15th January 2021 it was recent. This wording might not age well!) note about latest features in RMarkdown is [here](https://blog.rstudio.com/2020/12/21/rmd-news/).
+## Exploring the use of dynamic reports
+
+This section contains a separate activity that illustrates by example the usefulness of dynamic reports. 
+
+If you are working on this report in class, this might actually only be done in a separate class, after you have progressed further in the tutorial. Your teacher will let you know when it is the time to work on this task.
+
+Check in folder "ExampleDataAnalysis" at
+
+<https://github.com/TiagoAMarques/AnIntro2RTutorial>
+
+1.  Download the 4 files in the folder
+2.  Open ExampleDataAnalysis.Rmd
+3.  Compile it and see the results
+4.  Implement the last few actions
+5.  Recompile the report
+6.  Compare the results obtained
+
+Describe
+
+1. what you have learned, and 
+2. an hypothetical example of when this might come in handy in your work.
 
 # A first quick session in RStudio
 
@@ -270,7 +290,7 @@ Note that all the code must go inside code chunks, and you can get them by doing
 
 An empty code chunk (in the image with a comment added to it!) looks like this:
 
-![](codechunk.JPG)
+![](extfiles/codechunk.JPG)
 
 
 We will create a variable called `myvar1` which we will assign the value of 4. This is typically done using the assign operator `<-`.
@@ -388,7 +408,7 @@ rep(c(1,2,3,4),each=3)
 
 We have just started R, created and removed some objects, and used simple functions like `ls`, `seq` or `save`. R is an object oriented language, and functions and vectors are just examples of types of objects available in R. In the next section  we go through the most commonly used classes of objects in R.
 
-## Types and classes of objects
+# Types and classes of objects
 
 Objects can have classes, which allow functions to interact with them. Objects can be of several classes. We already used the class `numeric`, which is used for general numbers, but there are also additional very commonly used classes:
 
