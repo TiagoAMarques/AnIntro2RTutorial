@@ -6,6 +6,9 @@ output:
   word_document:
     toc: yes
     toc_depth: '3'
+  pdf_document:
+    toc: yes
+    toc_depth: '3'
   html_document:
     fig_caption: yes
     force_captions: yes
@@ -15,9 +18,6 @@ output:
     toc: yes
     toc_depth: 3
     toc_float: yes
-  pdf_document:
-    toc: yes
-    toc_depth: '3'
 urlcolor: blue
 csl: mee.csl
 subtitle: A tutorial that might get used for lots of stuff
@@ -34,7 +34,7 @@ bibliography: biblio.bib
 
 ## Where is this tutorial?
 
-You might be reading this document as a pdf, a word or an html. This is in itself a dynamic report in RMarkdown (see more details about dynamic reports below). The .Rmd which, after compilation, creates them all, is available in the github repository located at:
+You might be reading this document as a pdf, a word or an html. These are created by compiling an RMarkdown dynamic report (see more details about dynamic reports below). The .Rmd "TAMsIntro2RviaRStudioTutorial.Rmd", which after compilation, creates these 3 different formats, is available in the github repository located at:
 
 https://github.com/TiagoAMarques/AnIntro2RTutorial
 
@@ -52,7 +52,7 @@ This tutorial was created as a gentle introduction to the [R](https://www.r-proj
 
 To facilitate the interaction with R we leverage on [RStudio](https://www.rstudio.com/), a piece of software which allows users to have at a click's distance many useful features in R. In the following sections of the tutorial you will be guided through a first session of R via RStudio.
 
-The tutorial is intended to follow a brief presentation about R and RStudio, their interaction and capabilities ("Quick introduction to R and RStudio.pptx", also in this git repository). Since September 2023 there is also a shinny-new version of that presentation on RPubs: https://rpubs.com/talomarques/RRStudioRMarkdown 
+The tutorial is intended to follow a presentation about R and RStudio, their interaction and capabilities ("AQuikIntro2RandRStudioInQuarto.html"). This document is also in the git repository. The presentation itself is also hosted at RPubs:[A Quick Introduction to R and RStudio](https://rpubs.com/talomarques/AnIntroToRandRStudio).
 
 This tutorial assumes that R and RStudio have been previously installed in the computer you are using. The latest version of both software packages is recommended. Both are free and open source.
 

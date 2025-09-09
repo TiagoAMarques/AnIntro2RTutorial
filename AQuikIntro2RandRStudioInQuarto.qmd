@@ -9,13 +9,30 @@ embedded-resources: standalone
 
 ## Objective
 
-A quick introduction to the topics to be used in courses that require such introduction, including TAM's courses Ecologia Numérica and Modelação Ecológica at FCUL
+This presentation provides an introduction to R and RStudio. 
 
-but also to support the self paced learning github repository hosted at <https://github.com/TiagoAMarques/AnIntro2RTutorial>
+It covers topics to be used in courses that require such introduction, including TAM's courses Ecologia Numérica and Modelação Ecológica at FCUL. 
+
+Therefore you are most likely seeing it a class being delivered, unless you are working on your own.
+
+## Independent use
+
+This document could be also used as an introduction to the self-paced learning github repository hosted at <https://github.com/TiagoAMarques/AnIntro2RTutorial>
 
 The tutorial has a landing webpage (and hence looks a bit friendlier) here:
 
 <https://tiagoamarques.github.io/AnIntro2RTutorial/>
+
+This document is also available online at RPubs at
+
+<https://rpubs.com/talomarques/AnIntroToRandRStudio>
+
+<!--
+when you republish this presentation, it shows up in chrome as
+not being at this adreess, but at something like 
+https://rpubs.com/talomarques/1342657
+This is irrelevant and the above address will work regardless
+-->
 
 ::: footer
 This presentation was created using [Quarto](https://quarto.org/) and [revealjs](https://quarto.org/). Want to try yourself. Check its amazing capabilities [here](https://quarto.org/docs/presentations/revealjs/demo/#/title-slide)

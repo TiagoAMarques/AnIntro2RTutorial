@@ -4,7 +4,7 @@ username:
 account: rpubs
 server: rpubs.com
 hostUrl: rpubs.com
-appId: https://api.rpubs.com/api/v1/document/1342443/c8dc2db93a8d4285b7008b84f18243cb
-bundleId: https://api.rpubs.com/api/v1/document/1342443/c8dc2db93a8d4285b7008b84f18243cb
-url: http://rpubs.com/publish/claim/1342443/a130c849358d4cab89d074ae52e1bb7e
+appId: https://api.rpubs.com/api/v1/document/1342657/11224ad98b4f429bb7db6e001712d785
+bundleId: https://api.rpubs.com/api/v1/document/1342657/11224ad98b4f429bb7db6e001712d785
+url: http://rpubs.com/talomarques/1342657
 version: 1

@@ -1,10 +1,10 @@
 # An Introduction 2 R Tutorial
 
-This is a tutorial that can be used by students to get working with [R](https://www.r-project.org/) using [RStudio](https://www.rstudio.com/). It is intended to be used by someone that has not used R before.
+This tutorial can be used by students to get working with [R](https://www.r-project.org/) using [RStudio](https://www.rstudio.com/). It is intended to be used by someone that has not used R before.
 
 All the relevant material is available [here](https://github.com/TiagoAMarques/AnIntro2RTutorial) at the corresponding github repository.
 
-I use it for both my "Ecologia Numérica" and my "Modelação Ecológica" at [FCUL](https://ciencias.ulisboa.pt/en) courses. If you are a student in one of those courses, please bear in mind that the final task, "A final task integrating all of the above", is only intended to be completed for those in "Modelação Ecológica".
+I use it for both my "Ecologia Numérica" and my "Modelação Ecológica" at [FCUL](https://ciencias.ulisboa.pt/en) courses. If you are a student in one of those courses, please bear in mind that the section "Final tasks" is only intended to be completed for those in "Modelação Ecológica".
 
 To use the tutorial you should download the contents from the github repository above, at the very least the following files
 
@@ -16,13 +16,13 @@ The main file you should use to work through the tutorial is either "TAMsIntro2R
 
 (Note on a tangent: this was made for biology students. I assume you don't know your way around github. If you do, feel free to clone the repository and provide comments and raise issues etc that way etc)
 
-These days I tend to work using dynamic reports, making the workflow from reading the data and cleaning it all the way to reporting the results from analysis integrated and fully reproducible. I believe that working with dynamic reports is a good skill to have if you are a biology student, and so, if you are a student of one of my courses at FCUL, I will also show you in class how those work. Learning how to work with dynamic reports is another topic, but starting from a template helps. If you want a template for creating dynamic reports, there is one here:
+These days I tend to work using dynamic reports, making the workflow from reading the data and cleaning it all the way to reporting the results from analysis integrated and fully reproducible. I believe that working with dynamic reports is a good skill to have if you are a biology student, and so, if you are a student of one of my courses at FCUL, I will also show you in class how those work. In fact, this will be a highly transferable skill that will be useful in many working environments beyhond the analysis of biological/ecological data. Learning from scratch how to work with dynamic reports might be hard, but starting from a template helps. If you want a template for creating dynamic reports, there is one here:
 
 https://github.com/TiagoAMarques/RMarkdownTemplate
 
 My suggestion is that you start by creating your own dynamic report which you then use as a basis to work with the code and experiment variations of the code. Please keep all your code properly commented: what seems obvious to you today might not be obvious to the "you" next week or next month. Coding is a collaborative experience, even if between you and your future self (This quote, or something similar, might be from Hadley Hickam).
 
-If you are new to RStudio, there is also a quarto html presentation that can be helpful in getting you started, corresponding to the file "AQuikIntro2RandRStudioInQuarto.html" but also available [here](https://rpubs.com/talomarques/Intro2RandRStudio) at Rpubs. If you are a student of one of my courses at FCUL, this presentation will be delivered to you in class. 
+If you are new to RStudio, there is also a quarto html presentation that can be helpful in getting you started, corresponding to the file "AQuikIntro2RandRStudioInQuarto.html" but also available [here](https://rpubs.com/talomarques/AnIntroToRandRStudio) at Rpubs. If you are a student of one of my courses at FCUL, this presentation will be delivered to you in class. 
 
 If you are new to R in general, the [R cheat sheets](https://www.rstudio.com/resources/cheatsheets/) are great resources, and I recommend to begin with downloading these:
 
