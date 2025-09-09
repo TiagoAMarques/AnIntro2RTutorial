@@ -712,58 +712,86 @@ If you really want to get creative with your plots, and a great plot can be extr
 
 # Extending basic capabilities via packages
 
-While R base installation includes enough functions that getting acquainted with them could take several years, many more are available via the installation of additional packages available online. A package is just a set of functions and data sets (and the corresponding documentation plus some additional required files) which usually have some specific goal. As examples, in our course we will be using packages `vegan` and `mgcv`, which allow the implementation of a variety of numerical ecology techniques and generalized additive models (GAM), respectively.
+While R base installation includes enough functions that getting acquainted with them could take several years, many more are available via the installation of additional packages available online on CRAN (The Comprehensive R Archive Network). 
+
+A package is just a set of functions and data sets (and the corresponding documentation plus some additional required files) which usually have some specific goal. As examples, in our course we will be using packages `vegan` and `mgcv`, which allow the implementation of a variety of numerical ecology techniques and generalized additive models (GAM), respectively.
 
 Note packages cover a very wide range of applications, and chances are that at least a package, often more than one, already exists to implement most kinds of statistical or data processing tasks we might imagine.
 
-Installing a new package in R requires a call to function `install.packages`. A RStudio shortcut is simply to follow the `Tools|Install packages...` shortcut.
+Installing a new package in R requires a call to function `install.packages()`. A handy RStudio shortcut is simply to follow the `Tools|Install packages...` shortcut.
 
-After a package is installed it needs to be loaded to be available. In R this is done calling function `library` with the package name as an argument. In RStudio this becomes simpler by checking the boxes under the RStudio tab packages (by default this tab is available on the bottom right window, along with the Files, Plots, Help and Viewer tabs).
+After a package is installed it needs to be loaded to be available. In R this is done calling function `library()` with the package name as an argument. In RStudio this can also be done by ticking the corresponding package box under the RStudio tab "Packages" (by default this tab is available on the bottom right window, between the "Plots" and "Help" tabs).
 
-We use `vegan` as an example. Notice to begin with that `vegan` is not available yet
+Here we use package `praise` as an example. You might be needing it by now! Notice to begin with that `praise` is not available yet (assuming you never installed it in the machine you are working on)
 
 ```{r,eval=FALSE}
 #
-?vegan
+?praise
 ```
 
 Next, we install the package.
 
 ```{r,eval=FALSE}
 #
-install.packages("vegan")
+install.packages("praise")
 ```
 
-(note: do not install packages within a dynamic report, that would be a akin to installing Word everytime you wanted to work on a document!)
+Then we load the package
 
-Then, we load the package
+```{r,message=FALSE,warning=FALSE}
+library("praise")
+```
+
+and finally we check that the `praise` functions  are now loaded
+
+```{r,eval=FALSE}
+# praise() is actually the only function 
+# meant to be used
+# by users in the praise package
+?praise
+```
+
+From now on, when you feel frustrated about R (or life in general...) you can just use R to uplift you
 
 ```{r}
-#
-library("vegan")
+# get uplifted
+praise()
 ```
 
-and finally we check that the functions in it are now loaded
+Important note: you can and should load required packages in dynamic reports via the function `library`. You should not install packages (with `install.packages()`) within a dynamic report. Install packages directly on the command line, and only once. Otherwise, if doing it inside a dynamic report, that would be a akin to installing Word every time you wanted to work on a Word document!
+
+**Task 4**: 
+
+1. Use the internet to find some useful package to do something you might want to do, the install the package and then use the example code in it.
+
+2. Investigate the package `memer` to create memes from within R :)
+
+An example of the required code is below
 
 ```{r,eval=FALSE}
-#
-?vegan
+# if devtools is not installed, 1st install it
+# install.packages("devtools")
+# some packages are not available from CRAN
+# being available at their developers page
+# Many of these are hosted on github
+# Install the development version of memer from GitHub:
+# This might require you to install dependencies 
+# (dependencis: other packages that a package needs)
+# and all that could take some time
+# so do not do this in class
+devtools::install_github("sctyner/memer")
+# load the package
+library(memer)
+# Create a meme 
+meme_get("DistractedBf") %>% 
+  meme_text_distbf("tidyverse", "new R users", "base R")
+# how cool is that
+# challenge: send me a new meme that you create yourself
 ```
 
-We would now be ready to do all sorts of classification and ordination techniques, say.
+Both `memer` and `praise` are examples of "fun" packages. There are a few more you can explore [here](https://medium.com/geekculture/15-fun-r-packages-you-may-not-know-of-fb25a9dcd627).
 
-**Task 4**: Run the example code available in the help page from the function `cca`. Try to understand what is happening.
-
-```{r,eval=FALSE}
-#here are the relevant lines of code to run
-data(varespec)
-data(varechem)
-## Common but bad way: use all variables you happen to have in your
-## environmental data matrix
-vare.cca <- cca(varespec, varechem)
-vare.cca
-plot(vare.cca)
-```
+So, in fact, unlike what it might have been your first impression, R can be fun :) 
 
 # Analysis example: regression
 
