@@ -87,7 +87,7 @@ In Giorgi et al. 2022 The R Language: An Engine for Bioinformatics and Data Scie
 :::::
 
 ::: footer
-[image source at r4stats.com](http://r4stats.com/articles/popularity/)
+[image source at r4stats.com](http://r4stats.com/articles/popularity/) -  [different sources](https://medium.com/@tomazkastrun/r-package-updates-and-release-dates-statistics-and-another-rise-of-r-language-5125faa80eb1) provide different numbers, but overall patters are the same
 :::
 
 ## The R environment
