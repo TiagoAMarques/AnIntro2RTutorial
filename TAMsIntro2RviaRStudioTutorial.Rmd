@@ -3,9 +3,6 @@ title: "A hands-on tutorial on R and RStudio"
 author: "Tiago A. Marques"
 date: "`r format(Sys.Date(), '%d %B %Y')`"
 output:
-  word_document:
-    toc: yes
-    toc_depth: '3'
   pdf_document:
     toc: yes
     toc_depth: '3'
@@ -18,6 +15,9 @@ output:
     toc: yes
     toc_depth: 3
     toc_float: yes
+  word_document:
+    toc: yes
+    toc_depth: '3'
 urlcolor: blue
 csl: mee.csl
 subtitle: A tutorial that might get used for lots of stuff
@@ -321,6 +321,11 @@ and hence our workspace is empty again.
 Note a key difference between the functions `ls` and `rm`. While the first function does not need any arguments, the second requires at least one argument (but can take several). This can be easily seen by checking their help files and noting that `rm` needs at least 1 explicit argument while `ls` can work with defaults
 
 ```{r,eval=FALSE}
+# do not have this line of code in a dynamic report
+# it will fire the help file into a browser
+# which is a bit of a pain
+# Note in my .Rmd this code has
+# eval=FALSE and so is not executed, just shown
 ?rm
 ```
 
@@ -725,14 +730,25 @@ After a package is installed it needs to be loaded to be available. In R this is
 Here we use package `praise` as an example. You might be needing it by now! Notice to begin with that `praise` is not available yet (assuming you never installed it in the machine you are working on)
 
 ```{r,eval=FALSE}
-#
+# do not have this line of code in a dynamic report
+# it will fire the help file into a browser
+# which is a bit of a pain
+# Note in my .Rmd this code has
+# eval=FALSE and so is not executed, just shown
 ?praise
 ```
 
 Next, we install the package.
 
 ```{r,eval=FALSE}
-#
+# do not have this line of code in a dynamic report
+# it will install the package package
+# and that only needs to be done once
+# otherwise it would be like
+# installing word every time 
+# you wanted to work on a word file
+# in the .Rmd the option is set as
+# eval=FALSE and so is not executed, just shown
 install.packages("praise")
 ```
 
@@ -748,6 +764,11 @@ and finally we check that the `praise` functions  are now loaded
 # praise() is actually the only function 
 # meant to be used
 # by users in the praise package
+# do not have this line of code in a dynamic report
+# it will fire the help file into a browser
+# which is a bit of a pain
+# Note in my .Rmd this code has
+# eval=FALSE and so is not executed, just shown
 ?praise
 ```
 
