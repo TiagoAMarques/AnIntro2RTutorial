@@ -3,7 +3,7 @@ title: "A hands-on tutorial on R and RStudio"
 author: "Tiago A. Marques"
 date: "`r format(Sys.Date(), '%d %B %Y')`"
 output:
-  pdf_document:
+  word_document:
     toc: yes
     toc_depth: '3'
   html_document:
@@ -15,7 +15,7 @@ output:
     toc: yes
     toc_depth: 3
     toc_float: yes
-  word_document:
+  pdf_document:
     toc: yes
     toc_depth: '3'
 urlcolor: blue
@@ -34,7 +34,7 @@ bibliography: biblio.bib
 
 ## Where is this tutorial?
 
-You might be reading this document as a pdf, a word or an html. These are created by compiling an RMarkdown dynamic report (see more details about dynamic reports below). The .Rmd "TAMsIntro2RviaRStudioTutorial.Rmd", which after compilation, creates these 3 different formats, is available in the github repository located at:
+You might be reading this document as a pdf, a word or an html. These files are created by compiling (i.e. knitting) an RMarkdown dynamic report (see many more details about dynamic reports below). The .Rmd "TAMsIntro2RviaRStudioTutorial.Rmd", which after compilation, creates these 3 different formats, is available in the github repository located at:
 
 https://github.com/TiagoAMarques/AnIntro2RTutorial
 
@@ -44,17 +44,27 @@ This .Rmd was last compiled on `r Sys.time()`. The latest version of this tutori
 
 ## Tips for non-UK native system users
 
-You should avoid file names with anything other than small english-language letters as characters, including Latin characters like "é", "ã", "ô" or "ç", say. Also avoid spaces in file names. In short, make them short and easily readable, as possible. Also, you should be aware that some directories names can cause issues. If you are a user with those characters in the name, and you are working via a user with your name, then this applies to you. Finaly, be careful about some directories not having necessarily the name (for the system) that Windows shows you to have (examples for PT users: "Utilizador" vs "User" and "desktop" vs "Ambiente de trabalho").
+You should avoid file names with anything other than small English-language letters as characters, including Latin characters like "é", "ã", "ô" or "ç", say. Also avoid spaces in file names. In short, make them as short and easily readable as possible. 
+
+Also, you should be aware that some directories names can cause issues. If you are a user with those characters in the name, and you are working via a user with your name, then this applies to you. 
+
+Finally, be careful about some directories not having necessarily the name (for the system) that Windows shows you to have (examples for PT users: "Utilizador" vs "User" and "desktop" vs "Ambiente de trabalho").
+
+# Software requirements
+
+This tutorial assumes that R and RStudio have been previously installed in the computer you are using. The latest version of both software packages is recommended. Both are free and open source. You can get [R](https://www.r-project.org/) here and Rstudio [here](https://www.rstudio.com/).
 
 # Introduction
 
-This tutorial was created as a gentle introduction to the [R](https://www.r-project.org/) environment via the [RStudio](https://www.rstudio.com/) interface to R. While it could be a general introduction to R, the primary objective of this document is to serve as a "hands-on-tutorial" for courses delivered by me (TAM). I use it for both Ecologia Numérica and Modelação Ecológica, at FCUL, as well as for some other courses. It does not assume any previous knowledge about R, but some basic logic and programming notions would be desirable.
+This tutorial was created as a gentle introduction to the R environment via the RStudio interface to R.
 
-To facilitate the interaction with R we leverage on [RStudio](https://www.rstudio.com/), a piece of software which allows users to have at a click's distance many useful features in R. In the following sections of the tutorial you will be guided through a first session of R via RStudio.
+While it could be a general introduction to R, the primary objective of this document is to serve as a "hands-on-tutorial" for courses delivered by me (TAM). I use it for both Ecologia Numérica and Modelação Ecológica, courses for biology undergraduate and MSc students, respectively, at the Department of Biology (DB) at Faculdade de Ciências da Universidade de Lisboa (FCUL). 
 
-The tutorial is intended to follow a presentation about R and RStudio, their interaction and capabilities ("AQuikIntro2RandRStudioInQuarto.html"). This document is also in the git repository. The presentation itself is also hosted at RPubs:[A Quick Introduction to R and RStudio](https://rpubs.com/talomarques/AnIntroToRandRStudio).
+This material does not assume any previous knowledge about R, but some basic logic and programming notions would be desirable.
 
-This tutorial assumes that R and RStudio have been previously installed in the computer you are using. The latest version of both software packages is recommended. Both are free and open source.
+To facilitate the interaction with R we leverage on [RStudio](https://www.rstudio.com/), a graphical user interface (GUI), a piece of software which allows users to have at a click's distance many useful features of R. In the following sections of the tutorial you will be guided through a first session of R via RStudio, and then you will start working on a dynamic report.
+
+The tutorial is intended to follow a presentation about R and RStudio, their interaction and capabilities ("AQuikIntro2RandRStudioInQuarto.html"). This document is also in the git repository, but the presentation itself is also hosted at RPubs:[A Quick Introduction to R and RStudio](https://rpubs.com/talomarques/AnIntroToRandRStudio) where you can view it immediately.
 
 Disclaimer: in this document I copy paste freely from other documents that I have written. Therefore, if you have read these words elsewhere by me, though luck. I claim the right to plagiarize myself here!
 
@@ -150,7 +160,7 @@ Now we have met RStudio and we know how it can make our life simpler, let's move
 
 One of the most amazing features of the integration of R and RStudio is how simple it becomes to work with dynamic reports, built on RMarkdown. This will take you to the next level in data analysis! Actually, this document was itself created as a dynamic report, using RMarkdown. You should explore some of the basics of R Markdown, and you can do so here: https://rmarkdown.rstudio.com/authoring_basics.html. You can find additional details here: https://rmarkdown.rstudio.com/. You can read an entire free book on the topic here: https://bookdown.org/yihui/rmarkdown/.
 
-Experiment yourself to create one. In RStudio, select File - > New file -> R Markdown..., then just add a title, something like "My first dynamic report" and see what happens. Explore the content of the file just created and see what happens when you press the RStudio button `knit`. Experiment with the created document to try and change some of the output. Experiment in creating output as an html, as a pdf, and even as a Word document.
+Experiment yourself to create one. In RStudio, select File - > New file -> R Markdown..., then just add a title, something like "My first dynamic report" and see what happens. Explore the content of the file just created and see what happens when you press the RStudio button `knit`. Experiment with the created document to try and change some of the output. Experiment in creating output as an `.html`, as a `.pdf`, and even as a `.docx` Word document.
 
 Actually, a good way to learn and get up and running fast in RMarkdown is by example. Hence, I have prepared a template that you can use to create without effort a nice dynamic report. Feel free to explore the material here:
 
@@ -164,17 +174,18 @@ Imagine the potential when you are analyzing real data, and the data changes aft
 
 This section contains a separate activity that illustrates by example the usefulness of dynamic reports. 
 
-If you are working on this report in class, this might actually only be done in a separate class, after you have progressed further in the tutorial. Your teacher will let you know when it is the time to work on this task.
+If you are working on this report in class, this might actually only be done in a separate class, after you have progressed further in the tutorial. Therefore, your teacher will let you know when it is the time to work on this task. It is also possible that your teacher will have shown you this or another similar example in class. If that is the case, you could just use this material later when revising the concepts.
 
-Check in folder "ExampleDataAnalysis" at
+Check in folder `ExampleDataAnalysis` at
 
 <https://github.com/TiagoAMarques/AnIntro2RTutorial>
 
-1.  Download the 4 files in the folder
-2.  Open ExampleDataAnalysis.Rmd
-3.  Compile it and see the results
-4.  Implement the last few actions
-5.  Recompile the report
+1.  Download the file `ExampleDataAnalysis.Rmd`
+2.  Open `ExampleDataAnalysis.Rmd`
+3.  Compile (i.e. knit) `ExampleDataAnalysis.Rmd`
+4.  Explore the (`.html`) output of the analysis
+4.  Implement the last few actions described in the final "Your task" section of the document (which will lead to the creation of a new `.Rmd` file, `ExampleDataAnalysis2.Rmd`)
+5.  Recompile the just created `ExampleDataAnalysis2.Rmd`
 6.  Compare the results obtained
 
 Describe
@@ -184,17 +195,21 @@ Describe
 
 # A first quick session in RStudio
 
-Here we present a brief introduction to R inside RStudio, using a script and the command line. In the coming sections we will mostly consider analysis using dynamic reports via RMarkdown documents (.Rmd), but it is useful to start with a session where you can see objects being created in the global environment.
+Here we present a brief introduction to R inside RStudio, using a code script and the command line. 
 
-Open RStudio. By default an empty workspace should appear. If you have an existing workspace, you can open it by selecting `File|Open File`. We recommend that you begin by creating a script file (`Ctrl+Shift+N`, RStudio Shortcut) and use that to save and comment all your code that will be executed during the tutorial. In this way you will have a record of everything you did.
+In the coming sections we will mostly consider analysis using dynamic reports via RMarkdown documents (.Rmd), but if this is the first time you use R, it is useful to start with a session where you can see objects being created in the global environment via the command line. 
 
-You know that R is ready to receive a command when you see the R prompt on the command line (on the bottom left tab by default in RStudio): `>`. If you type a line of code that is not complete, R presents the `+` character, so that the user knows it expects the conclusion of the current line. 
+Open RStudio. By default an empty workspace should appear. A workspace is like your table in a library. You can work with all the objects in your table. If you have an existing workspace, you can open it by selecting `File|Open File`. We recommend that you begin by creating a new script file (RStudio Shortcut: `Ctrl+Shift+N`; this creates a .R file) and use that file to save, and comment, all the code that you will create and execut during this current R session. In this way you will have a record of everything you did, and you can save that file as say `Session1.R` for later use.
 
-**Important note**: while the prompt `>` and `+` might not be shown in this tutorial's code, they are often present in material online. You should not try to add either `>` nor `+` to the command line: this is  something that R does for you and will complain if you try to do it yourself! Past experience tells us that more than one person will have problems because they forgot to delete a `>` and/or `+`  from code when they copy paste the code into their own R sessions. Avoid being that person!
+You know that R is ready to receive a command when you see the R prompt on the command line (on the bottom left tab by default in RStudio): `>`. If you type a line of code that is not complete, R presents the `+` character, so that you, the R user, know R expects the conclusion of the current line. 
 
-On the top right corner tab, where objects available in the `Environment` are listed, given this is a fresh R session, you currently have no objects. 
+**Important note**: while the prompt `>` and `+` might not be shown in this tutorial's code, they are often present in material online. You should not try to add either `>` nor `+` to the command line: this is  something that R does for you and R will complain with an error message if you try to do it yourself! Past experience tells me that more than one person will have problems because they forgot to delete a `>` and/or `+`  from code when they copy paste the code into their own R sessions. Avoid being that person!
 
-Here we just create a couple of objects and use them, but below we will do it again in more detail. Now we just want to create some objects so that we can then save them and retrieve them again.
+On the top right corner tab, where objects available in the `Environment` are listed, given this is a fresh R session, you should have no objects listed (there might be objects if you used R before and there is already an `.Rdata` file in the working folder). It will look like something as 
+
+![](extfiles/emptyenv.png)
+
+First we just create a couple of objects and use them, but below we will do it again in more detail. Now we just want to create some objects so that we can then save them and retrieve them again.
 
 ```{r}
 # assign the value 3 to the object hh2
@@ -259,7 +274,27 @@ Finally, just to avoid clutter later, we will delete all the objects created so 
 rm(list = ls())
 ```
 
-Note that you have saved your workspace in some directory but you have not defined the directory explicitly. By default, this is your working directory. You can check what that directory currently is by using the following command
+Check nothing remains in your environment
+
+```{r}
+ls()
+```
+
+If you wanted to work again with whatever you might have saved in your workspace, you would do so by loading the saved `.Rdata` workspace file
+
+```{r}
+load(file="my1stR.Rdata")
+```
+
+as you can see, the objects you had created are back and available to you
+
+```{r}
+ls()
+```
+
+We will not be using these objects anymore, so feel free to delete them as well as to delete the workspace file `my1stR.Rdata`.
+
+Note that you saved your workspace in some directory, and loaded it up again from there, but you have not defined the directory explicitly. By default, this is your working directory. You can check what that directory currently is by using the following command
 
 ```{r}
 getwd()
@@ -274,39 +309,37 @@ setwd("C:/Users/tiago/Desktop/mycourse")
 
 It is a very good habit to make sure that you are working in the directory you think you are working. Many errors might occur if R can't find some object or file because it is looking on the wrong place.
 
-A good trick to make sure you are working in the directory you want is to open RStudio from the directory you want it to be working on. You can do that by double clicking a file R studio recognizes as a file it should open, e.g. as might happen in particular for files with extensions .R (a script), a .Rdata (a workspace) or a .Rmd (a dynamic report in RMarkdown).
+A good trick to make sure you are working in the directory you want is to open RStudio from the directory you want it to be working on. You can do that by double clicking a file R studio recognizes as a file it should open, e.g. as might happen in particular for files with extensions `.R` (a script), a `.Rdata` (a workspace) or a `.Rmd` (a dynamic report in RMarkdown).
 
 If you are already in RStudio, you can also use the `Files` tab to see where you are, move to the folder where you want to be working, and then from the `Files|More` menu (a dented wheel) select the option `Set as working directory`.
 
-Now you have used R in RStudio, let's use the power of their integration to work directly in a dynamic report.
+Now you have used R in RStudio, lets use the power of their integration to work directly in a dynamic report.
 
 # Working through R via a dynamic report
 
-Create a new dynamic report using a RMarkdown file, as described above. Comment all you do in the appropriate place. At the end you will have a record that makes it easy to track everything you did, and a template you can use in future classes.
+Create a new dynamic report using an RMarkdown file, as described above. Comment all you do in the appropriate place: things that seem obvious to you when you do them won't necessarily be obvious to you next week, so describe with comments what they are and why you did them. Therefore, at the end you will have a record that makes it easy to track everything you did, and a template you can use in future classes.
 
 Once you created the RMarkdown from scratch, we can start by creating a new variable.
 
-Note that all the code must go inside code chunks, and you can get them by doing `Code | InsertChunk` or the shortcut `Ctrl+Alt+I`.
+Note that all the code must go inside code chunks, and you can get them by doing `Code | InsertChunk` or the shortcut `Ctrl+Alt+I`. When code chucks are properly formated they appear higlighted in the .Rmd.
 
 An empty code chunk (in the image with a comment added to it!) looks like this:
 
 ![](extfiles/codechunk.JPG)
 
-
 We will create a variable called `myvar1` which we will assign the value of 4. This is typically done using the assign operator `<-`.
 
 ```{r}
-myvar1<-4
+myvar1 <- 4
 ```
 
-There are typically multiple ways to do the same thing in R, and this is sometimes referred to as a disadvantage. For simplicity, we deliberately avoid presenting the several alternatives for each action, and concentrate on the ones we prefer. This is not the same as saying these are the best, and if you continue to work with R you will likely get used to doing things your way - for now we do it our way!
+There are typically multiple ways to do the same thing in R, and this is sometimes referred to as a disadvantage by lets call them "code-purists". For simplicity, we deliberately avoid presenting the several alternatives for each action, and concentrate on the ones we prefer. This is not the same as saying these are the best, and if you continue to work with R you will likely get used to doing things your way - for now we do it our way!
   
 An object should have been created in your workspace. You can list all objects in a given workspace using
 
 ```{r}
 ls()
 ```
-
 
 You can also remove any object by using the`rm` function, so here we remove `myvar1`.
 
@@ -329,7 +362,7 @@ Note a key difference between the functions `ls` and `rm`. While the first funct
 ?rm
 ```
 
-This is a convenient way to obtain more information about a given function. If one does not know what the name of the function might be, one can search for functions containing a given string. The following command lists all the functions with the string `mean` in them.
+This is a convenient way to obtain more information about a given function. If one does not know what the name of the function might be, one can search for functions containing a given string using the `apropos` function. The following command lists all the functions with the string `mean` in them.
 
 ```{r}
 apropos("mean")
@@ -348,7 +381,7 @@ z1<-10:8
 z2<--10:10
 ```
 
-Take a peak at the objects just created:
+Take a peak at the objects just created (important: you must type an object name to see it printed on the output!):
 
 ```{r}
 x1
@@ -358,7 +391,7 @@ z1
 z2
 ```
 
-The function `seq` is very useful for setting sequences of numbers. The optional arguments `length.out` and `along.with` provide extra flexibility. Look at `?seq` to find out what the function does and the consequences of using these different arguments.
+The function `seq` is very useful for setting sequences of numbers. The optional arguments `by`, `length.out` and `along.with` provide extra flexibility. Look at `?seq` to find out what the function does and the consequences of using these different arguments. In our experience `by` and `length.out` (or `length` for short) will be more often used than `along.with` (or `along` for short), but this you will find out for yourself from experience.
 
 We can use the usual mathematical operators over vectors. A few examples follow:
 
@@ -376,17 +409,13 @@ Note by default you do not see results, you need to print them to the report to 
 print(x4)
 ```
 
-it is actually simpler than using print, because if you just use the name of the object on the console it gets printed by default
+if you just use the name of the object on the console it also gets printed by default
 
 ```{r}
 x4
-x5
-x6
-x7
 ```
 
-
-Note that if the vectors are of the same length, R performs the operation element-wise. Another useful (but possibly dangerous) feature is that R recycles vectors if they are not the same length
+Note that if the vectors are of the same length, R performs the operation element-wise. Another useful (but possibly dangerous) feature is that R *recycles* vectors if they are not the same length
 
 ```{r}
 x8<-c(1,2,3,4)
@@ -402,7 +431,7 @@ x9+x10
 x8+x9
 ```
 
-As expected, a warning message was produced when `x8` and `x9` were added. Usually *these messages are important and should be read*! Quite often the answer to your current question lies in the previous error or warning message.
+As expected, a warning message was produced when `x8` and `x9` were added. Usually *error messages are important and should be read*! Quite often the answer to your current question lies in the previous error or warning message.
 
 Another useful function is `rep`, which allows one to create repetitions of patterns. As examples, see the difference between the next two lines of code
 
@@ -411,31 +440,27 @@ rep(c(1,2,3,4),times=3)
 rep(c(1,2,3,4),each=3)
 ```
 
-We have just started R, created and removed some objects, and used simple functions like `ls`, `seq` or `save`. R is an object oriented language, and functions and vectors are just examples of types of objects available in R. In the next section  we go through the most commonly used classes of objects in R.
+We have just created and removed some objects, and used simple functions like `ls`, `seq` or `save`. R is an object oriented language, and functions and vectors are just examples of types of objects available in R. In the next section  we go through the most commonly used classes of objects in R.
 
 # Types and classes of objects
 
 Objects can have classes, which allow functions to interact with them. Objects can be of several classes. We already used the class `numeric`, which is used for general numbers, but there are also additional very commonly used classes:
 
-
-* `integer`, for integer numbers
-* `character`, just for character strings
+* `integer`, for integer numbers (could save memory with respect to the class numeric, if you only have integers)
+* `character`, representing for character strings, like "words" say
 * `factor`, used to represent levels of a categorical variable
-* `logical`, the values TRUE and FALSE
+* `logical`, the logical values TRUE and FALSE
+* `matrix`, an object containing data in tabular form
+* `data.frame`, an object containing the kind of data you could have in a single Excel worksheet
+* `list`, an object that can be used to store all sorts of unstructured (or structured) data
+* `function`, all the functions in R, like those you just used  `c`, `seq` or `rep` are of this class
 
+While many, maaaaany other classes of objects exist, these are arguably some of those more commonly used.
 
-While many others exist, these are the more commonly used. Another type of object which we have already used are functions. 
-
-```{r}
-class(mean)
-```
-
-While there are thousands of available functions inside R, later we will learn how to create our own functions.
-
-Outputs of some analyses have special classes, as an example, the output of a call of function `lm` is an object of class `lm`, i.e., a linear model. Many packages introduce special classes for objects, so that functions know how to behave when those objects are used as arguments. Typically, functions behave differently according to the class of the objects that are used as arguments to them. As an example, note how `summary` treats differently an object of class `factor` or one of class `numeric`, producing a table of counts per level for a factor but a 6 number summary for numeric values.
+Outputs of some analyses have special classes, as an example, the output of a call of function `lm` is an object of class `lm`, i.e., a linear model. Many packages introduce special classes for objects, so that functions know how to behave when those objects are used as arguments. Typically, functions behave differently according to the class of the objects that are used as their arguments. As an example, note below how `summary` treats differently an object of class `factor` or one of class `numeric`, producing a table of counts per level for a factor but a 6 number summary for numeric values.
 
 ```{r}
-obj1<-factor(c(rep("a",12),rep("b",4),rep("c",2)))
+obj1<-factor(c("a","a","b","a","b","a","a","a","a","a","e","a","f","a","f","d","a","b","d","a","b","a","a","d"))
 summary(obj1)
 obj2<-c(2,5,-0.2,89,12,-3,-5.4)
 summary(obj2)
@@ -464,13 +489,13 @@ mat1<-matrix(1:12,nrow=3,ncol=4)
 mat1
 ```
 
-Note that by default R fills the first column (with 1,2,3) then the second column (4,5,6) etc.  If you want it to fill the first row, then the second, you can use the optional argument `byrow=TRUE`, like this:
+Note that by default R fills the first column (with 1,2,3) then the second column (4,5,6) etc.  If you want it to fill the matrix by rows, i.e. the first row, then the second, etc, you can use the optional argument `byrow=TRUE`, like this:
 
 ```{r}
 matrix(1:12,nrow=3,ncol=4,byrow=TRUE)
 ```
 
-R also allows data structures with more than 2 dimensions -- we don't cover those here, but look up the help on ``array'' if you're interested. A matrix is just a two dimensional array. 
+R also allows data structures with more than 2 dimensions -- we don't cover those here, but look up the help on `array` if you are interested. A matrix is just a two dimensional array.
 
 Arrays are useful objects, but can be complex to visualize due to their potential high dimensionality. Another common type of object is a `data.frame`. This is essentially a matrix but for which each column can be of a different type. These are what we would typically associate with an excel spreadsheet or a table in a database. Typically columns correspond to variables observed in a number of subjects, each subject recorded in its own row. A simple example with 3 variables and 5 subjects follows:
 
