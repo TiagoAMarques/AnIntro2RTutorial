@@ -142,5 +142,8 @@ This is part of a suite of Physalia-Courses hosted at https://www.physalia-cours
 
 - [ANOVA and Mixed Models: A Short Introduction Using R](https://ema.drwhy.ai/) The free version of the CRC book by Lukas Meier, a great resource for those looking for an introduction to the topics with the supporting R code.
 
+
+- [Análises Ecológicas no R](https://analises-ecologicas.netlify.app/) A book in Portuguese about ecological analises in R. There are over 600 pages of material and respective code. Well worth exploring!
+
 - [Send me a suggested resource and I'll add it here]()
 
