@@ -145,5 +145,8 @@ This is part of a suite of Physalia-Courses hosted at https://www.physalia-cours
 
 - [Análises Ecológicas no R](https://analises-ecologicas.netlify.app/) A book in Portuguese about ecological analises in R. There are over 600 pages of material and respective code. Well worth exploring!
 
+- [Spatial Data Visualization with tmap
+](https://tmap.geocompx.org/) A Practical Guide to Thematic Mapping in R. This book is a hands-on, open-source resource for anyone interested in creating maps using R and the tmap package.
+
 - [Send me a suggested resource and I'll add it here]()
 
