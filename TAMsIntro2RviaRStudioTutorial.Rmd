@@ -6,6 +6,9 @@ output:
   word_document:
     toc: yes
     toc_depth: '3'
+  pdf_document:
+    toc: yes
+    toc_depth: '3'
   html_document:
     fig_caption: yes
     force_captions: yes
@@ -15,9 +18,6 @@ output:
     toc: yes
     toc_depth: 3
     toc_float: yes
-  pdf_document:
-    toc: yes
-    toc_depth: '3'
 urlcolor: blue
 csl: mee.csl
 subtitle: A tutorial that might get used for lots of stuff
@@ -88,7 +88,7 @@ Nowadays learning R by example is easy to do, with so many free online resources
 
 I recommend that you do it via the RStudio environment, since it provides an integrated environment to integrate with all R things. And there are many! And if you do so, I can guarantee that in no time you will be having fRun.
 
-![Illustrating having funR: Artwork by '@'allison_horst](extfiles\r_first_then.png)
+![Illustrating having funR: Artwork by '@'allison_horst](extfiles/r_first_then.png)
 
 The advantages of mastering R are priceless, but the learning curve can be daunting at first. 
 

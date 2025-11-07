@@ -148,5 +148,7 @@ This is part of a suite of Physalia-Courses hosted at https://www.physalia-cours
 - [Spatial Data Visualization with tmap
 ](https://tmap.geocompx.org/) A Practical Guide to Thematic Mapping in R. This book is a hands-on, open-source resource for anyone interested in creating maps using R and the tmap package.
 
+- [A course on GAMs](https://training.bioss.ac.uk/course_materials/GAMintro2023/) This is the course website for the 2 day generalized additive modelling course put on by BioSS for UKCEH. The instructors for the course will be Dave Miller and Thomas Cornulier.
+
 - [Send me a suggested resource and I'll add it here]()
 
