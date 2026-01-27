@@ -145,10 +145,15 @@ This is part of a suite of Physalia-Courses hosted at https://www.physalia-cours
 
 - [Análises Ecológicas no R](https://analises-ecologicas.netlify.app/) A book in Portuguese about ecological analises in R. There are over 600 pages of material and respective code. Well worth exploring!
 
-- [Spatial Data Visualization with tmap
-](https://tmap.geocompx.org/) A Practical Guide to Thematic Mapping in R. This book is a hands-on, open-source resource for anyone interested in creating maps using R and the tmap package.
+- [Spatial Data Visualization with tmap](https://tmap.geocompx.org/) A Practical Guide to Thematic Mapping in R. This book is a hands-on, open-source resource for anyone interested in creating maps using R and the tmap package.
 
-- [A course on GAMs](https://training.bioss.ac.uk/course_materials/GAMintro2023/) This is the course website for the 2 day generalized additive modelling course put on by BioSS for UKCEH. The instructors for the course will be Dave Miller and Thomas Cornulier.
+- [A course on GAMs](https://training.bioss.ac.uk/course_materials/GAMintro2023/) This is the 2023 course website for a 2 day generalized additive modelling course put on by BioSS for UKCEH. The instructors for the course were Dave Miller and Thomas Cornulier.
+
+- [Analysis of Ecological Data with R.](https://share.google/p6iIUpGdXUoOyM1tU) is a 2018 version of a book by Hörmann G. and Unkel I.
+
+- [R for Statistical Learning by
+David Dalpiaz](https://daviddalpiaz.github.io/r4sl/) - This book currently serves as a supplement to An Introduction to Statistical Learning for STAT 432 - Basics of Statistical Learning at the University of Illinois at Urbana-Champaign.
 
 - [Send me a suggested resource and I'll add it here]()
+
 
