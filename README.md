@@ -41,15 +41,13 @@ This is a non-exhaustive, non-comprehensive and quite random list of R (and rela
 
 - [An R companion to Statistical Thinking for the 21st Century](https://statsthinking21.github.io/statsthinking21-R-site/) a free companion to the book An R companion to Statistical Thinking for the 21st Century 2020 by Russell A. Poldrack
 
-- [The R Language: An Engine for Bioinformatics and Data Science](https://doi.org/10.3390/life12050648) Giorgi et al. describe the history of the R language. I use one of their images in the powerpoint [Quick introduction to R and R Studio](https://github.com/TiagoAMarques/AnIntro2RTutorial/blob/master/Quick%20introduction%20to%20R%20and%20R%20Studio.pptx)
+- [The R Language: An Engine for Bioinformatics and Data Science](https://doi.org/10.3390/life12050648) Giorgi et al. describe the history of the R language.
 
 - [Ten simple rules for teaching yourself R ](https://doi.org/10.1371/journal.pcbi.1010372) - Lawler et al. with a "Ten simple rules" paper for teaching yourself R
 
 - [Telling Stories with Data: With Applications in R](https://tellingstorieswithdata.com/) - a great book by @RohanAlexander [Rohan Alexander](https://rohanalexander.com/) about telling stories with data. Effective and reliable stories in a reproducible framework.
 
 - [Developing a Cancer Atlas using Bayesian Methods: A Practical Guide for Application and Interpretation](https://atlas.cancer.org.au/developing-a-cancer-atlas/index.html)
-
-- [Ten awesome R Markdown tricks](https://towardsdatascience.com/ten-awesome-r-markdown-tricks-56ef6d41098): R Markdown is more versatile than you might think by Keith McNulty (Dec 18, 2020, 8 min read). A preview: "Though I code in both R and Python, R Markdown is my only route for writing reports, blogs or books. It is incredibly flexible, has many beautiful design options and supports many output formats really nicely. If you have never worked in R Markdown, I highly recommend it. If you have worked in it before, here are ten little tricks I’ve learned which have served me well in numerous projects, and which highlight how flexible it is."
 
 - [A course on GAM's](https://noamross.github.io/gams-in-r-course/) by Noam Ross
 
@@ -69,9 +67,7 @@ This is a non-exhaustive, non-comprehensive and quite random list of R (and rela
 
 - [Data Analysis in R](https://bookdown.org/steve_midway/DAR/) by Steve Midway
 
-- [Fundamentals of R for Biologists](https://learnadventurously.com/courses/fundamentals-of-r-for-biologists/) Fundamentals of R for Biologists is a self-guided crash course in how to use R specifically geared for those working in the biological sciences. All of the lessons in this course are bundled together into a single PDF textbook: Fundamentals of R for Biologists. You can easily access this text [here]( https://learnadventurously.com/library/fundamentals-of-r-for-biologists-textbook/)
-
-- [A short thread of rstats resources made freely available online](https://twitter.com/djnavarro/status/1278470778879569920?s=09) by Danielle Navarro
+- [Fundamentals of R for Biologists](https://learnadv.com/resource/fundamentals-of-r-for-biologists-textbook/) Fundamentals of R for Biologists is a self-guided crash course in how to use R specifically geared for those working in the biological sciences. All of the lessons in this course are bundled together into a single PDF textbook: Fundamentals of R for Biologists.
 
 - [Luka Negoita's webpage](https://www.rforecology.com/) Including some self-paced online courses, for ecologists and biologists, that simplify the R learning process, so you can quickly gain confidence in handling your own data. (while some resources are free, most are paid). One free bit which is very useful lists 5 great sources of [free ecological datasets](https://www.rforecology.com/post/top-five-ish-sources-of-ecological-data/) that you can use to practice R within an ecological framework
 
@@ -149,10 +145,7 @@ This is part of a suite of Physalia-Courses hosted at https://www.physalia-cours
 
 - [A course on GAMs](https://training.bioss.ac.uk/course_materials/GAMintro2023/) This is the 2023 course website for a 2 day generalized additive modelling course put on by BioSS for UKCEH. The instructors for the course were Dave Miller and Thomas Cornulier.
 
-- [Analysis of Ecological Data with R.](https://share.google/p6iIUpGdXUoOyM1tU) is a 2018 version of a book by Hörmann G. and Unkel I.
-
-- [R for Statistical Learning by
-David Dalpiaz](https://daviddalpiaz.github.io/r4sl/) - This book currently serves as a supplement to An Introduction to Statistical Learning for STAT 432 - Basics of Statistical Learning at the University of Illinois at Urbana-Champaign.
+- [R for Statistical Learning by David Dalpiaz](https://daviddalpiaz.github.io/r4sl/) - This book currently serves as a supplement to An Introduction to Statistical Learning for STAT 432 - Basics of Statistical Learning at the University of Illinois at Urbana-Champaign.
 
 - [Send me a suggested resource and I'll add it here]()
 
