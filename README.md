@@ -109,17 +109,6 @@ This is part of a suite of Physalia-Courses hosted at https://www.physalia-cours
 - [R for Statistical Learning by David Dalpiaz](https://daviddalpiaz.github.io/r4sl/) - This book currently serves as a supplement to An Introduction to Statistical Learning for STAT 432 - Basics of Statistical Learning at the University of Illinois at Urbana-Champaign.
 
 
-## R for (medical) biostatistics
-
-- [Developing a Cancer Atlas using Bayesian Methods: A Practical Guide for Application and Interpretation](https://atlas.cancer.org.au/developing-a-cancer-atlas/index.html)
-
-- [Geospatial Health Data: Modeling and Visualization with R-INLA and Shiny](https://paula-moraga.github.io/book-geospatial/) - a free version of the CRC book by Paula Moraga
-
-- [Biostatistics for Biomedical Research](https://hbiostat.org/bbr/) The book is aimed at exposing biomedical researchers to modern biostatistical methods and statistical graphics, highlighting those methods that make fewer assumptions, including nonparametric statistics and robust statistical measures. In addition to covering traditional estimation and inferential techniques, the course contrasts those with the Bayesian approach, and also includes several components that have been increasingly important in the past few years, such as challenges of high-dimensional data analysis, modeling for observational treatment comparisons, analysis of differential treatment effect (heterogeneity of treatment effect), statistical methods for biomarker research, medical diagnostic research, and methods for reproducible research. 
-
-- [A short course on Survival Analysis](https://bookdown.org/sestelo/sa_financial/) A short course on Survival Analysis applied to the Financial Industry, for BBVA Data & Analytics, Madrid, by Marta Sestelo This book is designed to provide a guide for a short course on survival analysis. Focused on applying survival analysis statistical techniques to the financial industry. The emphasis is placed in understanding the methods, building intuition about when applying each of them and showing their application through the use of R.
-
-
 ## R for ecology
 
 - [Introduction to R for Biologists](https://melbournebioinformatics.github.io/r-intro-biologists/intro_r_biologists.html) by Maria Doyle, Jessica Chung, Vicky Perreau
@@ -144,6 +133,18 @@ This is part of a suite of Physalia-Courses hosted at https://www.physalia-cours
 - [Análises Ecológicas no R](https://analises-ecologicas.netlify.app/) A book in Portuguese about ecological analises in R. There are over 600 pages of material and respective code. Well worth exploring!
 
 
+
+## R for (medical) biostatistics
+
+- [Developing a Cancer Atlas using Bayesian Methods: A Practical Guide for Application and Interpretation](https://atlas.cancer.org.au/developing-a-cancer-atlas/index.html)
+
+- [Geospatial Health Data: Modeling and Visualization with R-INLA and Shiny](https://paula-moraga.github.io/book-geospatial/) - a free version of the CRC book by Paula Moraga
+
+- [Biostatistics for Biomedical Research](https://hbiostat.org/bbr/) The book is aimed at exposing biomedical researchers to modern biostatistical methods and statistical graphics, highlighting those methods that make fewer assumptions, including nonparametric statistics and robust statistical measures. In addition to covering traditional estimation and inferential techniques, the course contrasts those with the Bayesian approach, and also includes several components that have been increasingly important in the past few years, such as challenges of high-dimensional data analysis, modeling for observational treatment comparisons, analysis of differential treatment effect (heterogeneity of treatment effect), statistical methods for biomarker research, medical diagnostic research, and methods for reproducible research. 
+
+- [A short course on Survival Analysis](https://bookdown.org/sestelo/sa_financial/) A short course on Survival Analysis applied to the Financial Industry, for BBVA Data & Analytics, Madrid, by Marta Sestelo This book is designed to provide a guide for a short course on survival analysis. Focused on applying survival analysis statistical techniques to the financial industry. The emphasis is placed in understanding the methods, building intuition about when applying each of them and showing their application through the use of R.
+
+
 ## R as a GIS
 
 
@@ -159,15 +160,13 @@ This is part of a suite of Physalia-Courses hosted at https://www.physalia-cours
 
 - [R as GIS for Economists](https://tmieno2.github.io/R-as-GIS-for-Economists-Quarto/) A bookdown book by Taro Mieno. In his own words: "This book is specifically aimed at spatial data processing for empirical statistical projects, where spatial variables become part of the analysis dataset. Over the years, I have seen many students and researchers spend excessive time just processing spatial data, often by endlessly clicking through the ArcGIS (or QGIS) user interface. From an academic productivity perspective, this is a waste of time. My hope is that this book helps researchers become more proficient in spatial data processing, ultimately enhancing productivity in economics and other scientific fields where spatial data is essential."
 
-
-
-## R$^6$ (aka Rather Random Restrict-Realm R Resources)
+## R6 (aka Rather Random Restrict-Realm R Resources)
 
 - [Bayesian analysis of capture-recapture data with hidden Markov models](https://oliviergimenez.github.io/banana-book/index.html) a great book by Olivier Gimenez, colleague and friend, on the theory behind capture recapture models, how to frame the models as hidden Markov models, and useful case studies in R and NIMBLE.
 
 - [Doing Meta-Analysis with R: A Hands-On Guide](https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/) This book serves as an accessible introduction into how meta-analyses can be conducted in R. Essential steps for meta-analysis are covered, including pooling of outcome measures, forest plots, heterogeneity diagnostics, subgroup analyses, meta-regression, methods to control for publication bias, risk of bias assessments and plotting tools.
 
- [Resources to lower stats anxiety](http://www.glennanightingale.com/stats-clinic.html) - A stats clinic, a collection of resources developed by Glenna Nightingale. Take a peak, there's videos, shiny apps, data stories, etc.
+- [Resources to lower stats anxiety](http://www.glennanightingale.com/stats-clinic.html) - A stats clinic, a collection of resources developed by Glenna Nightingale. Take a peak, there's videos, shiny apps, data stories, etc.
 
 - [Marginal effects](https://marginaleffects.com/) - This free online book introduces a conceptual framework to clearly define statistical quantities of interest, and shows how to estimate those quantities using the `marginaleffects` package for R and Python. The techniques introduced can enhance the interpretability of over 100 classes of statistical and machine learning models, including linear, GLM, GAM, mixed-effects, bayesian, categorical outcomes, XGBoost, and more.
 
