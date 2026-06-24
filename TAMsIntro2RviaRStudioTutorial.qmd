@@ -1127,7 +1127,8 @@ yday(dtnow)
 or the minute
 
 ```{r}
-minute(dtnow)
+minute
+(dtnow)
 ```
 
 We could actually calculate the time elapsed between any time points
