@@ -9,6 +9,9 @@ format:
     fig-width: 10
     fig-height: 6
     df-print: default
+    toc: true
+    toc_depth: 2
+    toc_float: yes
     
   pdf:
     fig-width: 10
@@ -40,7 +43,7 @@ You might be reading this document as a pdf, a word or an html. These files are 
 
 ## Tutorial versions
 
-This .Rmd was last compiled on `r Sys.time()`. The latest version of this tutorial is always available at the github repository above.
+This .Rmd was last compiled on `r Sys.time()`. The latest version of this tutorial is always available at the [github repository](https://github.com/TiagoAMarques/AnIntro2RTutorial).
 
 ## Tips for non-UK native system users
 
@@ -52,7 +55,14 @@ Finally, be careful about some directories not having necessarily the name (for 
 
 # Software requirements
 
-This tutorial assumes that R and RStudio have been previously installed in the computer you are using. The latest version of both software packages is recommended. Both are free and open source. You can get [R](https://www.r-project.org/) here and Rstudio [here](https://www.rstudio.com/).
+This tutorial assumes that R and RStudio have been previously installed in the computer you are using. The latest version of both software packages is recommended. Both are free and open source. You can get R [here](https://www.r-project.org/) and Rstudio [here](https://www.rstudio.com/).
+
+It is fundamental that the difference between these two pieces of software is clear in your mind from the start:
+
+1.  R is the workhorse that does all the work in the background,
+2.  RStudio is just a user interface that allows you to access all the power of R in a convenient way.
+
+Additional R packages will be later installed, but you will learn about that in due time :)
 
 # Introduction
 
@@ -64,7 +74,7 @@ This material does not assume any previous knowledge about R, but some basic log
 
 To facilitate the interaction with R we leverage on [RStudio](https://www.rstudio.com/), a graphical user interface (GUI), a piece of software which allows users to have at a click's distance many useful features of R. In the following sections of the tutorial you will be guided through a first session of R via RStudio, and then you will start working on a dynamic report.
 
-The tutorial is intended to follow a presentation about R and RStudio, their interaction and capabilities ("AQuikIntro2RandRStudioInQuarto.html"). This document is also in the git repository, but the presentation itself is also hosted at RPubs:[A Quick Introduction to R and RStudio](https://rpubs.com/talomarques/AnIntroToRandRStudio) where you can view it immediately.
+The tutorial is intended to follow a presentation about R and RStudio, their interaction and capabilities ("AQuikIntro2RandRStudioInQuarto.html"). This document is also in the git repository, but the presentation itself is also hosted at RPubs: [A Quick Introduction to R and RStudio](https://rpubs.com/talomarques/AnIntroToRandRStudio) where you can view it immediately.
 
 Disclaimer: in this document I copy paste freely from other documents that I have written. Therefore, if you have read these words elsewhere by me, though luck. I claim the right to plagiarize myself here!
 
@@ -74,7 +84,7 @@ There is an extensive community revolving around R, and abundant courses, tutori
 
 R might seem frightening at first, but even monsters can make something look more pleasant if you look from the right angle. It is all a matter of perspective :) So I will use the help of some monsters here to convince you that this is the right thing to do!
 
-The amazing images in this document are all by Allison Horst, Artwork by '\@'allison_horst, and I recommend you visit Allison's github repository filled up with amazing stats and maths illustrations (https://github.com/allisonhorst/stats-illustrations), including so many amazing resources to make R look less frightening. To be honest, this section is actually also an homage to Allison's outstanding work.
+The amazing images in this document are all by Allison Horst, Artwork by '\@'allison_horst, and I recommend you visit Allison's [github repository](https://github.com/allisonhorst/stats-illustrations) filled up with amazing stats and maths illustrations, including so many amazing resources to make R look less frightening. To be honest, this section is actually also an homage to Allison's outstanding work.
 
 ![Illustrating R Monsters: Artwork by '\@'allison_horst](extfiles/monsteRs.jpg)
 
@@ -106,35 +116,50 @@ Go out and explore, little grasshopper. You will conquer many great things if yo
 
 We provide here a small list of these that might be particularly helpful for beginners:
 
--   [R webpage](http://r-project.org) - the main R webpage, including links to downloading R, manuals, tutorials, dedicated search engines, etc.
+- [R webpage](http://r-project.org) - the main R webpage, including links to downloading R, manuals, tutorials, dedicated search engines, etc.
 
--   [Swirl](https://swirlstats.com/) - if you want to learn R interactively from the command line, you might want to try this package. Your own R tutor at your fingertips. Try it!
+- [Swirl](https://swirlstats.com/) - if you want to learn R interactively from the command line, you might want to try this package. Your own R tutor at your fingertips. Try it!
 
--   [R video tutorials](http://blog.revolutionanalytics.com/2013/08/google-video-r-tutorials.html) - video how to's in R
+- [R video tutorials](http://blog.revolutionanalytics.com/2013/08/google-video-r-tutorials.html) - video how to's in R
 
--   [Online tutorial](http://www.datamind.org/) - a course with interactive exercises
+- [Online tutorial](http://www.datamind.org/) - a course with interactive exercises
 
--   [Online course](http://faculty.washington.edu/tlumley/Rcourse/) - notes for a two-day course in R
+- [Online course](http://faculty.washington.edu/tlumley/Rcourse/) - notes for a two-day course in R
 
--   [Reference card](http://cran.r-project.org/doc/contrib/refcard.pdf) - A very handy list of useful R functions
+- [Reference card](http://cran.r-project.org/doc/contrib/refcard.pdf) - A very handy list of useful R functions
 
--   [Short reference card](http://cran.r-project.org/doc/contrib/Short-refcard.pdf) - A longer reference card with most commonly used R functions
+- [Short reference card](http://cran.r-project.org/doc/contrib/Short-refcard.pdf) - A longer reference card with most commonly used R functions
 
--   [Cheat sheets](https://www.rstudio.com/resources/cheatsheets/) - an incredible useful set of resources from the RStudio team, where self contained subject specific sets of functions are provided for different common tasks
+- [Cheat sheets](https://rstudio.github.io/cheatsheets/) - an incredible useful set of resources from the RStudio team, where self contained subject specific sets of functions are provided for different common tasks. Because of their importance for our work, we highlight a few here:
 
-At the landing page of the github repository hosting this tutorial
+  - [Base R](https://iqss.github.io/dss-workshops/R/Rintro/base-r-cheat-sheet.pdf): the basics in base R
+  - [quarto](https://rstudio.github.io/cheatsheets/quarto.pdf): making dynamic reports in quarto
+  - [lubridate](https://rstudio.github.io/cheatsheets/html/lubridate.html): manipulating and formating dates and times
+  - [ggplot](https://rstudio.github.io/cheatsheets/html/data-visualization.html): plotting data
+  - [dplyr](https://rstudio.github.io/cheatsheets/html/data-transformation.html): manipulating data
+  - [sf](https://rstudio.github.io/cheatsheets/sf.pdf): manipulating spatial objects
 
-https://github.com/TiagoAMarques/AnIntro2RTutorial
+Additionally, a large number of [contributed cheat sheets](https://rstudio.github.io/cheatsheets/contributed-cheatsheets.html) also exist.
 
-there is a longer list of less introductory/general resources on R that might just have what you were looking for. Disclaimer: said list corresponds to a random non-exhaustive list of resources I have read and were useful to me at some point. I make no claims they might be useful to you :)
+At the [landing page](https://github.com/TiagoAMarques/AnIntro2RTutorial) of the github repository hosting this tutorial there is a longer list of less introductory/general resources on R that might just have what you were looking for. Disclaimer: said list corresponds to a random non-exhaustive list of resources I have read and were useful to me at some point. I make no claims they might be useful to you :)
+
+# Base R vs the tidyverse
+
+There are essentially two paradigms to coding in R. They are often as two religions, in more than one respect, so try not to get caught in the middle of a religious battle between them. On the developers own words, "The tidyverse is an **opinionated** collection of R packages designed for data science. All packages share an underlying design philosophy, grammar, and data structures". I am R user pragmatic, I take whatever works for me in any given scenario. I was educated in base R, but the tidyverse can be quite useful.
+
+The `tidyverse` way can be implemented via a suite of R packages, and you can read all about it in this [book](https://r4ds.hadley.nz/).
+
+![](images/clipboard-2143144059.png)
+
+Using one or the other will lead to sometimes inconsistencies. As an example, reading data into R using base R will in general create data.frames, but reading it using `dplyr` will create `tibbles`. The way to manipulate these objects will differ too.
+
+In general, things arguably look much better in the `tidyverse`, a poster child example being plots made in base R vs the `tidyverse` `ggplot2` package.
+
+This tutorial was born in base R, but over time I am making it agnostic.
 
 # Introduction to RStudio
 
-Typically, if I am using this tutorial in a class room, the student will have been exposed to the PowerPoint `Quick introduction to R and RStudio.pptx`. If you are not in a class room, you might want to take a look at it. This is also available at the repository
-
-https://github.com/TiagoAMarques/AnIntro2RTutorial
-
-right about [here](https://github.com/TiagoAMarques/AnIntro2RTutorial/blob/0db9070cb440ea591a74744c64c17e3022830f43/Quick%20introduction%20to%20R%20and%20R%20Studio.pptx).
+Typically, if I am using this tutorial in a class room, the student will have been exposed to the presentation at `AQuikIntro2RandRStudioInQuarto.html`. If you are not in a class room, you might want to take a look at it. This is also available at the repository right about [here](https://github.com/TiagoAMarques/AnIntro2RTutorial/blob/master/AQuikIntro2RandRStudioInQuarto.html). This is an html file which you cannot visualize in github, so do download it first to see it locally in your browser. Or, just see it at [A Quick Introduction to R and RStudio](https://rpubs.com/talomarques/AnIntroToRandRStudio).
 
 Nowadays most users (except perhaps die hard command line users) will use some sort of graphical user interface (GUI) to R. While the basic R installation comes with a simple GUI, here we adopt the use of RStudio, which considerably facilitates an introduction to R by providing many shortcuts and convenient features which we introduce next.
 
@@ -142,19 +167,23 @@ A major advantage of RStudio is that it makes it easy for you to type your R cod
 
 Given RStudio has been installed, when you double-click on a R workspace it should open in RStudio. Note that, if this fails, you might have to first associate .Rdata files with RStudio. After the presentation on R and RStudio you just sat through, from within RStudio you should be able to know where to find:
 
--   the command line (bottom left pane \footnote{All the tab positions are the RStudio defaults, but this can be customized by the user later.})
--   the code scripts (top left pane)
--   the workspace objects (top right pane)
--   the loaded packages and how to load them (bottom right pane)
--   the created plots (bottom right pane)
--   the help files (bottom right pane)
--   a file navigator system akin to windows explorer (bottom right pane)
+- the command line (bottom left pane \footnote{All the tab positions are the RStudio defaults, but this can be customized by the user later.})
+- the code scripts (top left pane)
+- the workspace objects (top right pane)
+- the loaded packages and how to load them (bottom right pane)
+- the created plots (bottom right pane)
+- the help files (bottom right pane)
+- a file navigator system akin to windows explorer (bottom right pane)
+
+An example screenshot of RStudio is below for reference. If you are not seeing something like this, maybe you are not in RStudio ;)
+
+![](images/clipboard-1423315731.png)
 
 Note that you can customize the aspect of RStudio (e.g. font size and colors of the smart syntax highlighting scheme) via "Tools\|Global options".
 
 A very handy feature of RStudio is that you can preview the possible arguments of functions, as well as their description, directly when you are inserting the code. Let's try doing that. Type say `seq()` in the command line or the script window and then place the cursor between the parenthesis and press the "Tab" key... Is this a nice feature or what?
 
-Now we have met RStudio and we know how it can make our life simpler, let's move on.
+Now we have met RStudio and we know how it can make our life simpler, lets move on.
 
 # Dynamic reports and reproducible research
 
@@ -446,14 +475,14 @@ We have just created and removed some objects, and used simple functions like `l
 
 Objects can have classes, which allow functions to interact with them. Objects can be of several classes. We already used the class `numeric`, which is used for general numbers, but there are also additional very commonly used classes:
 
--   `integer`, for integer numbers (could save memory with respect to the class numeric, if you only have integers)
--   `character`, representing for character strings, like "words" say
--   `factor`, used to represent levels of a categorical variable
--   `logical`, the logical values TRUE and FALSE
--   `matrix`, an object containing data in tabular form
--   `data.frame`, an object containing the kind of data you could have in a single Excel worksheet
--   `list`, an object that can be used to store all sorts of unstructured (or structured) data
--   `function`, all the functions in R, like those you just used `c`, `seq` or `rep` are of this class
+- `integer`, for integer numbers (could save memory with respect to the class numeric, if you only have integers)
+- `character`, representing for character strings, like "words" say
+- `factor`, used to represent levels of a categorical variable, e.g. car makes or models
+- `logical`, the logical values TRUE and FALSE
+- `matrix`, an object containing data in tabular form
+- `data.frame`, an object containing the kind of data you could have in a single Excel worksheet
+- `list`, an object that can be used to store all sorts of unstructured (or structured) data
+- `function`, all the functions in R, like those you just used `c`, `seq` or `rep` are of this class.
 
 While many, maaaaany other classes of objects exist, these are arguably some of those more commonly used.
 
@@ -612,137 +641,13 @@ Within R there are a number of mathematical operators but also mathematical and 
 
 (Tip: do not forget that you can get a full description what each function can be used for, what arguments it takes, and what kind of output it produces, using `?`. Further, the help of most functions includes examples of their use, which proves invaluable to understand their usage.)
 
-# Importing and exporting data
-
-Rather than importing data into R manually, typically the data we work with are imported from some external source. Typically this might be some simple file format, like a txt or a csv file, but while not covered here, direct import from say Excel files or Access data bases is possible. Such more specialized inputs often require additional packages.
-
-RStudio includes a useful dedicated shortcut `Import dataset`, by default available through the top right window of RStudio's interface. Note this shortcut essentially just calls the appropriate functions required for each import. Here we present a couple of examples just for practicing.
-
-First, we load up a data frame which exists in R (note R includes a large variety of example data sets which are useful to illustrate the use of code) and contains an example data set, with variables measured in 150 flowers of 3 varieties. This is in object `iris`, and we use the function `data` to load it so that we have access to it.
-
-```{r}
-data(iris)
-```
-
-we can take a look at what this data set contains
-
-```{r}
-#example of head use: see the first 4 rows in iris
-head(iris,4)
-#example of str use
-str(iris)
-#example of summary use
-summary(iris)
-```
-
-Now we create a new data frame which we then modify to include a new variable
-
-```{r}
-mydata<-iris
-mydata$total<-mydata$Sepal.Length+mydata$Sepal.Width+
-mydata$Petal.Length+mydata$Petal.Width
-```
-
-Now, we are going to export this data set as a txt, named `mydatafile.txt`
-
-```{r}
-write.table(mydata,file="mydatafile.txt",row.names=FALSE)
-```
-
-Note the use of the optional argument `row.names=FALSE`, otherwise some arbitrary row names would be added to the file. If you look in the folder you are working in, you should now have a new file there. Open it and check that it looks as you would expect. Next, we are going to import it back into R, into an object named `indat`.
-
-```{r}
-indat<-read.table(file="mydatafile.txt",header=TRUE)
-```
-
-So now we have our data back in R.
-
-**Task 2**: Import the file `dados1.csv` into R, giving it the name `newfile`. Tips: Explore the possible options including (1) `Import Dataset` shortcut in the `Environment tab`, which is usually a convenient way to find the right function with suitable defaults for your data (2) the optional arguments in function `read.table` above or (3) consider using function `read.csv`.
-
-# Graphics
-
-One of the most amazing R capabilities are its graphics customization properties. One can create pretty much any graphic output desirable. The plot function is, as we have seen before for function `summary`, a function that attempts to do something smart depending on the type of arguments used. Using the data set iris previously considered, plot examples are implemented below, with some optional arguments being used to show some of the possibilities to customize plots.
-
-```{r}
-#default use
-plot(indat$Sepal.Length)
-```
-
-In the following example, R evaluates the class of one of the arguments as being a factor and hence tries to give you a sensible result, which is producing a boxplot of a numerical variable as a function of a factor.
-
-```{r}
-ys<-indat$Sepal.Length
-xs<-indat$Species
-#note use of ~ to represent "as a function of"
-plot(ys~as.factor(xs))
-```
-
-Note the use of `~` to mean "as a function of"; this is also used below when specifying regression models, where the object on the left of `~` will be the response variable and the objects on the right explanatory variables.
-
-We now add some labels to a new plot, using directly function `boxplot` (which in the background `plot` above called), of sepal length as a function of species
-
-```{r}
-ys<-indat$Sepal.Length
-xs<-indat$Species
-#note use of ~ to represent "as a function of"
-boxplot(ys~xs,ylab="Sepal Length (in mm)",main="Sepal length by species")
-#compare with this code - next line returns an error
-#plot(ys~xs,ylab="Sepal Length (in mm)",main="Sepal length by species")
-#making species be a factor - allows the plot below to work well
-#xs<-as.factor(indat$Species)
-#plot(ys~xs,ylab="Sepal Length (in mm)",main="Sepal length by species")
-```
-
-We can also set the graphic window to hold multiple plots. This is obtained via argument `mfrow`, one of the arguments in function. Note this function controls a much larger number of graphical parameters. You can take a look at its help file to get a feel for how many and what kind of control it allows you. An example follows, in which we leverage on the use of function `with` to avoid having to constantly use `indat$` to tell R where the data can be found.
-
-```{r}
-#define 3 rows and 2 columns of plots
-par(mfrow=c(3,2))
-with(indat,hist(Sepal.Length,main=""))
-with(indat,hist(Sepal.Width,main=""))
-with(indat,hist(Petal.Length,main=""))
-with(indat,hist(Petal.Width,main=""))
-with(indat,plot(Petal.Length,Petal.Width,pch=21,col=12,bg=3))
-with(indat,plot(Sepal.Length,Sepal.Width,pch=16,col=3))
-```
-
-We used argument `mfrow`, but looking at the help for function `par` gives you an insight to the level of customization one can reach with respect to these graphical parameters, via dozens of different arguments.
-
-We can look at the correlation structure between all variables using function `pairs`.
-
-```{r}
-#note selection of just the first 4 columns, since the last is not numeric
-pairs(indat[,1:4])
-```
-
-**Task 3**: Using data `cars`, create a plot that represents the stopping distances as a function of the speed of cars. Use the `points` function to add a special symbol to points corresponding to cars with speed lower than 15 mph, but distance larger than 70m. Check out the function `text` to add text annotations to plots. Customize axis labels.
-
-Note that we can control most, if not all, elements of a plot. As an example, see the following code, where I am controlling all sorts of aspects. Search the help file to understand what the arguments `mar` of function `par` does (sets margin sizes) as well as `plot`'s parameters `xlim`, `ylim` `cex`, `pch`, `col`, do. See `?par` to check all the graphical parameters you can control on plots.
-
-```{r}
-set.seed(1234)
-par(mfrow=c(1,3),mar=c(8,4,0.5,0.5))
-pesos<-rnorm(100,200,20)
-sps<-rep(c("Carapau","Sardinha"),each=50)
-boxplot(pesos~sps,xlab="Espécie",ylab="Peso",las=1)
-boxplot(pesos~sps,xlab="Espécie",ylab="Peso",las=2,col=3)
-plot(rnorm(10),rnorm(10),xlim=c(-3,3),ylim=c(-3,3),col="blue",cex=2)
-points(rnorm(10),rnorm(10),col=6,cex=2,pch=2)
-points(rnorm(10),rnorm(10),col="orange",cex=4,pch=17)
-points(rnorm(10),rnorm(10),col="blue",cex=3,pch=21,bg="green")
-```
-
-Here and in class I will generally use R base for plots, but nowdays the cool kids tend to use the ggplot2 system (https://r-graph-gallery.com/ggplot2-package.html). It is worth to go and find out about it.
-
-If you really want to get creative with your plots, and a great plot can be extremely useful in conveying a message, check out the gallery here: https://r-graph-gallery.com/ Lots of ideas, with the R code to use them with your data!
-
 # Extending basic capabilities via packages
 
 While R base installation includes enough functions that getting acquainted with them could take several years, many more are available via the installation of additional packages available online on CRAN (The Comprehensive R Archive Network).
 
-A package is just a set of functions and data sets (and the corresponding documentation plus some additional required files) which usually have some specific goal. As examples, in our course we will be using packages `vegan` and `mgcv`, which allow the implementation of a variety of numerical ecology techniques and generalized additive models (GAM), respectively.
+A package is just a set of functions and/or data sets (and the corresponding documentation plus some additional required files) which usually have some specific goal. As examples, in our course we will be using general packages `lubridate`, great to manipulate dates and times, `dplyr`, which extends data import and manipulation, as well as `vegan` and `mgcv`, which allow the implementation of a variety of numerical ecology techniques and generalized additive models (GAM), respectively.
 
-Note packages cover a very wide range of applications, and chances are that at least a package, often more than one, already exists to implement most kinds of statistical or data processing tasks we might imagine.
+Note packages cover a very wide range of applications, and chances are that at least a package, often more than one, already exists to implement most kinds of statistical or data processing tasks we might imagine. Therefore, before coding your own new method, check if it has been coded by others before.
 
 Installing a new package in R requires a call to function `install.packages()`. A handy RStudio shortcut is simply to follow the `Tools|Install packages...` shortcut.
 
@@ -800,9 +705,11 @@ From now on, when you feel frustrated about R (or life in general...) you can ju
 praise()
 ```
 
-Important note: you can and should load required packages in dynamic reports via the function `library`. You should not install packages (with `install.packages()`) within a dynamic report. Install packages directly on the command line, and only once. Otherwise, if doing it inside a dynamic report, that would be a akin to installing Word every time you wanted to work on a Word document!
+Important note: you can and should load required packages in dynamic reports via the function `library`. You should not install packages (with `install.packages()`) within a dynamic report. Install packages directly on the command line, and only once.
 
-**Task 4**:
+Otherwise, if doing it inside a dynamic report, that would be a akin to installing Word every time you wanted to work on a Word document!
+
+**Task 2**:
 
 1.  Use the internet to find some useful package to do something you might want to do, the install the package and then use the example code in it.
 
@@ -834,6 +741,270 @@ meme_get("DistractedBf") %>%
 Both `memer` and `praise` are examples of "fun" packages. There are a few more you can explore [here](https://medium.com/geekculture/15-fun-r-packages-you-may-not-know-of-fb25a9dcd627).
 
 So, in fact, unlike what it might have been your first impression, R can be fun :)
+
+# Importing and exporting data
+
+Rather than importing data into R manually, typically the data we work with are imported from some external source. Typically this might be some simple file format, like a txt or a csv file, but while not covered here, direct import from say Excel files or Access data bases is possible. Such more specialized inputs often require additional packages.
+
+RStudio includes a useful dedicated shortcut `Import dataset`, by default available through the top right window of RStudio's interface. Note this shortcut essentially just calls the appropriate functions required for each import. Here we present a couple of examples just for practicing.
+
+First, we load up a data frame which exists in R (note R includes a large variety of example data sets which are useful to illustrate the use of code) and contains an example data set, with variables measured in 150 flowers of 3 varieties. This is in object `iris`, and we use the function `data` to load it so that we have access to it.
+
+```{r}
+data(iris)
+```
+
+we can take a look at what this data set contains
+
+```{r}
+#example of head use: see the first 4 rows in iris
+head(iris,4)
+#example of str use
+str(iris)
+#example of summary use
+summary(iris)
+```
+
+Now we create a new data frame which we then modify to include a new variable
+
+```{r}
+mydata<-iris
+mydata$total<-mydata$Sepal.Length+mydata$Sepal.Width+
+mydata$Petal.Length+mydata$Petal.Width
+```
+
+Now, we are going to export this data set as a txt, named `mydatafile.txt`
+
+```{r}
+write.table(mydata,file="mydatafile.txt",row.names=FALSE)
+```
+
+Note the use of the optional argument `row.names=FALSE`, otherwise some arbitrary row names would be added to the file. If you look in the folder you are working in, you should now have a new file there. Open it and check that it looks as you would expect. Next, we are going to import it back into R, into an object named `indat`.
+
+```{r}
+indat<-read.table(file="mydatafile.txt",header=TRUE)
+```
+
+So now we have our data back in R.
+
+**Task 3**: Import the file `dados1.csv` into R, giving it the name `newfile`. Tips: Explore the possible options including (1) `Import Dataset` shortcut in the `Environment tab`, which is usually a convenient way to find the right function with suitable defaults for your data (2) the optional arguments in function `read.table` above or (3) consider using function `read.csv`.
+
+# Plotting data
+
+## Base R
+
+One of the most amazing R capabilities are its graphics customization properties. One can create pretty much any graphic output desirable. The plot function is, as we have seen before for function `summary`, a function that attempts to do something smart depending on the type of arguments used. Using the data set iris previously considered, plot examples are implemented below, with some optional arguments being used to show some of the possibilities to customize plots.
+
+```{r}
+#default use
+plot(indat$Sepal.Length)
+```
+
+In the following example, R evaluates the class of one of the arguments as being a factor and hence tries to give you a sensible result, which is producing a boxplot of a numerical variable as a function of a factor.
+
+```{r}
+ys<-indat$Sepal.Length
+xs<-indat$Species
+#note use of ~ to represent "as a function of"
+plot(ys~as.factor(xs))
+```
+
+Note the use of `~` to mean "as a function of"; this is also used below when specifying regression models, where the object on the left of `~` will be the response variable and the objects on the right explanatory variables.
+
+We now add some labels to a new plot, using directly function `boxplot` (which in the background `plot` above called), of sepal length as a function of species
+
+```{r}
+ys<-indat$Sepal.Length
+xs<-indat$Species
+#note use of ~ to represent "as a function of"
+boxplot(ys~xs,ylab="Sepal Length (in mm)",main="Sepal length by species")
+#compare with this code - next line returns an error
+#plot(ys~xs,ylab="Sepal Length (in mm)",main="Sepal length by species")
+#making species be a factor - allows the plot below to work well
+#xs<-as.factor(indat$Species)
+#plot(ys~xs,ylab="Sepal Length (in mm)",main="Sepal length by species")
+```
+
+We can also set the graphic window to hold multiple plots. This is obtained via argument `mfrow`, one of the arguments in function. Note this function controls a much larger number of graphical parameters. You can take a look at its help file to get a feel for how many and what kind of control it allows you. An example follows, in which we leverage on the use of function `with` to avoid having to constantly use `indat$` to tell R where the data can be found.
+
+```{r}
+#define 3 rows and 2 columns of plots
+par(mfrow=c(3,2))
+with(indat,hist(Sepal.Length,main=""))
+with(indat,hist(Sepal.Width,main=""))
+with(indat,hist(Petal.Length,main=""))
+with(indat,hist(Petal.Width,main=""))
+with(indat,plot(Petal.Length,Petal.Width,pch=21,col=12,bg=3))
+with(indat,plot(Sepal.Length,Sepal.Width,pch=16,col=3))
+```
+
+We used argument `mfrow`, but looking at the help for function `par` gives you an insight to the level of customization one can reach with respect to these graphical parameters, via dozens of different arguments.
+
+We can look at the correlation structure between all variables using function `pairs`.
+
+```{r}
+#note selection of just the first 4 columns, since the last is not numeric
+pairs(indat[,1:4])
+```
+
+**Task 4**: Using data `cars`, create a plot that represents the stopping distances as a function of the speed of cars. Use the `points` function to add a special symbol to points corresponding to cars with speed lower than 15 mph, but distance larger than 70m. Check out the function `text` to add text annotations to plots. Customize axis labels.
+
+Note that we can control most, if not all, elements of a plot. As an example, see the following code, where I am controlling all sorts of aspects. Search the help file to understand what the arguments `mar` of function `par` does (sets margin sizes) as well as `plot`'s parameters `xlim`, `ylim` `cex`, `pch`, `col`, do. See `?par` to check all the graphical parameters you can control on plots.
+
+```{r}
+set.seed(1234)
+par(mfrow=c(1,3),mar=c(8,4,0.5,0.5))
+pesos<-rnorm(100,200,20)
+sps<-rep(c("Carapau","Sardinha"),each=50)
+boxplot(pesos~sps,xlab="Espécie",ylab="Peso",las=1)
+boxplot(pesos~sps,xlab="Espécie",ylab="Peso",las=2,col=3)
+plot(rnorm(10),rnorm(10),xlim=c(-3,3),ylim=c(-3,3),col="blue",cex=2)
+points(rnorm(10),rnorm(10),col=6,cex=2,pch=2)
+points(rnorm(10),rnorm(10),col="orange",cex=4,pch=17)
+points(rnorm(10),rnorm(10),col="blue",cex=3,pch=21,bg="green")
+```
+
+Here and in class I will generally use R base for plots, but nowdays the cool kids tend to use the ggplot2 system (https://r-graph-gallery.com/ggplot2-package.html). It is worth to go and find out about it, but also see next section for a sneack preview.
+
+If you really want to get creative with your plots, and a great plot can be extremely useful in conveying a message, check out the gallery here: https://r-graph-gallery.com/ Lots of ideas, with the R code to use them with your data!
+
+## Tidyverse
+
+Here I just present the above plots considering the `ggplot2` syntax, so you can get used to seeing it both ways, and also starting to decide which way you prefer to work yourself. First, we load up ggplot2
+
+```{r}
+library(ggplot2)
+```
+
+Then, we reproduce the five plots created above in base R. Do it yourself, and changes as much as you can. Break it too, learn from mistakes!
+
+First plot
+
+```{r}
+ggplot(indat, aes(x = seq_along(Sepal.Length), y = Sepal.Length)) +
+  geom_point() +
+  labs(x = "Index", y = "Sepal.Length") +
+  theme_bw()
+```
+
+Second plot
+
+```{r}
+ys<-indat$Sepal.Length
+xs<-indat$Species
+ggplot(indat, aes(x = as.factor(xs), y = ys)) +
+  geom_boxplot() +
+  labs(x = "xs", y = "ys") +
+  theme_bw()
+```
+
+Third plot
+
+```{r}
+ys<-indat$Sepal.Length
+xs<-indat$Species
+ggplot(indat, aes(x = as.factor(xs), y = ys)) +
+  geom_boxplot() +
+  labs(x = "xs",
+       y = "Sepal Length (in mm)",
+       title = "Sepal length by species") +
+  theme_bw()
+```
+
+Fourth plot
+
+```{r}
+library(ggplot2)
+library(patchwork)
+
+p1 <- ggplot(indat, aes(x = Sepal.Length)) +
+  geom_histogram() +
+  labs(x = "Sepal.Length", y = "Frequency") +
+  theme_bw()
+
+p2 <- ggplot(indat, aes(x = Sepal.Width)) +
+  geom_histogram() +
+  labs(x = "Sepal.Width", y = "Frequency") +
+  theme_bw()
+
+p3 <- ggplot(indat, aes(x = Petal.Length)) +
+  geom_histogram() +
+  labs(x = "Petal.Length", y = "Frequency") +
+  theme_bw()
+
+p4 <- ggplot(indat, aes(x = Petal.Width)) +
+  geom_histogram() +
+  labs(x = "Petal.Width", y = "Frequency") +
+  theme_bw()
+
+p5 <- ggplot(indat, aes(x = Petal.Length, y = Petal.Width)) +
+  geom_point(shape = 21, colour = "cyan4", fill = "green3") +
+  labs(x = "Petal.Length", y = "Petal.Width") +
+  theme_bw()
+
+p6 <- ggplot(indat, aes(x = Sepal.Length, y = Sepal.Width)) +
+  geom_point(shape = 16, colour = "green3") +
+  labs(x = "Sepal.Length", y = "Sepal.Width") +
+  theme_bw()
+
+(p1 | p2) / (p3 | p4) / (p5 | p6)
+```
+
+Fifth plot
+
+```{r}
+library(GGally)
+ggpairs(indat[, 1:4],
+        upper = list(continuous = "points"),
+        diag  = list(continuous = "blankDiag"))
+```
+
+Sixt plot
+
+```{r}
+set.seed(1234)
+pesos <- rnorm(100, 200, 20)
+sps   <- rep(c("Carapau", "Sardinha"), each = 50)
+df    <- data.frame(pesos, sps)
+
+# Boxplot 1 - horizontal x-axis labels (las=1)
+p1 <- ggplot(df, aes(x = sps, y = pesos)) +
+  geom_boxplot() +
+  labs(x = "Espécie", y = "Peso") +
+  theme_bw() +
+  theme(axis.text.x = element_text(angle = 0, hjust = 0.5),
+        plot.margin = margin(b = 40))
+
+# Boxplot 2 - vertical x-axis labels (las=2) + green fill
+p2 <- ggplot(df, aes(x = sps, y = pesos)) +
+  geom_boxplot(fill = "green3") +
+  labs(x = "Espécie", y = "Peso") +
+  theme_bw() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1),
+        plot.margin = margin(b = 40))
+
+# Scatter plot with 4 point layers
+set.seed(1234)
+df2 <- data.frame(
+  x   = c(rnorm(10), rnorm(10), rnorm(10), rnorm(10)),
+  y   = c(rnorm(10), rnorm(10), rnorm(10), rnorm(10)),
+  grp = rep(c("A","B","C","D"), each = 10)
+)
+
+p3 <- ggplot(df2, aes(x = x, y = y)) +
+  geom_point(data = subset(df2, grp == "A"),
+             colour = "blue",   size = 4,  shape = 16) +
+  geom_point(data = subset(df2, grp == "B"),
+             colour = "magenta", size = 4, shape = 2) +
+  geom_point(data = subset(df2, grp == "C"),
+             colour = "orange", size = 8,  shape = 17) +
+  geom_point(data = subset(df2, grp == "D"),
+             colour = "blue",   size = 6,  shape = 21, fill = "green") +
+  xlim(-3, 3) + ylim(-3, 3) +
+  theme_bw()
+
+p1 | p2 | p3
+```
 
 # Analysis example: regression
 
@@ -911,6 +1082,91 @@ abline(mylm1)
 lines(1:30,predmyglm1,col="blue",lwd=3,lty=3)
 lines(1:30,predmygam1,col="green",lwd=3,lty=2)
 ```
+
+# Dates and Times
+
+We might sometimes need to work with dates and/or times, and this used to be a major pain back in the day. Thanks to the functionality of package `lubridate`, that is no longer the case.
+
+```{r,message=FALSE,warning=FALSE}
+#load the package
+library(lubridate)
+```
+
+As an example, take a look at the current date and time using function `Sys.Date()`. It is now 
+
+```{r}
+#for just the date try 
+# Sys.Date()
+dtnow <- Sys.time()
+dtnow
+```
+
+in base R
+
+```{r}
+as.POSIXct(dtnow, format = "%Y-%m-%d %H:%M:%S", tz = "Europe/Lisbon")
+```
+just the date
+
+```{r}
+as.Date(dtnow)  # R grabs the date part automatically
+```
+
+We could get the day 
+
+```{r}
+day(dtnow)
+```
+
+or the Julian day
+
+```{r}
+yday(dtnow)
+```
+
+or the minute
+
+```{r}
+minute(dtnow)
+```
+
+We could actually calculate the time elapsed between any time points
+
+```{r}
+dtnow <- ymd_hms(dtnow, tz = "Europe/Lisbon")
+Sys.time()-dtnow
+```
+
+You can also turn strings (aka characters) into date-time objects, as an example, this is my birthday as text
+
+```{r}
+bday <- mdy("July 22nd, 1975")
+bday
+```
+
+and now this is is my age
+
+```{r}
+Sys.Date()-bday
+```
+a bit nicer and controling units, my age in years is
+
+```{r}
+as.numeric(interval(bday, Sys.Date()), "years")
+```
+
+and as humans use age
+
+```{r}
+# Integer age (completed years)
+interval(bday, Sys.Date()) %/% years(1)
+```
+
+Send me a present if it is my birthday! 
+
+Check out [here](https://rstudio.github.io/cheatsheets/html/lubridate.html) the many other amazing things you can do with times and dates leveraging on `lubridate` functionality.
+
+
 
 # Simulation and random number generation
 
@@ -1115,9 +1371,9 @@ What do you think? How can you find a distribution for the test statistic under 
 
 # Wrap up
 
-A full introduction to R course could take an entire week. A full course in regression modelling with R could take an entire semester. A full course of data analysis in R could take a life time.
+A full introduction to R course could take an entire week. A full course in regression modelling with R could take an entire semester. A full course of data analysis in R could take a lifetime.
 
-Our objective with this tutorial was simply to introduce you to R such that when we use R in the next few days, the commands do not look too esoteric. Nonetheless, this material, as well as the references provided, should constitute a good basis to learn R further if you so desire.
+Our objective with this tutorial was simply to introduce you to R such that when we use R in the next few days/weeks, for whatever course you might be taking, the commands do not look too esoteric. Nonetheless, this material, as well as the references provided, should constitute a good basis to learn R further if you so desire.
 
 Beginners find the R learning curve is often steep, but once mastered, R simplifies enormously the task of statistical data analysis.
 
@@ -1130,6 +1386,6 @@ rm(list = ls())
 
 # Acknowledgements
 
-Several people have provided comments over the years, typically when exposed to the tutorial, including colleagues, folks that have used it as teachers, or students asking questions in a course using the tutorial, like R courses, PAM DE courses, and Modelação Ecológica and Ecologia Numérica courses at DBA, FCUL, or doing internships / being supervised by me. I thank their kind contributions here: Danielle Harris, Len Thomas, Soraia Pereira, Susana França, Sofia Reboleira, Sónia Coelho, Afonso Barrocal, José Pedro Granadeiro, Daniela Leal and Nuno Escamade. Many are not named explicitly, as I've forgotten about the specifics, but I thank them any way! If you think your name is missing, let me know, and I will add it here. Further, this list is ever evolving and so, if you have comments, please, send them my way and get your name added to it! Indeed, fame for eternity is indeed that close :)
+Several people have provided comments over the years, typically when exposed to the tutorial, including colleagues, folks that have used it as teachers, or students asking questions in a course using the tutorial, like R courses, PAM DE courses, and Modelação Ecológica and Ecologia Numérica courses at DBA, FCUL, or doing internships / being supervised by me. I thank their kind contributions here: Danielle Harris, Len Thomas, Soraia Pereira, Susana França, Sofia Reboleira, Sónia Coelho, Afonso Barrocal, José Pedro Granadeiro, Daniela Leal, Nuno Escamade and Theoni Photopoulou. Many are not named explicitly, as I've forgotten about the specifics, but I thank them any way! If you think your name is missing, let me know, and I will add it here. Further, this list is ever evolving and so, if you have comments, please, send them my way and get your name added to it! Indeed, fame for eternity is indeed that close :)
 
 # References
