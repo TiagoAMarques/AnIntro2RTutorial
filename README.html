@@ -358,51 +358,33 @@ display: none;
 by someone that has not used R before.</p>
 <p>All the relevant material is available <a href="https://github.com/TiagoAMarques/AnIntro2RTutorial">here</a> at
 the corresponding github repository.</p>
-<p>I use it for both my “Ecologia Numérica” and my “Modelação Ecológica”
-at <a href="https://ciencias.ulisboa.pt/en">FCUL</a> courses. If you are
-a student in one of those courses, please bear in mind that the section
-“Final tasks” is only intended to be completed for those in “Modelação
-Ecológica”.</p>
-<p>To use the tutorial you should download the contents from the github
-repository above, at the very least the following files</p>
+<div id="quick-start" class="section level2">
+<h2>Quick start</h2>
+<p>To use the tutorial, download the contents of this repository. At a
+minimum, you will need:</p>
 <ul>
-<li>TAMsIntro2RviaRStudioTutorial.pdf and/or
-TAMsIntro2RviaRStudioTutorial.html</li>
-<li>dados1.csv</li>
-<li>mydatafile.txt</li>
+<li><code>TAMsIntro2RviaRStudioTutorial.pdf</code> <strong>or</strong>
+<code>TAMsIntro2RviaRStudioTutorial.html</code></li>
+<li><code>dados1.csv</code></li>
+<li><code>mydatafile.txt</code></li>
 </ul>
-<p>The main file you should use to work through the tutorial is either
-“TAMsIntro2RviaRStudioTutorial.html” or
-“TAMsIntro2RviaRStudioTutorial.pdf”, depending on your preference. These
-files are created by compiling “TAMsIntro2RviaRStudioTutorial.Rmd”,
-which is a dynamic report in <a href="https://rmarkdown.rstudio.com/">RMarkdown</a>.</p>
-<p>(Note on a tangent: this was made for biology students. I assume you
-don’t know your way around github. If you do, feel free to clone the
-repository and provide comments and raise issues etc that way etc)</p>
-<p>These days I tend to work using dynamic reports, making the workflow
-from reading the data and cleaning it all the way to reporting the
-results from analysis integrated and fully reproducible. I believe that
-working with dynamic reports is a good skill to have if you are a
-biology student, and so, if you are a student of one of my courses at
-FCUL, I will also show you in class how those work. In fact, this will
-be a highly transferable skill that will be useful in many working
-environments beyhond the analysis of biological/ecological data.
-Learning from scratch how to work with dynamic reports might be hard,
-but starting from a template helps. If you want a template for creating
-dynamic reports, there is one here:</p>
-<p><a href="https://github.com/TiagoAMarques/RMarkdownTemplate" class="uri">https://github.com/TiagoAMarques/RMarkdownTemplate</a></p>
-<p>My suggestion is that you start by creating your own dynamic report
-which you then use as a basis to work with the code and experiment
-variations of the code. Please keep all your code properly commented:
-what seems obvious to you today might not be obvious to the “you” next
-week or next month. Coding is a collaborative experience, even if
-between you and your future self (This quote, or something similar,
-might be from Hadley Hickam).</p>
+<p>Then:</p>
+<ol style="list-style-type: decimal">
+<li>Open the PDF or HTML tutorial.</li>
+<li>Follow the tutorial in order, running the code examples in
+RStudio.</li>
+<li>Modify the code as you go, so you can experiment and see how R
+behaves.</li>
+</ol>
+<p>The files <code>TAMsIntro2RviaRStudioTutorial.pdf</code> and
+<code>TAMsIntro2RviaRStudioTutorial.html</code> are generated from<br />
+<code>TAMsIntro2RviaRStudioTutorial.qmd</code>, which is a dynamic
+report written in <a href="https://rmarkdown.rstudio.com/">Quarto</a>.</p>
 <p>If you are new to RStudio, there is also a quarto html presentation
 that can be helpful in getting you started, corresponding to the file
-“AQuikIntro2RandRStudioInQuarto.html” but also available <a href="https://rpubs.com/talomarques/AnIntroToRandRStudio">here</a> at
-Rpubs. If you are a student of one of my courses at FCUL, this
-presentation will be delivered to you in class.</p>
+“AQuikIntro2RandRStudioInQuarto.html” but also available at Rpubs <a href="https://rpubs.com/talomarques/AnIntroToRandRStudio">here</a>. If
+you are a student of one of my courses at FCUL, this presentation will
+be delivered to you in class.</p>
 <p>If you are new to R in general, the <a href="https://www.rstudio.com/resources/cheatsheets/">R cheat sheets</a>
 are great resources, and I recommend to begin with downloading
 these:</p>
@@ -415,50 +397,91 @@ R</a></li>
 might want to try package <a href="https://swirlstats.com/">Swirl</a>.
 Your own R tutor at your fingertips. Try it!</p>
 </div>
+<div id="who-is-this-for" class="section level2">
+<h2>Who is this for</h2>
+<p>I use this material for both my <code>Ecologia Numérica</code> and my
+<code>Modelação Ecológica</code> at <a href="https://ciencias.ulisboa.pt/en">FCUL</a> courses. If you are a
+student in one of those courses, please bear in mind that the section
+<code>Final tasks</code> is only intended to be completed for those in
+<code>Modelação Ecológica</code>.</p>
+<p>(Note on a tangent: this was made for biology students. I assume you
+don’t know your way around github. If you do, feel free to clone the
+repository and provide comments and raise issues etc that way etc)</p>
+<p>These days I tend to work using dynamic reports, making the workflow
+from reading the data and cleaning it all the way to reporting the
+results from analysis integrated and fully reproducible. I believe that
+working with dynamic reports is a good skill to have if you are a
+biology student, and so, if you are a student of one of my courses at
+FCUL, I will also show you in class how those work. In fact, this will
+be a highly transferable skill that will be useful in many working
+environments beyond the analysis of biological/ecological data. Learning
+from scratch how to work with dynamic reports might be hard, but
+starting from a template helps. If you want a template for creating
+dynamic reports, there is one <a href="https://github.com/TiagoAMarques/RMarkdownTemplate">here</a>.</p>
+<p>My suggestion is that you start by creating your own dynamic report
+which you then use as a basis to work with the code and experiment
+variations of the code. Please keep all your code properly commented:
+what seems obvious to you today might not be obvious to the “you” next
+week or next month. Coding is a collaborative experience, even if
+between you and your future self (This quote, or something similar,
+might be from Hadley Hickam).</p>
+</div>
+</div>
 <div id="additional-online-resources" class="section level1">
 <h1>Additional online resources</h1>
 <p>Below I also provide a list of additional free online resources that
 you might want to consider as additional R learning resources. Some of
-these resources are not about R, but about some relevant aspect of
-statistics that uses R.</p>
+these resources are not about R itself, but about some relevant aspect
+of statistics that uses R.</p>
 <p>This is a non-exhaustive, non-comprehensive and quite random list of
 R (and related) resources that I found useful at some point. They might
 (but will not necessarily) be ecologically oriented. Feel free to
 explore at your own risk. No real order in the list I am afraid.</p>
 <ul>
+<li><a href="Thank%20you!">Send me a suggested resource and I’ll add it
+here</a></li>
+</ul>
+<div id="general-r" class="section level2">
+<h2>General R</h2>
+<ul>
 <li><p><a href="https://www.bigbookofr.com/">The Big Book of R</a> as
 per the author, Oscar Baruffa, hopefully this is the only bookmark
 you’ll need in future ;). Over 400 books on R programing, organized by
 topic area</p></li>
+<li><p><a href="https://doi.org/10.1371/journal.pcbi.1010372">Ten simple
+rules for teaching yourself R</a> - Lawler et al. with a “Ten simple
+rules” paper for teaching yourself R</p></li>
+<li><p><a href="https://scubed.netlify.app/courses/1_intro_r_tidyverse/">Introduction
+to R with Tidyverse course</a> This is a course by Sophie Lee “designed
+to equip you with the essential skills to leverage the power of R and
+Tidyverse for their work. The course begins with a gentle introduction
+to the user-friendly RStudio interface and the basics of the R coding
+language, or syntax. This makes it ideal for anyone with little or no
+prior coding experience, or those looking for a refresher of the
+basics.”</p></li>
+<li><p><a href="https://r-coder.com/learn-r/">A set of R tutorials</a>
+While the adds on the webpage are a bit annoying, the content is worth
+it and there are several free tutorials to learn R at your own
+pace.</p></li>
+<li><p><a href="https://nrennie.rbind.io/training-better-r-code/">Writing Better R
+Code</a> here you can find the material for a course entitled “Writing
+Better R Code” by Nicola Rennie, including the course slides</p></li>
+</ul>
+</div>
+<div id="r-for-statistics-and-data-science" class="section level2">
+<h2>R for statistics and data science</h2>
+<ul>
 <li><p><a href="https://statsthinking21.github.io/statsthinking21-R-site/">An R
 companion to Statistical Thinking for the 21st Century</a> a free
 companion to the book An R companion to Statistical Thinking for the
 21st Century 2020 by Russell A. Poldrack</p></li>
 <li><p><a href="https://doi.org/10.3390/life12050648">The R Language: An
 Engine for Bioinformatics and Data Science</a> Giorgi et al. describe
-the history of the R language. I use one of their images in the
-powerpoint <a href="https://github.com/TiagoAMarques/AnIntro2RTutorial/blob/master/Quick%20introduction%20to%20R%20and%20R%20Studio.pptx">Quick
-introduction to R and R Studio</a></p></li>
-<li><p><a href="https://doi.org/10.1371/journal.pcbi.1010372">Ten simple
-rules for teaching yourself R</a> - Lawler et al. with a “Ten simple
-rules” paper for teaching yourself R</p></li>
+the history of the R language.</p></li>
 <li><p><a href="https://tellingstorieswithdata.com/">Telling Stories
 with Data: With Applications in R</a> - a great book by <span class="citation">@RohanAlexander</span> <a href="https://rohanalexander.com/">Rohan Alexander</a> about telling
 stories with data. Effective and reliable stories in a reproducible
 framework.</p></li>
-<li><p><a href="https://atlas.cancer.org.au/developing-a-cancer-atlas/index.html">Developing
-a Cancer Atlas using Bayesian Methods: A Practical Guide for Application
-and Interpretation</a></p></li>
-<li><p><a href="https://towardsdatascience.com/ten-awesome-r-markdown-tricks-56ef6d41098">Ten
-awesome R Markdown tricks</a>: R Markdown is more versatile than you
-might think by Keith McNulty (Dec 18, 2020, 8 min read). A preview:
-“Though I code in both R and Python, R Markdown is my only route for
-writing reports, blogs or books. It is incredibly flexible, has many
-beautiful design options and supports many output formats really nicely.
-If you have never worked in R Markdown, I highly recommend it. If you
-have worked in it before, here are ten little tricks I’ve learned which
-have served me well in numerous projects, and which highlight how
-flexible it is.”</p></li>
 <li><p><a href="https://noamross.github.io/gams-in-r-course/">A course
 on GAM’s</a> by Noam Ross</p></li>
 <li><p><a href="https://github.com/Pakillo/LM-GLM-GLMM-intro/blob/trees/README.md">Introduction
@@ -466,40 +489,8 @@ to Linear, Generalized, and Mixed/Multilevel models with R</a> by
 Francisco Rodriguez-Sanchez (the first couple of slides are fantastic
 introduction to modern statistical analysis in a unified GLM framework).
 Found about this via a <a href="https://twitter.com/frod_san/status/1349321844483043335">tweet</a>.</p></li>
-<li><p><a href="https://oliviergimenez.github.io/intro_spatialR/">GIS
-and mapping in R: Introduction to the sf package</a> by Olivier
-Gimenez</p></li>
-<li><p><a href="https://www.rforbiologists.org/">R for biologists</a> -
-the name says it all</p></li>
-<li><p><a href="https://github.com/ColauttiLab">R Crash Course for
-Biologists</a> - This is a great resource, a git repos by R.I. Colauti,
-that includes also other crash courses in stats etc</p></li>
-<li><p><a href="https://paula-moraga.github.io/book-geospatial/">Geospatial Health
-Data: Modeling and Visualization with R-INLA and Shiny</a> - a free
-version of the CRC book by Paula Moraga</p></li>
-<li><p><a href="https://melbournebioinformatics.github.io/r-intro-biologists/intro_r_biologists.html">Introduction
-to R for Biologists</a> by Maria Doyle, Jessica Chung, Vicky
-Perreau</p></li>
-<li><p><a href="https://ncgas.org/training/r_textbook_full.pdf">Introduction to R
-for Biologists</a> by Sheri Sanders</p></li>
 <li><p><a href="https://bookdown.org/steve_midway/DAR/">Data Analysis in
 R</a> by Steve Midway</p></li>
-<li><p><a href="https://learnadventurously.com/courses/fundamentals-of-r-for-biologists/">Fundamentals
-of R for Biologists</a> Fundamentals of R for Biologists is a
-self-guided crash course in how to use R specifically geared for those
-working in the biological sciences. All of the lessons in this course
-are bundled together into a single PDF textbook: Fundamentals of R for
-Biologists. You can easily access this text <a href="https://learnadventurously.com/library/fundamentals-of-r-for-biologists-textbook/">here</a></p></li>
-<li><p><a href="https://twitter.com/djnavarro/status/1278470778879569920?s=09">A
-short thread of rstats resources made freely available online</a> by
-Danielle Navarro</p></li>
-<li><p><a href="https://www.rforecology.com/">Luka Negoita’s webpage</a>
-Including some self-paced online courses, for ecologists and biologists,
-that simplify the R learning process, so you can quickly gain confidence
-in handling your own data. (while some resources are free, most are
-paid). One free bit which is very useful lists 5 great sources of <a href="https://www.rforecology.com/post/top-five-ish-sources-of-ecological-data/">free
-ecological datasets</a> that you can use to practice R within an
-ecological framework</p></li>
 <li><p><a href="https://mattblackwell.github.io/gov2002-book/">A User’s
 Guide to Statistical Inference and Regression</a> Notes for Government
 2002: Quantitative Social Science Methods II at Harvard University,
@@ -518,31 +509,6 @@ from within R, then this course from Richard McElreath is your one stop
 shop! It includes the pre-recorded lectures, the slides, homework and
 respective solutions, all based on the quickly becoming a classing book
 “Statistical Rethinking” (for the actual book, well worth it, see <a href="https://xcelab.net/rm/statistical-rethinking/">here</a>.</p></li>
-<li><p><a href="https://oliviergimenez.github.io/banana-book/index.html">Bayesian
-analysis of capture-recapture data with hidden Markov models</a> a great
-book by Olivier Gimenez, colleague and friend, on the theory behind
-capture recapture models, how to frame the models as hidden Markov
-models, and useful case studies in R and NIMBLE.</p></li>
-<li><p><a href="https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/">Doing
-Meta-Analysis with R: A Hands-On Guide</a> This book serves as an
-accessible introduction into how meta-analyses can be conducted in R.
-Essential steps for meta-analysis are covered, including pooling of
-outcome measures, forest plots, heterogeneity diagnostics, subgroup
-analyses, meta-regression, methods to control for publication bias, risk
-of bias assessments and plotting tools.</p></li>
-<li><p><a href="https://hbiostat.org/bbr/">Biostatistics for Biomedical
-Research</a> The book is aimed at exposing biomedical researchers to
-modern biostatistical methods and statistical graphics, highlighting
-those methods that make fewer assumptions, including nonparametric
-statistics and robust statistical measures. In addition to covering
-traditional estimation and inferential techniques, the course contrasts
-those with the Bayesian approach, and also includes several components
-that have been increasingly important in the past few years, such as
-challenges of high-dimensional data analysis, modeling for observational
-treatment comparisons, analysis of differential treatment effect
-(heterogeneity of treatment effect), statistical methods for biomarker
-research, medical diagnostic research, and methods for reproducible
-research.</p></li>
 <li><p><a href="https://matthewbjane.quarto.pub/guide-to-effect-sizes-and-confidence-intervals/">Guide
 to Effect Sizes and Confidence Intervals</a> This effect sizes and
 confidence intervals collaborative guide aims to provide academics,
@@ -555,10 +521,6 @@ information on effect sizes and confidence intervals, as well as useful
 R packages for their calculation. Many of the methods and procedures
 described in this Guide are based on R or R-based Shiny Apps developed
 by the science community.</p></li>
-<li><p><a href="https://pyoflife.com/biostatistics-with-r-an-introduction-to-statistics-through-biological-data/">Biostatistics
-with R: An Introduction to Statistics Through Biological Data</a> Babak
-Shahbaba’s UseR book on Biostatistics with R: An Introduction to
-Statistics Through Biological Data</p></li>
 <li><p><a href="https://andrewproctor.github.io/rcourse/">Introduction
 to Data Analysis in R</a> Andrew Proctor’s course on Introduction to
 Data Analysis in R, including webpages, slides, exercises, solutions,
@@ -573,21 +535,6 @@ understanding the basic ideas of statistical thinking — a systematic way
 of thinking about how we describe the world and use data to make
 decisions and predictions, all in the context of the inherent
 uncertainty that exists in the real world”.</p></li>
-<li><p><a href="https://paezha.github.io/spatial-analysis-r/front-matter.html#what-is-this-book-and-who-is-it-for">An
-Introduction to Spatial Data Analysis and Statistics: A Course in R</a>
-by Antonio Paez</p></li>
-<li><p><a href="https://statistics4ecologists-v2.netlify.app/">Statistics for
-Ecologists</a> by John Fieberg. In his own words: “Ecological data pose
-many challenges to statistical inference. Most data come from
-observational studies rather than designed experiments; observational
-units are frequently sampled repeatedly over time, resulting in
-multiple, non-independent measurements; response data are often binary
-(e.g., presence-absence data) or non-negative integers (e.g.., counts),
-and therefore, the data do not fit the standard assumptions of linear
-regression (Normality, independence, and constant variance). This book
-will familiarize readers with modern statistical methods that address
-these complexities using both frequentist and Bayesian
-frameworks.”</p></li>
 <li><p><a href="https://michael-franke.github.io/Bayesian-Regression/">Bayesian
 Regression: Theory &amp; Practice</a> - a great course on regression
 models within a Bayesian framework with package <code>bmrs</code> with
@@ -602,18 +549,6 @@ study. The focus is on the skills needed to analyze data from psychology
 experiments. Material from a course aught by Dale Barr at the University
 of Glasgow School of Psychology. It is part of the <a href="https://psyteachr.github.io/">PsyTeachR</a> series of course
 materials developed by University of Glasgow Psychology staff.</p></li>
-<li><p><a href="http://www.glennanightingale.com/stats-clinic.html">Resources to
-lower stats anxiety</a> - A stats clinic, a collection of resources
-developed by Glenna Nightingale. Take a peak, there’s videos, shiny
-apps, data stories, etc.</p></li>
-<li><p><a href="https://marginaleffects.com/">Marginal effects</a> -
-This free online book introduces a conceptual framework to clearly
-define statistical quantities of interest, and shows how to estimate
-those quantities using the <code>marginaleffects</code> package for R
-and Python. The techniques introduced can enhance the interpretability
-of over 100 classes of statistical and machine learning models,
-including linear, GLM, GAM, mixed-effects, bayesian, categorical
-outcomes, XGBoost, and more.</p></li>
 <li><p><a href="https://m-clark.github.io/mixed-models-with-R/">Mixed
 Models with R: Getting started with random effects</a> A nice document
 by Michael Clark. On his own words: “The goal here is primarily to
@@ -622,23 +557,112 @@ standard techniques to implement them. While it can be seen as a
 standalone treatment, the document originally served as the basis for a
 workshop, and from that, exercises are available to practice your
 skills.”</p></li>
-<li><p><a href="https://scubed.netlify.app/courses/1_intro_r_tidyverse/">Introduction
-to R with Tidyverse course</a> This is a course by Sophie Lee “designed
-to equip you with the essential skills to leverage the power of R and
-Tidyverse for their work. The course begins with a gentle introduction
-to the user-friendly RStudio interface and the basics of the R coding
-language, or syntax. This makes it ideal for anyone with little or no
-prior coding experience, or those looking for a refresher of the
-basics.””</p></li>
-<li><p><a href="https://r-charts.com/">R charts</a> A great resource by
-“R Coder” that lets you see hundreds of R graph examples and provides
-all the code to reproduce them, making it easily extendable to your own
-data, using both base R and <code>ggplot2</code>, as well as other
-packages for some more niche graphs.</p></li>
-<li><p><a href="https://r-coder.com/learn-r/">A set of R tutorials</a>
-While the adds on the webpage are a bit annoying, the content is worth
-it and there are several free tutorials to learn R at your own
-pace.</p></li>
+<li><p><a href="https://modernstatisticswithr.com/">Modern Statistics
+with R</a> by Mans Thulin, Modern Statistics with R: From wrangling and
+exploring data to inference and predictive modelling (2024-07-01 -
+Second edition - Version 2.0.0)</p></li>
+<li><p><a href="https://github.com/gavinsimpson/physalia-gam-course">Material from
+Gavin Simpson’s course on GAMs</a> A course on Generalized Additive
+Models; a data-driven approach to estimating regression models This is
+part of a suite of Physalia-Courses hosted at <a href="https://www.physalia-courses.org/" class="uri">https://www.physalia-courses.org/</a></p></li>
+<li><p><a href="https://hbiostat.org/rmsc/">Regression Modeling
+Strategies</a> a book that is all about regression, by Frank E. Harrel.
+Jr., that serves as support material for a course by the same author,
+but can be read independently of the course.</p></li>
+<li><p><a href="https://ema.drwhy.ai/">Explanatory Model Analysis</a> A
+book to help you Explore, Explain, and Examine Predictive Models. With
+examples in R and Python. By Przemyslaw Biecek and Tomasz Burzykowski,
+edited by CRC.</p></li>
+<li><p><a href="https://ema.drwhy.ai/">ANOVA and Mixed Models: A Short
+Introduction Using R</a> The free version of the CRC book by Lukas
+Meier, a great resource for those looking for an introduction to the
+topics with the supporting R code.</p></li>
+<li><p><a href="https://training.bioss.ac.uk/course_materials/GAMintro2023/">A
+course on GAMs</a> This is the 2023 course website for a 2 day
+generalized additive modelling course put on by BioSS for UKCEH. The
+instructors for the course were Dave Miller and Thomas
+Cornulier.</p></li>
+<li><p><a href="https://daviddalpiaz.github.io/r4sl/">R for Statistical
+Learning by David Dalpiaz</a> - This book currently serves as a
+supplement to An Introduction to Statistical Learning for STAT 432 -
+Basics of Statistical Learning at the University of Illinois at
+Urbana-Champaign.</p></li>
+</ul>
+</div>
+<div id="r-for-ecology" class="section level2">
+<h2>R for ecology</h2>
+<ul>
+<li><p><a href="https://melbournebioinformatics.github.io/r-intro-biologists/intro_r_biologists.html">Introduction
+to R for Biologists</a> by Maria Doyle, Jessica Chung, Vicky
+Perreau</p></li>
+<li><p><a href="https://ncgas.org/training/r_textbook_full.pdf">Introduction to R
+for Biologists</a> by Sheri Sanders</p></li>
+<li><p><a href="https://www.rforbiologists.org/">R for biologists</a> -
+the name says it all</p></li>
+<li><p><a href="https://github.com/ColauttiLab">R Crash Course for
+Biologists</a> - This is a great resource, a git repos by R.I. Colauti,
+that includes also other crash courses in stats etc</p></li>
+<li><p><a href="https://learnadv.com/resource/fundamentals-of-r-for-biologists-textbook/">Fundamentals
+of R for Biologists</a> Fundamentals of R for Biologists is a
+self-guided crash course in how to use R specifically geared for those
+working in the biological sciences. All of the lessons in this course
+are bundled together into a single PDF textbook: Fundamentals of R for
+Biologists.</p></li>
+<li><p><a href="https://www.rforecology.com/">Luka Negoita’s webpage</a>
+Including some self-paced online courses, for ecologists and biologists,
+that simplify the R learning process, so you can quickly gain confidence
+in handling your own data. (while some resources are free, most are
+paid). One free bit which is very useful lists 5 great sources of <a href="https://www.rforecology.com/post/top-five-ish-sources-of-ecological-data/">free
+ecological datasets</a> that you can use to practice R within an
+ecological framework</p></li>
+<li><p><a href="https://pyoflife.com/biostatistics-with-r-an-introduction-to-statistics-through-biological-data/">Biostatistics
+with R: An Introduction to Statistics Through Biological Data</a> Babak
+Shahbaba’s UseR book on Biostatistics with R: An Introduction to
+Statistics Through Biological Data</p></li>
+<li><p><a href="https://statistics4ecologists-v2.netlify.app/">Statistics for
+Ecologists</a> by John Fieberg. In his own words: “Ecological data pose
+many challenges to statistical inference. Most data come from
+observational studies rather than designed experiments; observational
+units are frequently sampled repeatedly over time, resulting in
+multiple, non-independent measurements; response data are often binary
+(e.g., presence-absence data) or non-negative integers (e.g.., counts),
+and therefore, the data do not fit the standard assumptions of linear
+regression (Normality, independence, and constant variance). This book
+will familiarize readers with modern statistical methods that address
+these complexities using both frequentist and Bayesian
+frameworks.”</p></li>
+<li><p><a href="https://bdsr.stephenturner.us/">Biological Data Science
+with R</a> This book was written as a companion to a series of courses
+taught by Stephen D. Turner at the University of Virginia introducing
+the essentials of biological data science with R.</p></li>
+<li><p><a href="https://analises-ecologicas.netlify.app/">Análises
+Ecológicas no R</a> A book in Portuguese about ecological analises in R.
+There are over 600 pages of material and respective code. Well worth
+exploring!</p></li>
+</ul>
+</div>
+<div id="r-for-medical-biostatistics" class="section level2">
+<h2>R for (medical) biostatistics</h2>
+<ul>
+<li><p><a href="https://atlas.cancer.org.au/developing-a-cancer-atlas/index.html">Developing
+a Cancer Atlas using Bayesian Methods: A Practical Guide for Application
+and Interpretation</a></p></li>
+<li><p><a href="https://paula-moraga.github.io/book-geospatial/">Geospatial Health
+Data: Modeling and Visualization with R-INLA and Shiny</a> - a free
+version of the CRC book by Paula Moraga</p></li>
+<li><p><a href="https://hbiostat.org/bbr/">Biostatistics for Biomedical
+Research</a> The book is aimed at exposing biomedical researchers to
+modern biostatistical methods and statistical graphics, highlighting
+those methods that make fewer assumptions, including nonparametric
+statistics and robust statistical measures. In addition to covering
+traditional estimation and inferential techniques, the course contrasts
+those with the Bayesian approach, and also includes several components
+that have been increasingly important in the past few years, such as
+challenges of high-dimensional data analysis, modeling for observational
+treatment comparisons, analysis of differential treatment effect
+(heterogeneity of treatment effect), statistical methods for biomarker
+research, medical diagnostic research, and methods for reproducible
+research.</p></li>
 <li><p><a href="https://bookdown.org/sestelo/sa_financial/">A short
 course on Survival Analysis</a> A short course on Survival Analysis
 applied to the Financial Industry, for BBVA Data &amp; Analytics,
@@ -648,21 +672,21 @@ statistical techniques to the financial industry. The emphasis is placed
 in understanding the methods, building intuition about when applying
 each of them and showing their application through the use of
 R.</p></li>
-<li><p><a href="https://modernstatisticswithr.com/">Modern Statistics
-with R</a> by Mans Thulin, Modern Statistics with R: From wrangling and
-exploring data to inference and predictive modelling (2024-07-01 -
-Second edition - Version 2.0.0)</p></li>
-<li><p><a href="https://github.com/gavinsimpson/physalia-gam-course">Material from
-Gavin Simpson’s course on GAMs</a> A course on Generalized Additive
-Models; a data-driven approach to estimating regression models This is
-part of a suite of Physalia-Courses hosted at <a href="https://www.physalia-courses.org/" class="uri">https://www.physalia-courses.org/</a></p></li>
-<li><p><a href="https://nrennie.rbind.io/training-better-r-code/">Writing Better R
-Code</a> here you can find the material for a course entitled “Writing
-Better R Code” by Nicola Rennie, including the course slides</p></li>
-<li><p><a href="https://hbiostat.org/rmsc/">Regression Modeling
-Strategies</a> a book that is all about regression, by Frank E. Harrel.
-Jr., that serves as support material for a course by the same author,
-but can be read independently of the course.</p></li>
+</ul>
+</div>
+<div id="r-as-a-gis" class="section level2">
+<h2>R as a GIS</h2>
+<ul>
+<li><p><a href="https://oliviergimenez.github.io/intro_spatialR/">GIS
+and mapping in R: Introduction to the sf package</a> by Olivier
+Gimenez</p></li>
+<li><p><a href="https://paezha.github.io/spatial-analysis-r/front-matter.html#what-is-this-book-and-who-is-it-for">An
+Introduction to Spatial Data Analysis and Statistics: A Course in R</a>
+by Antonio Paez</p></li>
+<li><p><a href="https://tmap.geocompx.org/">Spatial Data Visualization
+with tmap</a> A Practical Guide to Thematic Mapping in R. This book is a
+hands-on, open-source resource for anyone interested in creating maps
+using R and the tmap package.</p></li>
 <li><p><a href="https://r.geocompx.org/">Geocomputation with R</a> a
 book by Robin Lovelace, Jakub Nowosad and Jannes Muenchow on geographic
 data analysis, visualization and modeling.</p></li>
@@ -679,29 +703,42 @@ academic productivity perspective, this is a waste of time. My hope is
 that this book helps researchers become more proficient in spatial data
 processing, ultimately enhancing productivity in economics and other
 scientific fields where spatial data is essential.”</p></li>
-<li><p><a href="https://bdsr.stephenturner.us/">Biological Data Science
-with R</a> This book was written as a companion to a series of courses
-taught by Stephen D. Turner at the University of Virginia introducing
-the essentials of biological data science with R.</p></li>
-<li><p><a href="https://ema.drwhy.ai/">Explanatory Model Analysis</a> A
-book to help you Explore, Explain, and Examine Predictive Models. With
-examples in R and Python. By Przemyslaw Biecek and Tomasz Burzykowski,
-edited by CRC.</p></li>
-<li><p><a href="https://ema.drwhy.ai/">ANOVA and Mixed Models: A Short
-Introduction Using R</a> The free version of the CRC book by Lukas
-Meier, a great resource for those looking for an introduction to the
-topics with the supporting R code.</p></li>
-<li><p><a href="https://analises-ecologicas.netlify.app/">Análises
-Ecológicas no R</a> A book in Portuguese about ecological analises in R.
-There are over 600 pages of material and respective code. Well worth
-exploring!</p></li>
-<li><p><a href="https://tmap.geocompx.org/">Spatial Data Visualization
-with tmap</a> A Practical Guide to Thematic Mapping in R. This book is a
-hands-on, open-source resource for anyone interested in creating maps
-using R and the tmap package.</p></li>
-<li><p><a href>Send me a suggested resource and I’ll add it
-here</a></p></li>
 </ul>
+</div>
+<div id="r6-aka-rather-random-restrict-realm-r-resources" class="section level2">
+<h2>R6 (aka Rather Random Restrict-Realm R Resources)</h2>
+<ul>
+<li><p><a href="https://oliviergimenez.github.io/banana-book/index.html">Bayesian
+analysis of capture-recapture data with hidden Markov models</a> a great
+book by Olivier Gimenez, colleague and friend, on the theory behind
+capture recapture models, how to frame the models as hidden Markov
+models, and useful case studies in R and NIMBLE.</p></li>
+<li><p><a href="https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/">Doing
+Meta-Analysis with R: A Hands-On Guide</a> This book serves as an
+accessible introduction into how meta-analyses can be conducted in R.
+Essential steps for meta-analysis are covered, including pooling of
+outcome measures, forest plots, heterogeneity diagnostics, subgroup
+analyses, meta-regression, methods to control for publication bias, risk
+of bias assessments and plotting tools.</p></li>
+<li><p><a href="http://www.glennanightingale.com/stats-clinic.html">Resources to
+lower stats anxiety</a> - A stats clinic, a collection of resources
+developed by Glenna Nightingale. Take a peak, there’s videos, shiny
+apps, data stories, etc.</p></li>
+<li><p><a href="https://marginaleffects.com/">Marginal effects</a> -
+This free online book introduces a conceptual framework to clearly
+define statistical quantities of interest, and shows how to estimate
+those quantities using the <code>marginaleffects</code> package for R
+and Python. The techniques introduced can enhance the interpretability
+of over 100 classes of statistical and machine learning models,
+including linear, GLM, GAM, mixed-effects, bayesian, categorical
+outcomes, XGBoost, and more.</p></li>
+<li><p><a href="https://r-charts.com/">R charts</a> A great resource by
+“R Coder” that lets you see hundreds of R graph examples and provides
+all the code to reproduce them, making it easily extendable to your own
+data, using both base R and <code>ggplot2</code>, as well as other
+packages for some more niche graphs.</p></li>
+</ul>
+</div>
 </div>
 
 
