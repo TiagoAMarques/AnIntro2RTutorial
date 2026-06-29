@@ -58,7 +58,7 @@ Below I also provide a list of additional free online resources that you might w
 
 This is a non-exhaustive, non-comprehensive and quite random list of R (and related) resources that I found useful at some point. They might (but will not necessarily) be ecologically oriented. Feel free to explore at your own risk. No real order in the list I am afraid.
 
-- [Send me a suggested resource and I'll add it here](Thank%20you!)
+- If you happen to know about a good resource to add to the list below, send me the link and I'll add it below.
 
 ## General R
 
