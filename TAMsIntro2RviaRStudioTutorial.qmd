@@ -1092,21 +1092,17 @@ We might sometimes need to work with dates and/or times, and this used to be a m
 library(lubridate)
 ```
 
-As an example, take a look at the current date and time using function `Sys.Date()`. It is now 
+Dates and times are natively of class `r class(Sys.time())` in R. As an example, take a look at the current date and time using function `Sys.Date()`. It is now (as in, when this document was last compiled!)
 
 ```{r}
 #for just the date try 
 # Sys.Date()
 dtnow <- Sys.time()
 dtnow
+class(dtnow)
 ```
 
-in base R
-
-```{r}
-as.POSIXct(dtnow, format = "%Y-%m-%d %H:%M:%S", tz = "Europe/Lisbon")
-```
-just the date
+and get just the date as
 
 ```{r}
 as.Date(dtnow)  # R grabs the date part automatically
@@ -1150,6 +1146,7 @@ and now this is is my age
 ```{r}
 Sys.Date()-bday
 ```
+
 a bit nicer and controling units, my age in years is
 
 ```{r}
@@ -1166,8 +1163,6 @@ interval(bday, Sys.Date()) %/% years(1)
 Send me a present if it is my birthday! 
 
 Check out [here](https://rstudio.github.io/cheatsheets/html/lubridate.html) the many other amazing things you can do with times and dates leveraging on `lubridate` functionality.
-
-
 
 # Simulation and random number generation
 

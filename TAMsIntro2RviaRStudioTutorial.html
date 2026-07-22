@@ -2318,7 +2318,7 @@ vertical-align: -.125em;
 </section>
 <section id="tutorial-versions" class="level2">
 <h2 class="anchored" data-anchor-id="tutorial-versions">Tutorial versions</h2>
-<p>This .Rmd was last compiled on 2026-07-22 11:32:09.192928. The latest version of this tutorial is always available at the <a href="https://github.com/TiagoAMarques/AnIntro2RTutorial">github repository</a>.</p>
+<p>This .Rmd was last compiled on 2026-07-22 11:46:33.954386. The latest version of this tutorial is always available at the <a href="https://github.com/TiagoAMarques/AnIntro2RTutorial">github repository</a>.</p>
 </section>
 <section id="tips-for-non-uk-native-system-users" class="level2">
 <h2 class="anchored" data-anchor-id="tips-for-non-uk-native-system-users">Tips for non-UK native system users</h2>
@@ -3238,7 +3238,7 @@ $age
 <span id="cb120-2"><a href="#cb120-2" aria-hidden="true" tabindex="-1"></a><span class="fu">praise</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] &quot;You are epic!&quot;</code></pre>
+<pre><code>[1] &quot;You are transcendent!&quot;</code></pre>
 </div>
 </div>
 <p>Important note: you can and should load required packages in dynamic reports via the function <code>library</code>. You should not install packages (with <code>install.packages()</code>) within a dynamic report. Install packages directly on the command line, and only once.</p>
@@ -3823,7 +3823,7 @@ F-statistic: 89.57 on 1 and 48 DF,  p-value: 1.49e-12</code></pre>
 <span id="cb159-2"><a href="#cb159-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lubridate)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
-<p>As an example, take a look at the current date and time using function <code>Sys.Date()</code>. It is now</p>
+<p>Dates and times are natively of class POSIXct, POSIXt in R. As an example, take a look at the current date and time using function <code>Sys.Date()</code>. It is now (as in, when this document was last compiled!)</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -3833,20 +3833,17 @@ F-statistic: 89.57 on 1 and 48 DF,  p-value: 1.49e-12</code></pre>
 <span id="cb160-4"><a href="#cb160-4" aria-hidden="true" tabindex="-1"></a>dtnow</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] &quot;2026-07-22 11:32:23 WEST&quot;</code></pre>
+<pre><code>[1] &quot;2026-07-22 11:46:41 WEST&quot;</code></pre>
 </div>
-</div>
-<p>in base R</p>
-<div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb162"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb162-1"><a href="#cb162-1" aria-hidden="true" tabindex="-1"></a><span class="fu">as.POSIXct</span>(dtnow, <span class="at">format =</span> <span class="st">&quot;%Y-%m-%d %H:%M:%S&quot;</span>, <span class="at">tz =</span> <span class="st">&quot;Europe/Lisbon&quot;</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb162"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb162-1"><a href="#cb162-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(dtnow)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] &quot;2026-07-22 11:32:23 WEST&quot;</code></pre>
+<pre><code>[1] &quot;POSIXct&quot; &quot;POSIXt&quot; </code></pre>
 </div>
 </div>
-<p>just the date</p>
+<p>and get just the date as</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -3887,7 +3884,7 @@ F-statistic: 89.57 on 1 and 48 DF,  p-value: 1.49e-12</code></pre>
 {
     UseMethod(&quot;minute&quot;)
 }
-&lt;bytecode: 0x000001bf89016af8&gt;
+&lt;bytecode: 0x0000016c5b257158&gt;
 &lt;environment: namespace:lubridate&gt;</code></pre>
 </div>
 <details class="code-fold">
@@ -3895,7 +3892,7 @@ F-statistic: 89.57 on 1 and 48 DF,  p-value: 1.49e-12</code></pre>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb172"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb172-1"><a href="#cb172-1" aria-hidden="true" tabindex="-1"></a>(dtnow)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] &quot;2026-07-22 11:32:23 WEST&quot;</code></pre>
+<pre><code>[1] &quot;2026-07-22 11:46:41 WEST&quot;</code></pre>
 </div>
 </div>
 <p>We could actually calculate the time elapsed between any time points</p>
@@ -3906,7 +3903,7 @@ F-statistic: 89.57 on 1 and 48 DF,  p-value: 1.49e-12</code></pre>
 <span id="cb174-2"><a href="#cb174-2" aria-hidden="true" tabindex="-1"></a><span class="fu">Sys.time</span>()<span class="sc">-</span>dtnow</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>Time difference of 0.3940899 secs</code></pre>
+<pre><code>Time difference of 0.1632359 secs</code></pre>
 </div>
 </div>
 <p>You can also turn strings (aka characters) into date-time objects, as an example, this is my birthday as text</p>
@@ -4233,13 +4230,13 @@ The i+3 currently is: 7</code></pre>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
 <div id="ref-Faraway2006" class="csl-entry" role="listitem">
-Faraway, J.J. (2006). <em>Extending the linear model with r</em>. Chapman &amp; Hall / CRC.
+Faraway, J.J. (2006). <em>Extending the linear model with <span>R</span></em>. Chapman &amp; Hall / CRC.
 </div>
 <div id="ref-Wood2006" class="csl-entry" role="listitem">
-Wood, S.N. (2006). <em>Generalized additive models: An introduction with r</em>. CRC/Chapman &amp; Hall.
+Wood, S.N. (2006). <em>Generalized additive models: An introduction with <span>R</span></em>. CRC/Chapman &amp; Hall.
 </div>
 <div id="ref-Zuur2009b" class="csl-entry" role="listitem">
-Zuur, A.F., Ieno, E.N., Walker, N., Saveliev, A.A. &amp; Smith, G.M. (2009). <em>Mixed effects models and extensions in ecology with r</em>. Springer.
+Zuur, A.F., Ieno, E.N., Walker, N., Saveliev, A.A. &amp; Smith, G.M. (2009). <em>Mixed effects models and extensions in ecology with <span>R</span></em>. Springer.
 </div>
 </div></section></div></main>
 <!-- /main column -->
