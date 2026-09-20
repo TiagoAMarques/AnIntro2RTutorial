@@ -37,13 +37,13 @@ bibliography: biblio.bib
 
 ## Where is this tutorial?
 
-You might be reading this document as a pdf, a word or an html. These files are created by compiling (i.e. knitting) an RMarkdown dynamic report (see many more details about dynamic reports below). The .Rmd "TAMsIntro2RviaRStudioTutorial.Rmd", which after compilation, creates these 3 different formats, is available in the github repository located at:
+You might be reading this document as a pdf, a word or an html. These files are created by compiling (i.e. knitting) a quarto dynamic report (see many more details about dynamic reports below). The .qmd "TAMsIntro2RviaRStudioTutorial.qmd", which after compilation, creates these 3 different formats, is available in the github repository located at:
 
 <https://github.com/TiagoAMarques/AnIntro2RTutorial>
 
 ## Tutorial versions
 
-This .Rmd was last compiled on `r Sys.time()`. The latest version of this tutorial is always available at the [github repository](https://github.com/TiagoAMarques/AnIntro2RTutorial).
+This .qmd was last compiled on `r Sys.time()`. The latest version of this tutorial is always available at the [github repository](https://github.com/TiagoAMarques/AnIntro2RTutorial).
 
 ## Tips for non-UK native system users
 
@@ -53,7 +53,7 @@ Also, you should be aware that some directories names can cause issues. If you a
 
 Finally, be careful about some directories not having necessarily the name (for the system) that Windows shows you to have (examples for PT users: "Utilizador" vs "User" and "desktop" vs "Ambiente de trabalho").
 
-# Software requirements
+## Software requirements
 
 This tutorial assumes that R and RStudio have been previously installed in the computer you are using. The latest version of both software packages is recommended. Both are free and open source. You can get R [here](https://www.r-project.org/) and Rstudio [here](https://www.rstudio.com/).
 
@@ -75,6 +75,8 @@ This material does not assume any previous knowledge about R, but some basic log
 To facilitate the interaction with R we leverage on [RStudio](https://www.rstudio.com/), a graphical user interface (GUI), a piece of software which allows users to have at a click's distance many useful features of R. In the following sections of the tutorial you will be guided through a first session of R via RStudio, and then you will start working on a dynamic report.
 
 The tutorial is intended to follow a presentation about R and RStudio, their interaction and capabilities ("AQuikIntro2RandRStudioInQuarto.html"). This document is also in the git repository, but the presentation itself is also hosted at RPubs: [A Quick Introduction to R and RStudio](https://rpubs.com/talomarques/AnIntroToRandRStudio) where you can view it immediately.
+
+If you are using this tutorial in class with me/a teacher, after you are exposed to the slides, you might want to jump straight to section @sec-starthere2. Do come back after class to all the material in between here and there, as it might contain useful context and additional relevant material. Remember, here you learn as much as you want to, and those that want the most will certainly do better.
 
 Disclaimer: in this document I copy paste freely from other documents that I have written. Therefore, if you have read these words elsewhere by me, though luck. I claim the right to plagiarize myself here!
 
@@ -104,9 +106,9 @@ The advantages of mastering R are priceless, but the learning curve can be daunt
 
 ![Illustrating R's learning curve: Artwork by '\@'allison_horst](extfiles/usethis.png)
 
-This document is written in RMarkdown, a tool that allows you to build dynamic reports based on R code, providing integrated documents that contain all that is required for a given project, from reading the data in to final results and discussion, passing through all the analysis and results. If you want a gentle introduction to RMarkdown using a hands on tutorial based on a versatile template that will do many of the things you will need to get started, look for no more, there is also one here:
+This document is written in Quarto, a tool that allows you to build dynamic reports based on R code, providing integrated documents that contain all that is required for a given project, from reading the data in to final results and discussion, passing through all the analysis and results. If you want a gentle introduction to Quarto using a hands on tutorial based on a versatile template that will do many of the things you will need to get started, look for no more, there is one here:
 
-https://github.com/TiagoAMarques/RMarkdownTemplate
+<https://github.com/TiagoAMarques/template_4_quarto_report>
 
 Go out and explore, little grasshopper. You will conquer many great things if you do. You will become a code giant one day. But never forget, you need to be thankful to an entire community, and you are standing on the shoulders of giants!
 
@@ -187,15 +189,15 @@ Now we have met RStudio and we know how it can make our life simpler, lets move 
 
 # Dynamic reports and reproducible research
 
-One of the most amazing features of the integration of R and RStudio is how simple it becomes to work with dynamic reports, built on RMarkdown. This will take you to the next level in data analysis! Actually, this document was itself created as a dynamic report, using RMarkdown. You should explore some of the basics of R Markdown, and you can do so here: https://rmarkdown.rstudio.com/authoring_basics.html. You can find additional details here: https://rmarkdown.rstudio.com/. You can read an entire free book on the topic here: https://bookdown.org/yihui/rmarkdown/.
+One of the most amazing features of the integration of R and RStudio is how simple it becomes to work with dynamic reports, built on Quarto (if you are an old geeser... Quarto is like RMarkdown, on steroids - with no side effects). This will take you to the next level in data analysis. Actually, this document was itself created as a dynamic report, using Quarto. You should explore some of the basics of R quarto, and you can do so here: https://quarto.org/docs/get-started/hello/rstudio.html.
 
-Experiment yourself to create one. In RStudio, select File - \> New file -\> R Markdown..., then just add a title, something like "My first dynamic report" and see what happens. Explore the content of the file just created and see what happens when you press the RStudio button `knit`. Experiment with the created document to try and change some of the output. Experiment in creating output as an `.html`, as a `.pdf`, and even as a `.docx` Word document.
+Experiment yourself to create one. In RStudio, select `File` - \> `New file` -\> ?, then just add a title, something like "My first dynamic report" and see what happens. Explore the content of the file just created and see what happens when you press the RStudio button `knit`. Experiment with the created document to try and change some of the output. Experiment in creating output as an `.html`, as a `.pdf`, and even as a `.docx` Word document.
 
-Actually, a good way to learn and get up and running fast in RMarkdown is by example. Hence, I have prepared a template that you can use to create without effort a nice dynamic report. Feel free to explore the material here:
+Actually, a good way to learn and get up and running fast in Quarto is by example. Hence, I have prepared a template that you can use to create without effort a nice dynamic report. Feel free to explore the material here:
 
-https://github.com/TiagoAMarques/RMarkdownTemplate
+<https://github.com/TiagoAMarques/template_4_quarto_report>
 
-Just download all the files into a folder, `knit` the file `RMarkdownTemplate.Rmd` and off you go.
+Just download all the files into a folder, `knit` the file `QuartoTemplate.Rmd` and off you go.
 
 Imagine the potential when you are analyzing real data, and the data changes after your report is written!
 
@@ -226,7 +228,7 @@ Describe
 
 Here we present a brief introduction to R inside RStudio, using a code script and the command line.
 
-In the coming sections we will mostly consider analysis using dynamic reports via RMarkdown documents (.Rmd), but if this is the first time you use R, it is useful to start with a session where you can see objects being created in the global environment via the command line.
+In the coming sections we will mostly consider analysis using dynamic reports via Quarto documents (.qmd), but if this is the first time you use R, it is useful to start with a session where you can see objects being created in the global environment via the command line.
 
 Open RStudio. By default an empty workspace should appear. A workspace is like your table in a library. You can work with all the objects in your table. If you have an existing workspace, you can open it by selecting `File|Open File`. We recommend that you begin by creating a new script file (RStudio Shortcut: `Ctrl+Shift+N`; this creates a .R file) and use that file to save, and comment, all the code that you will create and execut during this current R session. In this way you will have a record of everything you did, and you can save that file as say `Session1.R` for later use.
 
@@ -338,19 +340,21 @@ setwd("C:/Users/tiago/Desktop/mycourse")
 
 It is a very good habit to make sure that you are working in the directory you think you are working. Many errors might occur if R can't find some object or file because it is looking on the wrong place.
 
-A good trick to make sure you are working in the directory you want is to open RStudio from the directory you want it to be working on. You can do that by double clicking a file R studio recognizes as a file it should open, e.g. as might happen in particular for files with extensions `.R` (a script), a `.Rdata` (a workspace) or a `.Rmd` (a dynamic report in RMarkdown).
+A good trick to make sure you are working in the directory you want is to open RStudio from the directory you want it to be working on. You can do that by double clicking a file R studio recognizes as a file it should open, e.g. as might happen in particular for files with extensions `.R` (a script), a `.Rdata` (a workspace) or a `.qmd` (a dynamic report in Quarto).
 
 If you are already in RStudio, you can also use the `Files` tab to see where you are, move to the folder where you want to be working, and then from the `Files|More` menu (a dented wheel) select the option `Set as working directory`.
 
 Now you have used R in RStudio, lets use the power of their integration to work directly in a dynamic report.
 
-# Working through R via a dynamic report
+# Working through R via a dynamic report {#sec-starthere2}
 
-Create a new dynamic report using an RMarkdown file, as described above. Comment all you do in the appropriate place: things that seem obvious to you when you do them won't necessarily be obvious to you next week, so describe with comments what they are and why you did them. Therefore, at the end you will have a record that makes it easy to track everything you did, and a template you can use in future classes.
+Create a new dynamic report using a quarto file, as described above. Call it something sensible, like `*****EN2026tutorial.qmd`. Copy-paste into it as much as you want from this current file. A lazy option would be to create a copy of this `.qmd` and rename it, deleting most of the material above.
 
-Once you created the RMarkdown from scratch, we can start by creating a new variable.
+Comment all you do in the appropriate place: things that seem obvious to you when you do them won't necessarily be obvious to you next week, so describe with comments what they are and why you did them. Therefore, at the end you will have a record that makes it easy to track everything you did, and a template you can use in future classes.
 
-Note that all the code must go inside code chunks, and you can get them by doing `Code | InsertChunk` or the shortcut `Ctrl+Alt+I`. When code chucks are properly formated they appear higlighted in the .Rmd.
+Once you created the quarto file from scratch, we can start by creating a new variable.
+
+Note that all the code must go inside code chunks, and you can get them by doing `Code | InsertChunk` or the shortcut `Ctrl+Alt+I`. When code chucks are properly formatted they appear highlighted in the .Rmd.
 
 An empty code chunk (in the image with a comment added to it!) looks like this:
 

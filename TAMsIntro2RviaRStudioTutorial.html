@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Tiago A. Marques">
-<meta name="dcterms.date" content="2026-07-22">
+<meta name="dcterms.date" content="2026-09-20">
 
 <title>A hands-on tutorial on R and RStudio</title>
 <style>
@@ -2233,8 +2233,8 @@ vertical-align: -.125em;
   <li><a href="#where-is-this-tutorial" id="toc-where-is-this-tutorial" class="nav-link" data-scroll-target="#where-is-this-tutorial">Where is this tutorial?</a></li>
   <li><a href="#tutorial-versions" id="toc-tutorial-versions" class="nav-link" data-scroll-target="#tutorial-versions">Tutorial versions</a></li>
   <li><a href="#tips-for-non-uk-native-system-users" id="toc-tips-for-non-uk-native-system-users" class="nav-link" data-scroll-target="#tips-for-non-uk-native-system-users">Tips for non-UK native system users</a></li>
-  </ul></li>
   <li><a href="#software-requirements" id="toc-software-requirements" class="nav-link" data-scroll-target="#software-requirements">Software requirements</a></li>
+  </ul></li>
   <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
   <li><a href="#preliminaries-about-r" id="toc-preliminaries-about-r" class="nav-link" data-scroll-target="#preliminaries-about-r">Preliminaries about R</a></li>
   <li><a href="#external-r-resources-that-might-be-helpful" id="toc-external-r-resources-that-might-be-helpful" class="nav-link" data-scroll-target="#external-r-resources-that-might-be-helpful">External R resources that might be helpful</a></li>
@@ -2245,7 +2245,7 @@ vertical-align: -.125em;
   <li><a href="#exploring-the-use-of-dynamic-reports" id="toc-exploring-the-use-of-dynamic-reports" class="nav-link" data-scroll-target="#exploring-the-use-of-dynamic-reports">Exploring the use of dynamic reports</a></li>
   </ul></li>
   <li><a href="#a-first-quick-session-in-rstudio" id="toc-a-first-quick-session-in-rstudio" class="nav-link" data-scroll-target="#a-first-quick-session-in-rstudio">A first quick session in RStudio</a></li>
-  <li><a href="#working-through-r-via-a-dynamic-report" id="toc-working-through-r-via-a-dynamic-report" class="nav-link" data-scroll-target="#working-through-r-via-a-dynamic-report">Working through R via a dynamic report</a></li>
+  <li><a href="#sec-starthere2" id="toc-sec-starthere2" class="nav-link" data-scroll-target="#sec-starthere2">Working through R via a dynamic report</a></li>
   <li><a href="#types-and-classes-of-objects" id="toc-types-and-classes-of-objects" class="nav-link" data-scroll-target="#types-and-classes-of-objects">Types and classes of objects</a></li>
   <li><a href="#subsetting-data" id="toc-subsetting-data" class="nav-link" data-scroll-target="#subsetting-data">Subsetting data</a></li>
   <li><a href="#mathematical-functions" id="toc-mathematical-functions" class="nav-link" data-scroll-target="#mathematical-functions">Mathematical functions</a></li>
@@ -2294,7 +2294,7 @@ vertical-align: -.125em;
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">July 22, 2026</p>
+      <p class="date">September 20, 2026</p>
     </div>
   </div>
   
@@ -2313,12 +2313,12 @@ vertical-align: -.125em;
 <h1>Before you start</h1>
 <section id="where-is-this-tutorial" class="level2">
 <h2 class="anchored" data-anchor-id="where-is-this-tutorial">Where is this tutorial?</h2>
-<p>You might be reading this document as a pdf, a word or an html. These files are created by compiling (i.e. knitting) an RMarkdown dynamic report (see many more details about dynamic reports below). The .Rmd “TAMsIntro2RviaRStudioTutorial.Rmd”, which after compilation, creates these 3 different formats, is available in the github repository located at:</p>
+<p>You might be reading this document as a pdf, a word or an html. These files are created by compiling (i.e. knitting) a quarto dynamic report (see many more details about dynamic reports below). The .qmd “TAMsIntro2RviaRStudioTutorial.qmd”, which after compilation, creates these 3 different formats, is available in the github repository located at:</p>
 <p><a href="https://github.com/TiagoAMarques/AnIntro2RTutorial" class="uri">https://github.com/TiagoAMarques/AnIntro2RTutorial</a></p>
 </section>
 <section id="tutorial-versions" class="level2">
 <h2 class="anchored" data-anchor-id="tutorial-versions">Tutorial versions</h2>
-<p>This .Rmd was last compiled on 2026-07-22 11:50:22.506785. The latest version of this tutorial is always available at the <a href="https://github.com/TiagoAMarques/AnIntro2RTutorial">github repository</a>.</p>
+<p>This .qmd was last compiled on 2026-09-20 13:01:10.59346. The latest version of this tutorial is always available at the <a href="https://github.com/TiagoAMarques/AnIntro2RTutorial">github repository</a>.</p>
 </section>
 <section id="tips-for-non-uk-native-system-users" class="level2">
 <h2 class="anchored" data-anchor-id="tips-for-non-uk-native-system-users">Tips for non-UK native system users</h2>
@@ -2326,9 +2326,8 @@ vertical-align: -.125em;
 <p>Also, you should be aware that some directories names can cause issues. If you are a user with those characters in the name, and you are working via a user with your name, then this applies to you.</p>
 <p>Finally, be careful about some directories not having necessarily the name (for the system) that Windows shows you to have (examples for PT users: “Utilizador” vs “User” and “desktop” vs “Ambiente de trabalho”).</p>
 </section>
-</section>
-<section id="software-requirements" class="level1">
-<h1>Software requirements</h1>
+<section id="software-requirements" class="level2">
+<h2 class="anchored" data-anchor-id="software-requirements">Software requirements</h2>
 <p>This tutorial assumes that R and RStudio have been previously installed in the computer you are using. The latest version of both software packages is recommended. Both are free and open source. You can get R <a href="https://www.r-project.org/">here</a> and Rstudio <a href="https://www.rstudio.com/">here</a>.</p>
 <p>It is fundamental that the difference between these two pieces of software is clear in your mind from the start:</p>
 <ol type="1">
@@ -2337,6 +2336,7 @@ vertical-align: -.125em;
 </ol>
 <p>Additional R packages will be later installed, but you will learn about that in due time :)</p>
 </section>
+</section>
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
 <p>This tutorial was created as a gentle introduction to the R environment via the RStudio interface to R.</p>
@@ -2344,6 +2344,7 @@ vertical-align: -.125em;
 <p>This material does not assume any previous knowledge about R, but some basic logic and programming notions would be desirable.</p>
 <p>To facilitate the interaction with R we leverage on <a href="https://www.rstudio.com/">RStudio</a>, a graphical user interface (GUI), a piece of software which allows users to have at a click’s distance many useful features of R. In the following sections of the tutorial you will be guided through a first session of R via RStudio, and then you will start working on a dynamic report.</p>
 <p>The tutorial is intended to follow a presentation about R and RStudio, their interaction and capabilities (“AQuikIntro2RandRStudioInQuarto.html”). This document is also in the git repository, but the presentation itself is also hosted at RPubs: <a href="https://rpubs.com/talomarques/AnIntroToRandRStudio">A Quick Introduction to R and RStudio</a> where you can view it immediately.</p>
+<p>If you are using this tutorial in class with me/a teacher, after you are exposed to the slides, you might want to jump straight to section <a href="#sec-starthere2" class="quarto-xref">Section 9</a>. Do come back after class to all the material in between here and there, as it might contain useful context and additional relevant material. Remember, here you learn as much as you want to, and those that want the most will certainly do better.</p>
 <p>Disclaimer: in this document I copy paste freely from other documents that I have written. Therefore, if you have read these words elsewhere by me, though luck. I claim the right to plagiarize myself here!</p>
 </section>
 <section id="preliminaries-about-r" class="level1">
@@ -2385,7 +2386,7 @@ vertical-align: -.125em;
 <figcaption>Illustrating R’s learning curve: Artwork by ’@’allison_horst</figcaption>
 </figure>
 </div>
-<p>This document is written in RMarkdown, a tool that allows you to build dynamic reports based on R code, providing integrated documents that contain all that is required for a given project, from reading the data in to final results and discussion, passing through all the analysis and results. If you want a gentle introduction to RMarkdown using a hands on tutorial based on a versatile template that will do many of the things you will need to get started, look for no more, there is also one here:</p>
+<p>This document is written in Quarto, a tool that allows you to build dynamic reports based on R code, providing integrated documents that contain all that is required for a given project, from reading the data in to final results and discussion, passing through all the analysis and results. If you want a gentle introduction to Quarto using a hands on tutorial based on a versatile template that will do many of the things you will need to get started, look for no more, there is one here:</p>
 <p>https://github.com/TiagoAMarques/RMarkdownTemplate</p>
 <p>Go out and explore, little grasshopper. You will conquer many great things if you do. You will become a code giant one day. But never forget, you need to be thankful to an entire community, and you are standing on the shoulders of giants!</p>
 <div class="quarto-figure quarto-figure-center">
@@ -2451,9 +2452,9 @@ vertical-align: -.125em;
 </section>
 <section id="dynamic-reports-and-reproducible-research" class="level1">
 <h1>Dynamic reports and reproducible research</h1>
-<p>One of the most amazing features of the integration of R and RStudio is how simple it becomes to work with dynamic reports, built on RMarkdown. This will take you to the next level in data analysis! Actually, this document was itself created as a dynamic report, using RMarkdown. You should explore some of the basics of R Markdown, and you can do so here: https://rmarkdown.rstudio.com/authoring_basics.html. You can find additional details here: https://rmarkdown.rstudio.com/. You can read an entire free book on the topic here: https://bookdown.org/yihui/rmarkdown/.</p>
-<p>Experiment yourself to create one. In RStudio, select File - &gt; New file -&gt; R Markdown…, then just add a title, something like “My first dynamic report” and see what happens. Explore the content of the file just created and see what happens when you press the RStudio button <code>knit</code>. Experiment with the created document to try and change some of the output. Experiment in creating output as an <code>.html</code>, as a <code>.pdf</code>, and even as a <code>.docx</code> Word document.</p>
-<p>Actually, a good way to learn and get up and running fast in RMarkdown is by example. Hence, I have prepared a template that you can use to create without effort a nice dynamic report. Feel free to explore the material here:</p>
+<p>One of the most amazing features of the integration of R and RStudio is how simple it becomes to work with dynamic reports, built on Quarto (Quarto is like RMarkdown, on steroids - with no side effects). This will take you to the next level in data analysis. Actually, this document was itself created as a dynamic report, using Quarto. You should explore some of the basics of R quarto, and you can do so here: https://quarto.org/docs/get-started/hello/rstudio.html. You can find additional (RMarkdown native) details here: https://rmarkdown.rstudio.com/. You can read an entire free book on the topic here: https://bookdown.org/yihui/rmarkdown/.</p>
+<p>Experiment yourself to create one. In RStudio, select <code>File</code> - &gt; <code>New file</code> -&gt; ?, then just add a title, something like “My first dynamic report” and see what happens. Explore the content of the file just created and see what happens when you press the RStudio button <code>knit</code>. Experiment with the created document to try and change some of the output. Experiment in creating output as an <code>.html</code>, as a <code>.pdf</code>, and even as a <code>.docx</code> Word document.</p>
+<p>Actually, a good way to learn and get up and running fast in Quarto is by example. Hence, I have prepared a template that you can use to create without effort a nice dynamic report. Feel free to explore the material here:</p>
 <p>https://github.com/TiagoAMarques/RMarkdownTemplate</p>
 <p>Just download all the files into a folder, <code>knit</code> the file <code>RMarkdownTemplate.Rmd</code> and off you go.</p>
 <p>Imagine the potential when you are analyzing real data, and the data changes after your report is written!</p>
@@ -2482,7 +2483,7 @@ vertical-align: -.125em;
 <section id="a-first-quick-session-in-rstudio" class="level1">
 <h1>A first quick session in RStudio</h1>
 <p>Here we present a brief introduction to R inside RStudio, using a code script and the command line.</p>
-<p>In the coming sections we will mostly consider analysis using dynamic reports via RMarkdown documents (.Rmd), but if this is the first time you use R, it is useful to start with a session where you can see objects being created in the global environment via the command line.</p>
+<p>In the coming sections we will mostly consider analysis using dynamic reports via Quarto documents (.qmd), but if this is the first time you use R, it is useful to start with a session where you can see objects being created in the global environment via the command line.</p>
 <p>Open RStudio. By default an empty workspace should appear. A workspace is like your table in a library. You can work with all the objects in your table. If you have an existing workspace, you can open it by selecting <code>File|Open File</code>. We recommend that you begin by creating a new script file (RStudio Shortcut: <code>Ctrl+Shift+N</code>; this creates a .R file) and use that file to save, and comment, all the code that you will create and execut during this current R session. In this way you will have a record of everything you did, and you can save that file as say <code>Session1.R</code> for later use.</p>
 <p>You know that R is ready to receive a command when you see the R prompt on the command line (on the bottom left tab by default in RStudio): <code>&gt;</code>. If you type a line of code that is not complete, R presents the <code>+</code> character, so that you, the R user, know R expects the conclusion of the current line.</p>
 <p><strong>Important note</strong>: while the prompt <code>&gt;</code> and <code>+</code> might not be shown in this tutorial’s code, they are often present in material online. You should not try to add either <code>&gt;</code> nor <code>+</code> to the command line: this is something that R does for you and R will complain with an error message if you try to do it yourself! Past experience tells me that more than one person will have problems because they forgot to delete a <code>&gt;</code> and/or <code>+</code> from code when they copy paste the code into their own R sessions. Avoid being that person!</p>
@@ -2633,7 +2634,7 @@ vertical-align: -.125em;
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">getwd</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] &quot;C:/Users/tiago/Dropbox/GithubProjects/AnIntro2RTutorial&quot;</code></pre>
+<pre><code>[1] &quot;C:/Users/tiago/Documents/GithubDesktop/AnIntro2RTutorial&quot;</code></pre>
 </div>
 </div>
 <p>You can always change the directory you are working on by setting it up explicitly to your desired location, using</p>
@@ -2645,15 +2646,16 @@ vertical-align: -.125em;
 </details>
 </div>
 <p>It is a very good habit to make sure that you are working in the directory you think you are working. Many errors might occur if R can’t find some object or file because it is looking on the wrong place.</p>
-<p>A good trick to make sure you are working in the directory you want is to open RStudio from the directory you want it to be working on. You can do that by double clicking a file R studio recognizes as a file it should open, e.g. as might happen in particular for files with extensions <code>.R</code> (a script), a <code>.Rdata</code> (a workspace) or a <code>.Rmd</code> (a dynamic report in RMarkdown).</p>
+<p>A good trick to make sure you are working in the directory you want is to open RStudio from the directory you want it to be working on. You can do that by double clicking a file R studio recognizes as a file it should open, e.g. as might happen in particular for files with extensions <code>.R</code> (a script), a <code>.Rdata</code> (a workspace) or a <code>.qmd</code> (a dynamic report in Quarto).</p>
 <p>If you are already in RStudio, you can also use the <code>Files</code> tab to see where you are, move to the folder where you want to be working, and then from the <code>Files|More</code> menu (a dented wheel) select the option <code>Set as working directory</code>.</p>
 <p>Now you have used R in RStudio, lets use the power of their integration to work directly in a dynamic report.</p>
 </section>
-<section id="working-through-r-via-a-dynamic-report" class="level1">
+<section id="sec-starthere2" class="level1">
 <h1>Working through R via a dynamic report</h1>
-<p>Create a new dynamic report using an RMarkdown file, as described above. Comment all you do in the appropriate place: things that seem obvious to you when you do them won’t necessarily be obvious to you next week, so describe with comments what they are and why you did them. Therefore, at the end you will have a record that makes it easy to track everything you did, and a template you can use in future classes.</p>
-<p>Once you created the RMarkdown from scratch, we can start by creating a new variable.</p>
-<p>Note that all the code must go inside code chunks, and you can get them by doing <code>Code | InsertChunk</code> or the shortcut <code>Ctrl+Alt+I</code>. When code chucks are properly formated they appear higlighted in the .Rmd.</p>
+<p>Create a new dynamic report using a quarto file, as described above. Call it something sensible, like <code>*****EN2026tutorial.qmd</code>. Copy-paste into it as much as you want from this current file. A lazy option would be to create a copy of this <code>.qmd</code> and rename it, deleting most of the material above.</p>
+<p>Comment all you do in the appropriate place: things that seem obvious to you when you do them won’t necessarily be obvious to you next week, so describe with comments what they are and why you did them. Therefore, at the end you will have a record that makes it easy to track everything you did, and a template you can use in future classes.</p>
+<p>Once you created the quarto file from scratch, we can start by creating a new variable.</p>
+<p>Note that all the code must go inside code chunks, and you can get them by doing <code>Code | InsertChunk</code> or the shortcut <code>Ctrl+Alt+I</code>. When code chucks are properly formatted they appear highlighted in the .Rmd.</p>
 <p>An empty code chunk (in the image with a comment added to it!) looks like this:</p>
 <p><img role="img" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAkACQAAD/4RD0RXhpZgAATU0AKgAAAAgABAE7AAIAAAAOAAAISodpAAQAAAABAAAIWJydAAEAAAAcAAAQ0OocAAcAAAgMAAAAPgAAAAAc6gAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFRpYWdvIE1hcnF1ZXMAAAWQAwACAAAAFAAAEKaQBAACAAAAFAAAELqSkQACAAAAAzM5AACSkgACAAAAAzM5AADqHAAHAAAIDAAACJoAAAAAHOoAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAyMDIwOjA5OjMwIDEwOjM3OjM2ADIwMjA6MDk6MzAgMTA6Mzc6MzYAAABUAGkAYQBnAG8AIABNAGEAcgBxAHUAZQBzAAAA/+ELIGh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8APD94cGFja2V0IGJlZ2luPSfvu78nIGlkPSdXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQnPz4NCjx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iPjxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+PHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9InV1aWQ6ZmFmNWJkZDUtYmEzZC0xMWRhLWFkMzEtZDMzZDc1MTgyZjFiIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iLz48cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0idXVpZDpmYWY1YmRkNS1iYTNkLTExZGEtYWQzMS1kMzNkNzUxODJmMWIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyI+PHhtcDpDcmVhdGVEYXRlPjIwMjAtMDktMzBUMTA6Mzc6MzYuMzg1PC94bXA6Q3JlYXRlRGF0ZT48L3JkZjpEZXNjcmlwdGlvbj48cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0idXVpZDpmYWY1YmRkNS1iYTNkLTExZGEtYWQzMS1kMzNkNzUxODJmMWIiIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyI+PGRjOmNyZWF0b3I+PHJkZjpTZXEgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj48cmRmOmxpPlRpYWdvIE1hcnF1ZXM8L3JkZjpsaT48L3JkZjpTZXE+DQoJCQk8L2RjOmNyZWF0b3I+PC9yZGY6RGVzY3JpcHRpb24+PC9yZGY6UkRGPjwveDp4bXBtZXRhPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8P3hwYWNrZXQgZW5kPSd3Jz8+/9sAQwAHBQUGBQQHBgUGCAcHCAoRCwoJCQoVDxAMERgVGhkYFRgXGx4nIRsdJR0XGCIuIiUoKSssKxogLzMvKjInKisq/9sAQwEHCAgKCQoUCwsUKhwYHCoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioq/8AAEQgAWQJlAwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/aAAwDAQACEQMRAD8A8LHSlrRitYWhRimSVBPJq/JaaK2mJ5UV3HfK2HDOHiceo6FT7fN9a9VytbQ8xRv1Oford0+10oXQ/tSC4e3Iwfs0oV156/MCDxnjjPqKryWVqJXEIZowx2s3ykjsSMnB9smnza2sLl0uZVFdBeWmitbQNp8V3HPjE0c7h1+qsMH8CvHqau+GPDmmatfXP9pPLDa2lrJdS+Ty7quOFzwDz+lZyrRhTc5J6GkaTlNQjrc5Kit7U7PSPt7/ANjpc/ZMDZ9qI8zpznbx1qp9jg/ufqa0jLmSZnKPK7GZRXc23hrw9qXhW8vLB76LUNPhSS4WfaYnycEJjkc+v/6uZ+xwf3P1NZ060ajaXR2ZpUoyglJ7MzKK0/scH9z9TR9jg/ufqa1uZGZRWn9jg/ufqaPscH9z9TRcDMorT+xwf3P1NH2OD+5+pouBmUVp/Y4P7n6mj7HB/c/U0XAzKK0/scH9z9TR9jg/ufqaLgZlFaf2OD+5+po+xwf3P1NFwMyitP7HB/c/U0fY4P7n6mi4GZRWn9jg/ufqaPscH9z9TRcDMorT+xwf3P1NH2OD+5+pouBmUVp/Y4P7n6mj7HB/c/U0XAzKK0/scH9z9TR9jg/ufqaLgZlFaf2OD+5+po+xwf3P1NFwMyitP7HB/c/U0fY4P7n6mi4GZRWn9jg/ufqaPscH9z9TRcDMorT+xwf3P1NH2OD+5+pouBmUVp/Y4P7n6mj7HB/c/U0XAzKK0/scH9z9TR9jg/ufqaLgZlFaf2OD+5+po+xwf3P1NFwMyitP7HB/c/U0fY4P7n6mi4GZRWn9jg/ufqaPscH9z9TRcDMorT+xwf3P1NH2OD+5+pouBmUVp/Y4P7n6mj7HB/c/U0XAzKK0/scH9z9TR9jg/ufqaLgZlFaf2OD+5+po+xwf3P1NFwMyitP7HB/c/U0fY4P7n6mi4GZRWn9jg/ufqaPscH9z9TRcDMorT+xwf3P1NH2OD+5+pouBmUVp/Y4P7n6mj7HB/c/U0XAzKK0/scH9z9TR9jg/ufqaLgZlFaf2OD+5+po+xwf3P1NFwMyitP7HB/c/U0fY4P7n6mi4GZRWn9jg/ufqaPscH9z9TRcDMorT+xwf3P1NH2OD+5+pouBmUVp/Y4P7n6mii4D4P+PeP/cH8qkqOD/j3j/3B/KpKQBRRRQAV2Xgz+zv7N1T7N5/9s/YJ/8AXY8jy+M4xzux68VxtbXhfV7PSL+5/tOCWa0u7WS2l8kgOqtjlc8Z4/WuTGU5VKLUd/LqdWEqKnXjKWxe+HXHjmzyM/JLx/2zaoNS8aanqekzaZMlslk7KY4YogogCnhVx2+ufwqkdSh0nXftnheW5hjQYie6VGkGVw2QAV7msup+rxqVvbTXRWvumm3+qK9vKlS9jB9Xe2zTSX6P8DrvBn2f+xfEP9qb/wCzPs8fn+R/rt2/5NmePXOfb3rlbnyPtUv2TzPI3nyvNxu254zjjOOuK6K21nRNN8K3lnYw30moX8KRztOUEKYOSVxz19f/ANfM0YeMva1JtNXenyS1CtKPsacE02r/AIsKKKK7TjCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAI4P+PeP/cH8q09P0+SYNPJbySQouQoU/vD0AGPfrWfZxtKkEaAszBQAOprfeW1sLdSiSEQuVi/ej53xhm+7/D0B/Su7CUoNupU2X9dnt/kupyYmpKKUIbv+u/9b9DN1G1+xvHF5TKwX5pCDh26nHsOlU6dIVaQmMMFPQM2T+eBTa5akoym3FWR0U1KMEpO7NUeHr02pkKYk3YEeV5HrnNN02zYT3Lyw+Y1shAjxuBc8Ae9T6lp9x9htvJQNbQQbi4YDk8nvUEkj2WiQxRsUkumMjlTg7egH0NepKjSoVW3BpRXV7vZW07v00POjVqVYNcyfM7adPxfRFW6066slVrmIoGOAdwP8qsDTZ7KF572y3xbcDMoG0noeDk/SjUz5FraWXeOPzHH+03OPw/rRcn7Lo9vb9HnPnP9Oi/41g6VKnOe/uryevbbXX02NvaVZwjqtXbrt3Wumi8ypbWc95IUtojIR1xwB+NLdWVxZMq3UewsMjkHP5Vp6da3a2WDaR3VpOA7DzApGPfPHrWdfpBHfSJZuXhU/Kc5+uPaoq4eNKgptO7+X4W1XmmXCu513BNWXz/G+npb5larlppl3doJYYDJGGwfnC5/OqdaOl/6PDc3p6xJsjP+23ArLDQhOpae2+nlr1TNa8pRptw3/rzRUnAlvGW2g8vLbViVi/P171NPpN7bQGaeDbGuMncDj9afpMF21wbixSN5If4HPXORUurQW8MaMsX2a5YnzIFk3gDrn27cVsqCdGVaad/uXy0s9emmmxhKs41Y0otefV/nf56mXUttazXk3lW6b3xnGQOPxqKnwxNPOkSfedgo/GuOmk5JNXOyV1F2di1dWj2dvHDcWmyd2yJPMzkemBUX2G4+2/ZBH+//ALu4emevStSMR3fiaKJf9Vb/ACID32D/ABpBDNZR319dlVnYFFQMCVZvp7V6csLCT51flTavptFem76HnLEyiknbmav13b067dzKtrSe7l8u2jMjDrjoPx6VLJpd5FcRwPDiSXOwbgc4/Gr+nWt4tmcW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" class="img-fluid"></p>
 <p>We will create a variable called <code>myvar1</code> which we will assign the value of 4. This is typically done using the assign operator <code>&lt;-</code>.</p>
@@ -3238,7 +3240,7 @@ $age
 <span id="cb120-2"><a href="#cb120-2" aria-hidden="true" tabindex="-1"></a><span class="fu">praise</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] &quot;You are neat!&quot;</code></pre>
+<pre><code>[1] &quot;You are cat&#39;s pajamas!&quot;</code></pre>
 </div>
 </div>
 <p>Important note: you can and should load required packages in dynamic reports via the function <code>library</code>. You should not install packages (with <code>install.packages()</code>) within a dynamic report. Install packages directly on the command line, and only once.</p>
@@ -3833,7 +3835,7 @@ F-statistic: 89.57 on 1 and 48 DF,  p-value: 1.49e-12</code></pre>
 <span id="cb160-4"><a href="#cb160-4" aria-hidden="true" tabindex="-1"></a>dtnow</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] &quot;2026-07-22 11:50:30 WEST&quot;</code></pre>
+<pre><code>[1] &quot;2026-09-20 13:01:20 WEST&quot;</code></pre>
 </div>
 <details class="code-fold">
 <summary>Code</summary>
@@ -3850,7 +3852,7 @@ F-statistic: 89.57 on 1 and 48 DF,  p-value: 1.49e-12</code></pre>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb164"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb164-1"><a href="#cb164-1" aria-hidden="true" tabindex="-1"></a><span class="fu">as.Date</span>(dtnow)  <span class="co"># R grabs the date part automatically</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] &quot;2026-07-22&quot;</code></pre>
+<pre><code>[1] &quot;2026-09-20&quot;</code></pre>
 </div>
 </div>
 <p>We could get the day</p>
@@ -3860,7 +3862,7 @@ F-statistic: 89.57 on 1 and 48 DF,  p-value: 1.49e-12</code></pre>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb166"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb166-1"><a href="#cb166-1" aria-hidden="true" tabindex="-1"></a><span class="fu">day</span>(dtnow)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 22</code></pre>
+<pre><code>[1] 20</code></pre>
 </div>
 </div>
 <p>or the Julian day</p>
@@ -3870,7 +3872,7 @@ F-statistic: 89.57 on 1 and 48 DF,  p-value: 1.49e-12</code></pre>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb168"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb168-1"><a href="#cb168-1" aria-hidden="true" tabindex="-1"></a><span class="fu">yday</span>(dtnow)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 203</code></pre>
+<pre><code>[1] 263</code></pre>
 </div>
 </div>
 <p>or the minute</p>
@@ -3884,7 +3886,7 @@ F-statistic: 89.57 on 1 and 48 DF,  p-value: 1.49e-12</code></pre>
 {
     UseMethod(&quot;minute&quot;)
 }
-&lt;bytecode: 0x00000283b1238a50&gt;
+&lt;bytecode: 0x0000029bf8da15e8&gt;
 &lt;environment: namespace:lubridate&gt;</code></pre>
 </div>
 <details class="code-fold">
@@ -3892,7 +3894,7 @@ F-statistic: 89.57 on 1 and 48 DF,  p-value: 1.49e-12</code></pre>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb172"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb172-1"><a href="#cb172-1" aria-hidden="true" tabindex="-1"></a>(dtnow)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] &quot;2026-07-22 11:50:30 WEST&quot;</code></pre>
+<pre><code>[1] &quot;2026-09-20 13:01:20 WEST&quot;</code></pre>
 </div>
 </div>
 <p>We could actually calculate the time elapsed between any time points</p>
@@ -3903,7 +3905,7 @@ F-statistic: 89.57 on 1 and 48 DF,  p-value: 1.49e-12</code></pre>
 <span id="cb174-2"><a href="#cb174-2" aria-hidden="true" tabindex="-1"></a><span class="fu">Sys.time</span>()<span class="sc">-</span>dtnow</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>Time difference of 0.156951 secs</code></pre>
+<pre><code>Time difference of 0.1818669 secs</code></pre>
 </div>
 </div>
 <p>You can also turn strings (aka characters) into date-time objects, as an example, this is my birthday as text</p>
@@ -3924,7 +3926,7 @@ F-statistic: 89.57 on 1 and 48 DF,  p-value: 1.49e-12</code></pre>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb178"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb178-1"><a href="#cb178-1" aria-hidden="true" tabindex="-1"></a><span class="fu">Sys.Date</span>()<span class="sc">-</span>bday</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>Time difference of 18628 days</code></pre>
+<pre><code>Time difference of 18688 days</code></pre>
 </div>
 </div>
 <p>a bit nicer and controling units, my age in years is</p>
@@ -3934,7 +3936,7 @@ F-statistic: 89.57 on 1 and 48 DF,  p-value: 1.49e-12</code></pre>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb180"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb180-1"><a href="#cb180-1" aria-hidden="true" tabindex="-1"></a><span class="fu">as.numeric</span>(<span class="fu">interval</span>(bday, <span class="fu">Sys.Date</span>()), <span class="st">&quot;years&quot;</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 51.00068</code></pre>
+<pre><code>[1] 51.16496</code></pre>
 </div>
 </div>
 <p>and as humans use age</p>
