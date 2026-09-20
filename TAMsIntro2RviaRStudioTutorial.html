@@ -2318,7 +2318,7 @@ vertical-align: -.125em;
 </section>
 <section id="tutorial-versions" class="level2">
 <h2 class="anchored" data-anchor-id="tutorial-versions">Tutorial versions</h2>
-<p>This .qmd was last compiled on 2026-09-20 13:01:10.59346. The latest version of this tutorial is always available at the <a href="https://github.com/TiagoAMarques/AnIntro2RTutorial">github repository</a>.</p>
+<p>This .qmd was last compiled on 2026-09-20 13:42:37.757425. The latest version of this tutorial is always available at the <a href="https://github.com/TiagoAMarques/AnIntro2RTutorial">github repository</a>.</p>
 </section>
 <section id="tips-for-non-uk-native-system-users" class="level2">
 <h2 class="anchored" data-anchor-id="tips-for-non-uk-native-system-users">Tips for non-UK native system users</h2>
@@ -2343,7 +2343,7 @@ vertical-align: -.125em;
 <p>While it could be a general introduction to R, the primary objective of this document is to serve as a “hands-on-tutorial” for courses delivered by me (TAM). I use it for both Ecologia Numérica and Modelação Ecológica, courses for biology undergraduate and MSc students, respectively, at the Department of Biology (DB) at Faculdade de Ciências da Universidade de Lisboa (FCUL).</p>
 <p>This material does not assume any previous knowledge about R, but some basic logic and programming notions would be desirable.</p>
 <p>To facilitate the interaction with R we leverage on <a href="https://www.rstudio.com/">RStudio</a>, a graphical user interface (GUI), a piece of software which allows users to have at a click’s distance many useful features of R. In the following sections of the tutorial you will be guided through a first session of R via RStudio, and then you will start working on a dynamic report.</p>
-<p>The tutorial is intended to follow a presentation about R and RStudio, their interaction and capabilities (“AQuikIntro2RandRStudioInQuarto.html”). This document is also in the git repository, but the presentation itself is also hosted at RPubs: <a href="https://rpubs.com/talomarques/AnIntroToRandRStudio">A Quick Introduction to R and RStudio</a> where you can view it immediately.</p>
+<p>The tutorial is intended to follow a presentation about R and RStudio, their interaction and capabilities (“AQuikIntro2RandRStudioInQuarto.html”). This document is also in the git repository, but the presentation itself is also hosted at RPubs: <a href="https://rpubs.com/talomarques/1342657">A Quick Introduction to R and RStudio</a> where you can view it immediately.</p>
 <p>If you are using this tutorial in class with me/a teacher, after you are exposed to the slides, you might want to jump straight to section <a href="#sec-starthere2" class="quarto-xref">Section 9</a>. Do come back after class to all the material in between here and there, as it might contain useful context and additional relevant material. Remember, here you learn as much as you want to, and those that want the most will certainly do better.</p>
 <p>Disclaimer: in this document I copy paste freely from other documents that I have written. Therefore, if you have read these words elsewhere by me, though luck. I claim the right to plagiarize myself here!</p>
 </section>
@@ -2387,7 +2387,7 @@ vertical-align: -.125em;
 </figure>
 </div>
 <p>This document is written in Quarto, a tool that allows you to build dynamic reports based on R code, providing integrated documents that contain all that is required for a given project, from reading the data in to final results and discussion, passing through all the analysis and results. If you want a gentle introduction to Quarto using a hands on tutorial based on a versatile template that will do many of the things you will need to get started, look for no more, there is one here:</p>
-<p>https://github.com/TiagoAMarques/RMarkdownTemplate</p>
+<p><a href="https://github.com/TiagoAMarques/template_4_quarto_report" class="uri">https://github.com/TiagoAMarques/template_4_quarto_report</a></p>
 <p>Go out and explore, little grasshopper. You will conquer many great things if you do. You will become a code giant one day. But never forget, you need to be thankful to an entire community, and you are standing on the shoulders of giants!</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -2452,11 +2452,11 @@ vertical-align: -.125em;
 </section>
 <section id="dynamic-reports-and-reproducible-research" class="level1">
 <h1>Dynamic reports and reproducible research</h1>
-<p>One of the most amazing features of the integration of R and RStudio is how simple it becomes to work with dynamic reports, built on Quarto (Quarto is like RMarkdown, on steroids - with no side effects). This will take you to the next level in data analysis. Actually, this document was itself created as a dynamic report, using Quarto. You should explore some of the basics of R quarto, and you can do so here: https://quarto.org/docs/get-started/hello/rstudio.html. You can find additional (RMarkdown native) details here: https://rmarkdown.rstudio.com/. You can read an entire free book on the topic here: https://bookdown.org/yihui/rmarkdown/.</p>
+<p>One of the most amazing features of the integration of R and RStudio is how simple it becomes to work with dynamic reports, built on Quarto (if you are an old geeser… Quarto is like RMarkdown, on steroids - with no side effects). This will take you to the next level in data analysis. Actually, this document was itself created as a dynamic report, using Quarto. You should explore some of the basics of R quarto, and you can do so here: https://quarto.org/docs/get-started/hello/rstudio.html.</p>
 <p>Experiment yourself to create one. In RStudio, select <code>File</code> - &gt; <code>New file</code> -&gt; ?, then just add a title, something like “My first dynamic report” and see what happens. Explore the content of the file just created and see what happens when you press the RStudio button <code>knit</code>. Experiment with the created document to try and change some of the output. Experiment in creating output as an <code>.html</code>, as a <code>.pdf</code>, and even as a <code>.docx</code> Word document.</p>
 <p>Actually, a good way to learn and get up and running fast in Quarto is by example. Hence, I have prepared a template that you can use to create without effort a nice dynamic report. Feel free to explore the material here:</p>
-<p>https://github.com/TiagoAMarques/RMarkdownTemplate</p>
-<p>Just download all the files into a folder, <code>knit</code> the file <code>RMarkdownTemplate.Rmd</code> and off you go.</p>
+<p><a href="https://github.com/TiagoAMarques/template_4_quarto_report" class="uri">https://github.com/TiagoAMarques/template_4_quarto_report</a></p>
+<p>Just download all the files into a folder, <code>knit</code> the file <code>QuartoTemplate.Rmd</code> and off you go.</p>
 <p>Imagine the potential when you are analyzing real data, and the data changes after your report is written!</p>
 <section id="exploring-the-use-of-dynamic-reports" class="level2">
 <h2 class="anchored" data-anchor-id="exploring-the-use-of-dynamic-reports">Exploring the use of dynamic reports</h2>
@@ -3240,7 +3240,7 @@ $age
 <span id="cb120-2"><a href="#cb120-2" aria-hidden="true" tabindex="-1"></a><span class="fu">praise</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] &quot;You are cat&#39;s pajamas!&quot;</code></pre>
+<pre><code>[1] &quot;You are stellar!&quot;</code></pre>
 </div>
 </div>
 <p>Important note: you can and should load required packages in dynamic reports via the function <code>library</code>. You should not install packages (with <code>install.packages()</code>) within a dynamic report. Install packages directly on the command line, and only once.</p>
@@ -3835,7 +3835,7 @@ F-statistic: 89.57 on 1 and 48 DF,  p-value: 1.49e-12</code></pre>
 <span id="cb160-4"><a href="#cb160-4" aria-hidden="true" tabindex="-1"></a>dtnow</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] &quot;2026-09-20 13:01:20 WEST&quot;</code></pre>
+<pre><code>[1] &quot;2026-09-20 13:42:45 WEST&quot;</code></pre>
 </div>
 <details class="code-fold">
 <summary>Code</summary>
@@ -3886,7 +3886,7 @@ F-statistic: 89.57 on 1 and 48 DF,  p-value: 1.49e-12</code></pre>
 {
     UseMethod(&quot;minute&quot;)
 }
-&lt;bytecode: 0x0000029bf8da15e8&gt;
+&lt;bytecode: 0x000002125c1a5968&gt;
 &lt;environment: namespace:lubridate&gt;</code></pre>
 </div>
 <details class="code-fold">
@@ -3894,7 +3894,7 @@ F-statistic: 89.57 on 1 and 48 DF,  p-value: 1.49e-12</code></pre>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb172"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb172-1"><a href="#cb172-1" aria-hidden="true" tabindex="-1"></a>(dtnow)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] &quot;2026-09-20 13:01:20 WEST&quot;</code></pre>
+<pre><code>[1] &quot;2026-09-20 13:42:45 WEST&quot;</code></pre>
 </div>
 </div>
 <p>We could actually calculate the time elapsed between any time points</p>
@@ -3905,7 +3905,7 @@ F-statistic: 89.57 on 1 and 48 DF,  p-value: 1.49e-12</code></pre>
 <span id="cb174-2"><a href="#cb174-2" aria-hidden="true" tabindex="-1"></a><span class="fu">Sys.time</span>()<span class="sc">-</span>dtnow</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>Time difference of 0.1818669 secs</code></pre>
+<pre><code>Time difference of 0.1619589 secs</code></pre>
 </div>
 </div>
 <p>You can also turn strings (aka characters) into date-time objects, as an example, this is my birthday as text</p>

@@ -74,7 +74,7 @@ This material does not assume any previous knowledge about R, but some basic log
 
 To facilitate the interaction with R we leverage on [RStudio](https://www.rstudio.com/), a graphical user interface (GUI), a piece of software which allows users to have at a click's distance many useful features of R. In the following sections of the tutorial you will be guided through a first session of R via RStudio, and then you will start working on a dynamic report.
 
-The tutorial is intended to follow a presentation about R and RStudio, their interaction and capabilities ("AQuikIntro2RandRStudioInQuarto.html"). This document is also in the git repository, but the presentation itself is also hosted at RPubs: [A Quick Introduction to R and RStudio](https://rpubs.com/talomarques/AnIntroToRandRStudio) where you can view it immediately.
+The tutorial is intended to follow a presentation about R and RStudio, their interaction and capabilities ("AQuikIntro2RandRStudioInQuarto.html"). This document is also in the git repository, but the presentation itself is also hosted at RPubs: [A Quick Introduction to R and RStudio](https://rpubs.com/talomarques/1342657) where you can view it immediately.
 
 If you are using this tutorial in class with me/a teacher, after you are exposed to the slides, you might want to jump straight to section @sec-starthere2. Do come back after class to all the material in between here and there, as it might contain useful context and additional relevant material. Remember, here you learn as much as you want to, and those that want the most will certainly do better.
 
