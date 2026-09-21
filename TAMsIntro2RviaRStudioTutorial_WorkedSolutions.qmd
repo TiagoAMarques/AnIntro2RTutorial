@@ -1,7 +1,7 @@
 ---
 title: "A hands-on tutorial on R and RStudio: worked solutions"
 author: "Tiago A. Marques"
-date: today
+date: "`r format(Sys.Date(), '%d %B %Y')`"
 format:
   html:
     embed-resources: true
