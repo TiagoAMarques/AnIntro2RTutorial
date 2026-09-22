@@ -76,7 +76,7 @@ To facilitate the interaction with R we leverage on [RStudio](https://www.rstudi
 
 The tutorial is intended to follow a presentation about R and RStudio, their interaction and capabilities ("AQuikIntro2RandRStudioInQuarto.html"). This document is also in the git repository, but the presentation itself is also hosted at RPubs: [A Quick Introduction to R and RStudio](https://rpubs.com/talomarques/1342657) where you can view it immediately.
 
-If you are using this tutorial in class with me/a teacher, after you are exposed to the slides, you might want to jump straight to section @sec-starthere2. Do come back after class to all the material in between here and there, as it might contain useful context and additional relevant material. Remember, here you learn as much as you want to, and those that want the most will certainly do better.
+If you are using this tutorial in class with me/a teacher, after you are exposed to the slides, you might want to jump straight to [Working through R via a dynamic report](#sec-starthere2). Do come back after class to all the material in between here and there, as it might contain useful context and additional relevant material. Remember, here you learn as much as you want to, and those that want the most will certainly do better.
 
 Disclaimer: in this document I copy paste freely from other documents that I have written. Therefore, if you have read these words elsewhere by me, though luck. I claim the right to plagiarize myself here!
 
