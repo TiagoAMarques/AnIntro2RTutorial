@@ -23,7 +23,7 @@ Let us imagine that you are doing a study, perhaps your Master thesis dissertati
 
 This section simulates you going to the field, collecting and recording the data. It will take you months to do so, but here it happens in a split of a second.
 
-The next chunk of code, only visible on the .Rmd file, is not to be touched. It simulates data with some useful features and creates the file with the data, "fakedata.csv", which you use below
+The next chunk of code, only visible on the .qmd file, is not to be touched. It simulates data with some useful features and creates the file with the data, "fakedata.csv", which you use below
 ```{r,echo=FALSE}
 #do not touch this code chunck
 #this simulates the data
@@ -139,11 +139,11 @@ write.csv(mydata2,file="fakedata2.csv",row.names = FALSE,quote=FALSE)
 
 Now, you just have to wonder at what dynamic reports are best at. If you had just a plain old word with numbers you took from some excel calculations, you would have to redo all the analysis. Here, you don't. See for yourself.
 
-* create a new ".Rmd" file that reads `fakedata2.csv` instead of `fakedata.csv`. Basically you can just go to windows explorer, create a copy of `ExampleDataAnalysis.Rmd`, so copy-paste the file `ExampleDataAnalysis.Rmd`, and name it say `ExampleDataAnalysis2.Rmd` 
+* create a new ".qmd" file that reads `fakedata2.csv` instead of `fakedata.csv`. Basically you can just go to windows explorer, create a copy of `ExampleDataAnalysis.qmd`, so copy-paste the file `ExampleDataAnalysis.qmd`, and name it say `ExampleDataAnalysis2.qmd` 
 
 * edit the **line of code above, in the new file you just created** that reads `mydata <- read_excel("fakedata2.csv")` to become `mydata <- read_excel("fakedata2.csv")` (note this line will therefore now read the file `fakedata2.csv` that contains all the data, with 6, not just 4, habitats)
 
-* compile the file `ExampleDataAnalysis2.Rmd`
+* compile the file `ExampleDataAnalysis2.qmd`
 
 * check how all the results are updated immediately. 
 

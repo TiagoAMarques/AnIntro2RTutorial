@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Tiago A. Marques">
-<meta name="dcterms.date" content="2026-07-22">
+<meta name="dcterms.date" content="2026-09-28">
 
 <title>An example data analysis to illustrate reproducibility</title>
 <style>
@@ -103,7 +103,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">July 22, 2026</p>
+      <p class="date">September 28, 2026</p>
     </div>
   </div>
   
@@ -129,7 +129,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="do-not-touch-this-section-field-work-season-1-in-progress" class="level1">
 <h1>Do not touch this section (field work season 1 in progress)</h1>
 <p>This section simulates you going to the field, collecting and recording the data. It will take you months to do so, but here it happens in a split of a second.</p>
-<p>The next chunk of code, only visible on the .Rmd file, is not to be touched. It simulates data with some useful features and creates the file with the data, “fakedata.csv”, which you use below</p>
+<p>The next chunk of code, only visible on the .qmd file, is not to be touched. It simulates data with some useful features and creates the file with the data, “fakedata.csv”, which you use below</p>
 </section>
 <section id="your-analysis" class="level1">
 <h1>Your analysis</h1>
@@ -331,9 +331,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h1>Your task</h1>
 <p>Now, you just have to wonder at what dynamic reports are best at. If you had just a plain old word with numbers you took from some excel calculations, you would have to redo all the analysis. Here, you don’t. See for yourself.</p>
 <ul>
-<li><p>create a new “.Rmd” file that reads <code>fakedata2.csv</code> instead of <code>fakedata.csv</code>. Basically you can just go to windows explorer, create a copy of <code>ExampleDataAnalysis.Rmd</code>, so copy-paste the file <code>ExampleDataAnalysis.Rmd</code>, and name it say <code>ExampleDataAnalysis2.Rmd</code></p></li>
+<li><p>create a new “.qmd” file that reads <code>fakedata2.csv</code> instead of <code>fakedata.csv</code>. Basically you can just go to windows explorer, create a copy of <code>ExampleDataAnalysis.qmd</code>, so copy-paste the file <code>ExampleDataAnalysis.qmd</code>, and name it say <code>ExampleDataAnalysis2.qmd</code></p></li>
 <li><p>edit the <strong>line of code above, in the new file you just created</strong> that reads <code>mydata &lt;- read_excel("fakedata2.csv")</code> to become <code>mydata &lt;- read_excel("fakedata2.csv")</code> (note this line will therefore now read the file <code>fakedata2.csv</code> that contains all the data, with 6, not just 4, habitats)</p></li>
-<li><p>compile the file <code>ExampleDataAnalysis2.Rmd</code></p></li>
+<li><p>compile the file <code>ExampleDataAnalysis2.qmd</code></p></li>
 <li><p>check how all the results are updated immediately.</p></li>
 </ul>
 <p>While you have to do new field work, all the analysis is reproduced by simply recompiling the same document, reading the new data instead of the old data.</p>
