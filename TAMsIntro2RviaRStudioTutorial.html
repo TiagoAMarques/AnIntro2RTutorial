@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Tiago A. Marques">
-<meta name="dcterms.date" content="2026-09-22">
+<meta name="dcterms.date" content="2026-09-30">
 
 <title>A hands-on tutorial on R and RStudio</title>
 <style>
@@ -2294,7 +2294,7 @@ vertical-align: -.125em;
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">September 22, 2026</p>
+      <p class="date">September 30, 2026</p>
     </div>
   </div>
   
@@ -2318,7 +2318,7 @@ vertical-align: -.125em;
 </section>
 <section id="tutorial-versions" class="level2">
 <h2 class="anchored" data-anchor-id="tutorial-versions">Tutorial versions</h2>
-<p>This .qmd was last compiled on 2026-09-22 17:11:07.806717. The latest version of this tutorial is always available at the <a href="https://github.com/TiagoAMarques/AnIntro2RTutorial">github repository</a>.</p>
+<p>This .qmd was last compiled on 2026-09-30 17:05:08.251355. The latest version of this tutorial is always available at the <a href="https://github.com/TiagoAMarques/AnIntro2RTutorial">github repository</a>.</p>
 </section>
 <section id="tips-for-non-uk-native-system-users" class="level2">
 <h2 class="anchored" data-anchor-id="tips-for-non-uk-native-system-users">Tips for non-UK native system users</h2>
@@ -2652,7 +2652,10 @@ vertical-align: -.125em;
 </section>
 <section id="sec-starthere2" class="level1">
 <h1>Working through R via a dynamic report</h1>
-<p>Create a new dynamic report using a quarto file, as described above. Call it something sensible, like <code>*****EN2026tutorial.qmd</code>. Copy-paste into it as much as you want from this current file. A lazy option would be to create a copy of this <code>.qmd</code> and rename it, deleting most of the material above.</p>
+<p>Create a new dynamic report using a template quarto file. To make it easier, use the template provided here:</p>
+<p><a href="https://github.com/TiagoAMarques/template_4_quarto_report" class="uri">https://github.com/TiagoAMarques/template_4_quarto_report</a></p>
+<p>put all the files in a folder, rename the template file <code>QuartoTemplate.qmd</code> to something more sensible, something like <code>*****XX2026tutorial.qmd</code>. Here <code>*****</code> could be your FCUL student number and <code>XX</code> a course identifier (e.g. EN for Ecologia Numérica or ME for Modelação Ecológica).</p>
+<p>Then start your work in a new section at the top. ater you can read the text in the tempate to find out more about how different things get added to the output. This template allows you to obtain <code>.pdf</code>, <code>.docx</code> and <code>.html</code> as outputs.</p>
 <p>Comment all you do in the appropriate place: things that seem obvious to you when you do them won’t necessarily be obvious to you next week, so describe with comments what they are and why you did them. Therefore, at the end you will have a record that makes it easy to track everything you did, and a template you can use in future classes.</p>
 <p>Once you created the quarto file from scratch, we can start by creating a new variable.</p>
 <p>Note that all the code must go inside code chunks, and you can get them by doing <code>Code | InsertChunk</code> or the shortcut <code>Ctrl+Alt+I</code>. When code chucks are properly formatted they appear highlighted in the .Rmd.</p>
@@ -3240,7 +3243,7 @@ $age
 <span id="cb120-2"><a href="#cb120-2" aria-hidden="true" tabindex="-1"></a><span class="fu">praise</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] &quot;You are rad!&quot;</code></pre>
+<pre><code>[1] &quot;You are magnificent!&quot;</code></pre>
 </div>
 </div>
 <p>Important note: you can and should load required packages in dynamic reports via the function <code>library</code>. You should not install packages (with <code>install.packages()</code>) within a dynamic report. Install packages directly on the command line, and only once.</p>
@@ -3835,7 +3838,7 @@ F-statistic: 89.57 on 1 and 48 DF,  p-value: 1.49e-12</code></pre>
 <span id="cb160-4"><a href="#cb160-4" aria-hidden="true" tabindex="-1"></a>dtnow</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] &quot;2026-09-22 17:11:19 WEST&quot;</code></pre>
+<pre><code>[1] &quot;2026-09-30 17:05:16 WEST&quot;</code></pre>
 </div>
 <details class="code-fold">
 <summary>Code</summary>
@@ -3852,7 +3855,7 @@ F-statistic: 89.57 on 1 and 48 DF,  p-value: 1.49e-12</code></pre>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb164"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb164-1"><a href="#cb164-1" aria-hidden="true" tabindex="-1"></a><span class="fu">as.Date</span>(dtnow)  <span class="co"># R grabs the date part automatically</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] &quot;2026-09-22&quot;</code></pre>
+<pre><code>[1] &quot;2026-09-30&quot;</code></pre>
 </div>
 </div>
 <p>We could get the day</p>
@@ -3862,7 +3865,7 @@ F-statistic: 89.57 on 1 and 48 DF,  p-value: 1.49e-12</code></pre>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb166"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb166-1"><a href="#cb166-1" aria-hidden="true" tabindex="-1"></a><span class="fu">day</span>(dtnow)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 22</code></pre>
+<pre><code>[1] 30</code></pre>
 </div>
 </div>
 <p>or the Julian day</p>
@@ -3872,7 +3875,7 @@ F-statistic: 89.57 on 1 and 48 DF,  p-value: 1.49e-12</code></pre>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb168"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb168-1"><a href="#cb168-1" aria-hidden="true" tabindex="-1"></a><span class="fu">yday</span>(dtnow)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 265</code></pre>
+<pre><code>[1] 273</code></pre>
 </div>
 </div>
 <p>or the minute</p>
@@ -3886,7 +3889,7 @@ F-statistic: 89.57 on 1 and 48 DF,  p-value: 1.49e-12</code></pre>
 {
     UseMethod(&quot;minute&quot;)
 }
-&lt;bytecode: 0x0000018de1811ea8&gt;
+&lt;bytecode: 0x000001fcb15890a8&gt;
 &lt;environment: namespace:lubridate&gt;</code></pre>
 </div>
 <details class="code-fold">
@@ -3894,7 +3897,7 @@ F-statistic: 89.57 on 1 and 48 DF,  p-value: 1.49e-12</code></pre>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb172"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb172-1"><a href="#cb172-1" aria-hidden="true" tabindex="-1"></a>(dtnow)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] &quot;2026-09-22 17:11:19 WEST&quot;</code></pre>
+<pre><code>[1] &quot;2026-09-30 17:05:16 WEST&quot;</code></pre>
 </div>
 </div>
 <p>We could actually calculate the time elapsed between any time points</p>
@@ -3905,7 +3908,7 @@ F-statistic: 89.57 on 1 and 48 DF,  p-value: 1.49e-12</code></pre>
 <span id="cb174-2"><a href="#cb174-2" aria-hidden="true" tabindex="-1"></a><span class="fu">Sys.time</span>()<span class="sc">-</span>dtnow</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>Time difference of 0.2297649 secs</code></pre>
+<pre><code>Time difference of 0.209234 secs</code></pre>
 </div>
 </div>
 <p>You can also turn strings (aka characters) into date-time objects, as an example, this is my birthday as text</p>
@@ -3926,7 +3929,7 @@ F-statistic: 89.57 on 1 and 48 DF,  p-value: 1.49e-12</code></pre>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb178"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb178-1"><a href="#cb178-1" aria-hidden="true" tabindex="-1"></a><span class="fu">Sys.Date</span>()<span class="sc">-</span>bday</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>Time difference of 18690 days</code></pre>
+<pre><code>Time difference of 18698 days</code></pre>
 </div>
 </div>
 <p>a bit nicer and controling units, my age in years is</p>
@@ -3936,7 +3939,7 @@ F-statistic: 89.57 on 1 and 48 DF,  p-value: 1.49e-12</code></pre>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb180"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb180-1"><a href="#cb180-1" aria-hidden="true" tabindex="-1"></a><span class="fu">as.numeric</span>(<span class="fu">interval</span>(bday, <span class="fu">Sys.Date</span>()), <span class="st">&quot;years&quot;</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 51.17043</code></pre>
+<pre><code>[1] 51.19233</code></pre>
 </div>
 </div>
 <p>and as humans use age</p>
