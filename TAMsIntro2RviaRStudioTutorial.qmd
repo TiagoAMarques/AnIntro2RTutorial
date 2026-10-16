@@ -393,13 +393,15 @@ and hence our workspace is empty again.
 Note a key difference between the functions `ls` and `rm`. While the first function does not need any arguments, the second requires at least one argument (but can take several). This can be easily seen by checking their help files and noting that `rm` needs at least 1 explicit argument while `ls` can work with defaults
 
 ```{r,eval=FALSE}
-# do not have this line of code in a dynamic report
-# it will fire the help file into a browser
-# which is a bit of a pain
-# Note in my .Rmd this code has
-# eval=FALSE and so is not executed, just shown
+
 ?rm
 ```
+
+
+::: {.callout-tip}
+Note in my .Rmd the code above has the option `eval` set to `false` and so the code is not evaluated/ executed. Do not leave ?+function calls in a dynamic report otherwise you will have the help file jumping out on a browser every time you compile it
+:::
+
 
 This is a convenient way to obtain more information about a given function. If one does not know what the name of the function might be, one can search for functions containing a given string using the `apropos` function. The following command lists all the functions with the string `mean` in them.
 
@@ -677,16 +679,26 @@ Here we use package `praise` as an example. You might be needing it by now! Noti
 Next, we install the package.
 
 ```{r,eval=FALSE}
-# do not have this line of code in a dynamic report
-# it will install the package package
+# do not have this line of code in your dynamic report
+# the function "install.packages"
+# will install the package praise
 # and that only needs to be done once
 # otherwise it would be like
-# installing word every time 
-# you wanted to work on a word file
+# installing Word every time 
+# you wanted to work on a .docx file
 # in the .Rmd the option is set as
 # eval=FALSE and so is not executed, just shown
 install.packages("praise")
+# if you need to install praise for the first time
+# copy paste the above line in the command line
+# and then press enter - done
 ```
+
+
+::: {.callout-tip}
+Do not have calls to `install.packages`  in a dynamic report; otherwise you will re-instal a package over and over. Once you installed the package once, directly on the command line, it is done.
+:::
+
 
 Then we load the package
 

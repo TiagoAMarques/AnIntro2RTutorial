@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Tiago A. Marques">
-<meta name="dcterms.date" content="2026-09-30">
+<meta name="dcterms.date" content="2026-10-07">
 
 <title>A hands-on tutorial on R and RStudio</title>
 <style>
@@ -2294,7 +2294,7 @@ vertical-align: -.125em;
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">September 30, 2026</p>
+      <p class="date">October 7, 2026</p>
     </div>
   </div>
   
@@ -2318,7 +2318,7 @@ vertical-align: -.125em;
 </section>
 <section id="tutorial-versions" class="level2">
 <h2 class="anchored" data-anchor-id="tutorial-versions">Tutorial versions</h2>
-<p>This .qmd was last compiled on 2026-09-30 17:05:08.251355. The latest version of this tutorial is always available at the <a href="https://github.com/TiagoAMarques/AnIntro2RTutorial">github repository</a>.</p>
+<p>This .qmd was last compiled on 2026-10-07 09:37:50.16474. The latest version of this tutorial is always available at the <a href="https://github.com/TiagoAMarques/AnIntro2RTutorial">github repository</a>.</p>
 </section>
 <section id="tips-for-non-uk-native-system-users" class="level2">
 <h2 class="anchored" data-anchor-id="tips-for-non-uk-native-system-users">Tips for non-UK native system users</h2>
@@ -2692,13 +2692,21 @@ vertical-align: -.125em;
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="co"># do not have this line of code in a dynamic report</span></span>
-<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a><span class="co"># it will fire the help file into a browser</span></span>
-<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a><span class="co"># which is a bit of a pain</span></span>
-<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Note in my .Rmd this code has</span></span>
-<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a><span class="co"># eval=FALSE and so is not executed, just shown</span></span>
-<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a>?rm</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>?rm</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Note in my .Rmd the code above has the option <code>eval</code> set to <code>false</code> and so the code is not evaluated/ executed. Do not leave ?+function calls in a dynamic report otherwise you will have the help file jumping out on a browser every time you compile it</p>
+</div>
 </div>
 <p>This is a convenient way to obtain more information about a given function. If one does not know what the name of the function might be, one can search for functions containing a given string using the <code>apropos</code> function. The following command lists all the functions with the string <code>mean</code> in them.</p>
 <div class="cell">
@@ -3202,16 +3210,33 @@ $age
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb117"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb117-1"><a href="#cb117-1" aria-hidden="true" tabindex="-1"></a><span class="co"># do not have this line of code in a dynamic report</span></span>
-<span id="cb117-2"><a href="#cb117-2" aria-hidden="true" tabindex="-1"></a><span class="co"># it will install the package package</span></span>
-<span id="cb117-3"><a href="#cb117-3" aria-hidden="true" tabindex="-1"></a><span class="co"># and that only needs to be done once</span></span>
-<span id="cb117-4"><a href="#cb117-4" aria-hidden="true" tabindex="-1"></a><span class="co"># otherwise it would be like</span></span>
-<span id="cb117-5"><a href="#cb117-5" aria-hidden="true" tabindex="-1"></a><span class="co"># installing word every time </span></span>
-<span id="cb117-6"><a href="#cb117-6" aria-hidden="true" tabindex="-1"></a><span class="co"># you wanted to work on a word file</span></span>
-<span id="cb117-7"><a href="#cb117-7" aria-hidden="true" tabindex="-1"></a><span class="co"># in the .Rmd the option is set as</span></span>
-<span id="cb117-8"><a href="#cb117-8" aria-hidden="true" tabindex="-1"></a><span class="co"># eval=FALSE and so is not executed, just shown</span></span>
-<span id="cb117-9"><a href="#cb117-9" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;praise&quot;</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb117"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb117-1"><a href="#cb117-1" aria-hidden="true" tabindex="-1"></a><span class="co"># do not have this line of code in your dynamic report</span></span>
+<span id="cb117-2"><a href="#cb117-2" aria-hidden="true" tabindex="-1"></a><span class="co"># the function &quot;install.packages&quot;</span></span>
+<span id="cb117-3"><a href="#cb117-3" aria-hidden="true" tabindex="-1"></a><span class="co"># will install the package praise</span></span>
+<span id="cb117-4"><a href="#cb117-4" aria-hidden="true" tabindex="-1"></a><span class="co"># and that only needs to be done once</span></span>
+<span id="cb117-5"><a href="#cb117-5" aria-hidden="true" tabindex="-1"></a><span class="co"># otherwise it would be like</span></span>
+<span id="cb117-6"><a href="#cb117-6" aria-hidden="true" tabindex="-1"></a><span class="co"># installing Word every time </span></span>
+<span id="cb117-7"><a href="#cb117-7" aria-hidden="true" tabindex="-1"></a><span class="co"># you wanted to work on a .docx file</span></span>
+<span id="cb117-8"><a href="#cb117-8" aria-hidden="true" tabindex="-1"></a><span class="co"># in the .Rmd the option is set as</span></span>
+<span id="cb117-9"><a href="#cb117-9" aria-hidden="true" tabindex="-1"></a><span class="co"># eval=FALSE and so is not executed, just shown</span></span>
+<span id="cb117-10"><a href="#cb117-10" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;praise&quot;</span>)</span>
+<span id="cb117-11"><a href="#cb117-11" aria-hidden="true" tabindex="-1"></a><span class="co"># if you need to install praise for the first time</span></span>
+<span id="cb117-12"><a href="#cb117-12" aria-hidden="true" tabindex="-1"></a><span class="co"># copy paste the above line in the command line</span></span>
+<span id="cb117-13"><a href="#cb117-13" aria-hidden="true" tabindex="-1"></a><span class="co"># and then press enter - done</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Do not have calls to <code>install.packages</code> in a dynamic report; otherwise you will re-instal a package over and over. Once you installed the package once, directly on the command line, it is done.</p>
+</div>
 </div>
 <p>Then we load the package</p>
 <div class="cell">
@@ -3243,7 +3268,7 @@ $age
 <span id="cb120-2"><a href="#cb120-2" aria-hidden="true" tabindex="-1"></a><span class="fu">praise</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] &quot;You are magnificent!&quot;</code></pre>
+<pre><code>[1] &quot;You are well-made!&quot;</code></pre>
 </div>
 </div>
 <p>Important note: you can and should load required packages in dynamic reports via the function <code>library</code>. You should not install packages (with <code>install.packages()</code>) within a dynamic report. Install packages directly on the command line, and only once.</p>
@@ -3838,7 +3863,7 @@ F-statistic: 89.57 on 1 and 48 DF,  p-value: 1.49e-12</code></pre>
 <span id="cb160-4"><a href="#cb160-4" aria-hidden="true" tabindex="-1"></a>dtnow</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] &quot;2026-09-30 17:05:16 WEST&quot;</code></pre>
+<pre><code>[1] &quot;2026-10-07 09:37:58 WEST&quot;</code></pre>
 </div>
 <details class="code-fold">
 <summary>Code</summary>
@@ -3855,7 +3880,7 @@ F-statistic: 89.57 on 1 and 48 DF,  p-value: 1.49e-12</code></pre>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb164"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb164-1"><a href="#cb164-1" aria-hidden="true" tabindex="-1"></a><span class="fu">as.Date</span>(dtnow)  <span class="co"># R grabs the date part automatically</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] &quot;2026-09-30&quot;</code></pre>
+<pre><code>[1] &quot;2026-10-07&quot;</code></pre>
 </div>
 </div>
 <p>We could get the day</p>
@@ -3865,7 +3890,7 @@ F-statistic: 89.57 on 1 and 48 DF,  p-value: 1.49e-12</code></pre>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb166"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb166-1"><a href="#cb166-1" aria-hidden="true" tabindex="-1"></a><span class="fu">day</span>(dtnow)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 30</code></pre>
+<pre><code>[1] 7</code></pre>
 </div>
 </div>
 <p>or the Julian day</p>
@@ -3875,7 +3900,7 @@ F-statistic: 89.57 on 1 and 48 DF,  p-value: 1.49e-12</code></pre>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb168"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb168-1"><a href="#cb168-1" aria-hidden="true" tabindex="-1"></a><span class="fu">yday</span>(dtnow)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 273</code></pre>
+<pre><code>[1] 280</code></pre>
 </div>
 </div>
 <p>or the minute</p>
@@ -3889,7 +3914,7 @@ F-statistic: 89.57 on 1 and 48 DF,  p-value: 1.49e-12</code></pre>
 {
     UseMethod(&quot;minute&quot;)
 }
-&lt;bytecode: 0x000001fcb15890a8&gt;
+&lt;bytecode: 0x000002a95f057350&gt;
 &lt;environment: namespace:lubridate&gt;</code></pre>
 </div>
 <details class="code-fold">
@@ -3897,7 +3922,7 @@ F-statistic: 89.57 on 1 and 48 DF,  p-value: 1.49e-12</code></pre>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb172"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb172-1"><a href="#cb172-1" aria-hidden="true" tabindex="-1"></a>(dtnow)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] &quot;2026-09-30 17:05:16 WEST&quot;</code></pre>
+<pre><code>[1] &quot;2026-10-07 09:37:58 WEST&quot;</code></pre>
 </div>
 </div>
 <p>We could actually calculate the time elapsed between any time points</p>
@@ -3908,7 +3933,7 @@ F-statistic: 89.57 on 1 and 48 DF,  p-value: 1.49e-12</code></pre>
 <span id="cb174-2"><a href="#cb174-2" aria-hidden="true" tabindex="-1"></a><span class="fu">Sys.time</span>()<span class="sc">-</span>dtnow</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>Time difference of 0.209234 secs</code></pre>
+<pre><code>Time difference of 0.1915941 secs</code></pre>
 </div>
 </div>
 <p>You can also turn strings (aka characters) into date-time objects, as an example, this is my birthday as text</p>
@@ -3929,7 +3954,7 @@ F-statistic: 89.57 on 1 and 48 DF,  p-value: 1.49e-12</code></pre>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb178"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb178-1"><a href="#cb178-1" aria-hidden="true" tabindex="-1"></a><span class="fu">Sys.Date</span>()<span class="sc">-</span>bday</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>Time difference of 18698 days</code></pre>
+<pre><code>Time difference of 18705 days</code></pre>
 </div>
 </div>
 <p>a bit nicer and controling units, my age in years is</p>
@@ -3939,7 +3964,7 @@ F-statistic: 89.57 on 1 and 48 DF,  p-value: 1.49e-12</code></pre>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb180"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb180-1"><a href="#cb180-1" aria-hidden="true" tabindex="-1"></a><span class="fu">as.numeric</span>(<span class="fu">interval</span>(bday, <span class="fu">Sys.Date</span>()), <span class="st">&quot;years&quot;</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 51.19233</code></pre>
+<pre><code>[1] 51.2115</code></pre>
 </div>
 </div>
 <p>and as humans use age</p>
